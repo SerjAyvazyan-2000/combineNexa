@@ -1,0 +1,1145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Change image resolution</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+       <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header-body G-justify-between">
+            <a class="header-logo G-flex" href="index.html">
+              <picture>
+                <source
+                  srcset="assets/images/logoMobile.svg"
+                  media="(max-width: 576px)"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/logo.svg"
+                  alt="Company logo"
+                  width="28"
+                  height="28"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </picture>
+            </a>
+
+            <nav class="menu">
+              <div class="menu-wrapper">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+
+                <div class="menu-mobile-actions">
+                  <a
+                    href="https://nexa.ru/sign-up"
+                    target="_blank"
+                    class="btn-login G-align-center"
+                  >
+                    <span class="login-btn-bg G-center">
+                      <i class="icon icon-person"></i>
+                    </span>
+                    <span class="login-btn-text">Войти</span>
+                  </a>
+
+                  <a
+                    href="https://nexa.ru/sign-up"
+                    target="_blank"
+                    class="btn-register G-align-center"
+                  >
+                    <span class="register-btn-bg G-center">
+                      <i class="icon icon-person-edit"></i>
+                    </span>
+                    <span class="register-btn-text">Регистрация</span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+            <div class="menu-bg"></div>
+
+            <div class="header-actions G-align-center">
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="btn-login G-align-center"
+              >
+                <span class="login-btn-bg G-center">
+                  <i class="icon icon-person"></i>
+                </span>
+                <span class="login-btn-text">Войти</span>
+              </a>
+
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="btn-register G-align-center"
+              >
+                <span class="register-btn-bg G-center">
+                  <i class="icon icon-person-edit"></i>
+                </span>
+                <span class="register-btn-text">Регистрация</span>
+              </a>
+
+              <div class="burger-bg G-center">
+                <div class="burger">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+      <main>
+        <section class="b-primary">
+          <div class="container">
+            <div class="b-primary__top">
+              <div class="a-hero-titles">
+                <h1 class="fade-top">
+                  <span class="mobile-text-wrap">Изменить</span> разрешение картинки <span class="mobile-text-wrap">без потери качества</span>
+                </h1>
+                <p class="fade-bottom">
+                  Детали становятся яснее, <span class="mobile-text-wrap">а пиксели — невидимыми</span>
+                </p>
+                <a
+                  href="https://nexa.ru/sign-up"
+                  target="_blank"
+                  class="white-btn a-hero-btn"
+                >
+                  <span class="white-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="white-btn-text">Начать бесплатно</span>
+                </a>
+              </div>
+            </div>
+            <div class="b-primary__body fade-bottom">
+              <div class="b-primary__elem b-primary__elem-1">
+                <div class="b-primary__number">x20</div>
+                <div class="b-primary__desc">
+                  увеличение разрешения изображений
+                </div>
+
+                <div class="b-primary__elem-bg G-flex">
+                  <img
+                    src="assets/images/elemBg3.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                  />
+                </div>
+              </div>
+              <div class="b-primary__elem b-primary__elem-2">
+                <div class="b-primary__number">8K</div>
+                <div class="b-primary__desc">
+                  максимальный выходной размер изображения
+                </div>
+
+                <div class="b-primary__elem-bg G-flex">
+                  <img
+                    src="assets/images/elemBg2.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                  />
+                </div>
+              </div>
+              <div class="b-primary__elem b-primary__elem-3">
+                <div class="b-primary__number">1 с.</div>
+                <div class="b-primary__desc">среднее время обработки</div>
+
+                <div class="b-primary__elem-bg G-flex">
+                  <img
+                    src="assets/images/elemBg.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                  />
+                </div>
+              </div>
+              <div class="b-primary__elem b-primary__elem-4">
+                <div class="b-primary__number">98%</div>
+                <div class="b-primary__desc">
+                  точность <br />
+                  восстановления деталей
+                </div>
+
+                <div class="b-primary__elem-bg G-flex">
+                  <img
+                    src="assets/images/elemBg4.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                  />
+                </div>
+              </div>
+              <div class="b-primary__columns">
+                <div class="b-primary__image b-primary__image-small">
+                  <picture>
+                    <source
+                      srcset="assets/images/primary02-mobile.webp"
+                      media="(max-width: 576px)"
+                    />
+                    <img
+                      src="assets/images/primary02.webp"
+                      alt="img"
+                      width="390"
+                      heigth="250"
+                    />
+                  </picture>
+                </div>
+                <div class="b-primary__image b-primary__image-big">
+                  <picture>
+                    <source
+                      srcset="assets/images/primary01-mobile.webp"
+                      media="(max-width: 576px)"
+                    />
+                    <img
+                      src="assets/images/primary01.webp"
+                      alt="img"
+                      width="580"
+                      heigth="370"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="b-primary__bg">
+            <picture>
+              <source srcset="assets/images/bg-mobile.png" media="(max-width: 576px)" />
+              <img
+                src="assets/images/bg.webp"
+                style="content-visibility: auto"
+                alt="img"
+                width=""
+                heigth=""
+              />
+            </picture>
+          </div>
+        </section>
+
+        <section class="b-why section">
+          <div class="b-circle"></div>
+          <div class="container">
+            <div class="b-why__body">
+              <div class="b-why__column fade-left">
+                <div class="b-why__top">
+                  <h2 class="b-why__title title">
+                    Почему именно наша нейросеть?
+                  </h2>
+                  <p class="b-why__text text">
+                    Делаем картинки больше и лучше — быстро, безопасно и красиво
+                  </p>
+                  <a
+                    href="https://nexa.ru/sign-up"
+                    target="_blank"
+                    class="black-btn a-hero-btn"
+                  >
+                    <span class="black-btn-bg G-center">
+                      <i class="icon icon-stars"></i>
+                    </span>
+                    <span class="black-btn-text">Попробовать</span>
+                  </a>
+                </div>
+                <div class="b-why__bottom">
+                  <div class="b-why__people">
+                    <img
+                      src="img/why/people.png"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                  </div>
+                  <p class="why__text">
+                    NEXA AI уже пользуется более 10.000 пользователей
+                  </p>
+                  <p class="why__text">Попробуйте и вы</p>
+                </div>
+              </div>
+              <div class="b-why__swiper swiper fade-right">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide light">
+                    <div class="b-why__icon">
+                      <img
+                        src="img/why/magicpen.webp"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="b-why__subtitle subtitle">Умная адаптация</h3>
+                    <p class="b-why__desc">
+                      Алгоритм понимает, <br />
+                      что изображено на картинке, <br />и восстанавливает
+                      её естественно
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="b-why__icon">
+                      <img
+                        src="img/why/colorfilter.webp"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="b-why__subtitle subtitle">Цвет без искажений</h3>
+                    <p class="b-why__desc">
+                      Цвета изображения <br />
+                      остаются яркими и точными, без «пластикового» эффекта
+                    </p>
+                  </div>
+                  <div class="swiper-slide light-mobile">
+                    <div class="b-why__icon">
+                      <img
+                        src="img/why/document-text.webp"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="b-why__subtitle subtitle">Любые форматы</h3>
+                    <p class="b-why__desc">
+                      Поддержка и работа со всеми <br />
+                      форматами — от старых JPEG <br />
+                      до современных RAW
+                    </p>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="b-why__icon">
+                      <img
+                        src="img/why/security-safe.webp"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="b-why__subtitle subtitle">
+                      Безопасность файлов
+                    </h3>
+                    <p class="b-why__desc">
+                      Ваши изображения обрабатываются без <br />
+                      сохранения на сервере в целях <br />
+                      конфиденциальности
+                    </p>
+                  </div>
+                </div>
+                <div class="b-why__pagination"></div>
+              </div>
+              <div class="b-why__bottom b-why__bottom-mobile">
+                <div class="b-why__people">
+                  <img
+                    src="img/why/people.png"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <p class="b-why__text">
+                  NEXA AI уже пользуется более 10.000 пользователей
+                </p>
+                <p class="b-why__text">Попробуйте и вы</p>
+
+                <a
+                  href="https://nexa.ru/sign-up"
+                  target="_blank"
+                  class="black-btn b-why-btn"
+                >
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Попробовать</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="steps" class="b-steps section">
+          <div class="container">
+            <div class="section-titles fade-bottom">
+              <h2>4 шага к идеальной картинке</h2>
+              <p>
+                Всё происходит за пару кликов — без лишних настроек и сложных
+                слов
+              </p>
+            </div>
+            <div class="b-steps__columns fade-bottom">
+              <div class="b-steps__images">
+                <div class="b-steps__image">
+                  <img
+                    src="assets/images/steps01.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                  <div class="b-die">320х145</div>
+                </div>
+                <div class="b-steps__arrow">
+                  <img
+                    src="assets/images/arrow-down.svg"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="b-steps__image">
+                  <img
+                    src="assets/images/steps02.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                  <div class="b-die">2600х1200</div>
+                </div>
+              </div>
+              <div class="b-steps__column">
+                <ul class="b-steps__list">
+                  <li class="b-steps__item">
+                    <h3 class="b-steps__subtitle">1. Загрузите изображение</h3>
+                    <p>просто перетащите файл на сайт</p>
+                  </li>
+                  <li class="b-steps__item">
+                    <h3 class="b-steps__subtitle">2. Выберите разрешение</h3>
+                    <p>укажите, во сколько раз увеличить</p>
+                  </li>
+                  <li class="b-steps__item">
+                    <h3 class="b-steps__subtitle">3. Запустите обработку</h3>
+                    <p>нейросеть всё сделает за вас</p>
+                  </li>
+                  <li class="b-steps__item">
+                    <h3 class="b-steps__subtitle">4. Скачайте результат</h3>
+                    <p>готовое фото в нужном качестве и размере</p>
+                  </li>
+                </ul>
+
+                <a
+                  href="https://nexa.ru/sign-up"
+                  target="_blank"
+                  class="white-btn b-steps-btn"
+                >
+                  <span class="white-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="white-btn-text">Начать бесплатно</span>
+                </a>
+              </div>
+              <div class="b-circle"></div>
+              <div class="b-grid">
+                <img
+                  src="assets/images/Grid-mobile.webp"
+                  alt="img"
+                  width=""
+                  heigth=""
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="features" class="b-features section">
+          <div class="container">
+            <div class="section-titles fade-bottom">
+              <h2>Что умеет нейросеть?</h2>
+              <p>
+                Не просто растягиваем картинку — мы улучшаем её до идеального
+                вида, сохраняя каждую деталь и оттенок
+              </p>
+            </div>
+            <div class="b-features__body fade-bottom">
+              <div class="b-features__column">
+                <div class="b-features__image">
+                  <img
+                    src="assets/images/img01.png"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="b-features__subtitle">
+                  Волшебное <br />
+                  восстановление
+                </h3>
+                <p class="b-features__desc">оживляет старые и размытые фото</p>
+              </div>
+              <div class="fb-eatures__item-big b-features__item-big-mobile">
+                <div class="b-features__image">
+                  <picture>
+                    <source
+                      srcset="img/can/img03-mobile.png"
+                      media="(max-width: 576px)"
+                    />
+                    <img
+                      src="assets/images/img03.png"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <h3 class="b-features__subtitle">
+                  Чёткие границы без искажений
+                </h3>
+                <p class="b-features__desc">
+                  алгоритм убирает “лесенки”, сглаживает линии и делает края
+                  предметов аккуратными — как на фото с профкамеры
+                </p>
+              </div>
+              <div class="b-features__column b-features__column-color">
+                <div class="b-features__image">
+                  <picture>
+                    <source
+                      srcset="img/can/img02-mobile.webp"
+                      media="(max-width: 479px)"
+                    />
+                    <img
+                      src="assets/images/img02.webp"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+                <h3 class="b-features__subtitle">
+                  Масштаб <br />
+                  без ограничений
+                </h3>
+                <p class="b-features__desc">
+                  увеличивает от баннера до аватарки
+                </p>
+              </div>
+              <div class="b-features__column b-features-split">
+                <div class="b-features__item-big">
+                  <div class="b-features__image">
+                    <picture>
+                      <source
+                        srcset="img/can/img03-mobile.png"
+                        media="(max-width: 576px)"
+                      />
+                      <img
+                        src="assets/images/img03.png"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                  <h3 class="b-features__subtitle">
+                    Чёткие границы <br />
+                    без искажений
+                  </h3>
+                  <p class="b-features__desc">
+                    алгоритм убирает “лесенки”, сглаживает линии и делает края
+                    предметов аккуратными — как на фото с профкамеры
+                  </p>
+                </div>
+                <div class="b-features__item-small">
+                  <h3 class="b-features__subtitle">Умная оптимизация</h3>
+                  <p class="b-features__desc">
+                    сохраняет баланс между весом файла и качеством
+                  </p>
+                </div>
+              </div>
+              <div class="b-features__item-small b-features__item-small-mobile">
+                <h3 class="b-features__subtitle">Умная оптимизация</h3>
+                <p class="b-features__desc">
+                  сохраняет баланс между <br />
+                  весом файла и качеством
+                </p>
+              </div>
+            </div>
+            <a
+              href="https://nexa.ru/sign-up"
+              target="_blank"
+              class="white-btn b-features-btn"
+            >
+              <span class="white-btn-bg G-center">
+                <i class="icon icon-stars"></i>
+              </span>
+              <span class="white-btn-text">Попробовать бесплатно</span>
+            </a>
+          </div>
+        </section>
+
+        <section id="reviews" class="reviews-section">
+          <div class="container">
+            <div class="reviews-body G-column-center">
+              <div class="section-titles fade-bottom">
+                <h2 class="block-title">Что говорят наши пользователи</h2>
+              </div>
+
+              <div class="reviews-box block-cnt fade-bottom G-justify-between">
+                <div class="reviews-left-item">
+                  <div class="face-reviews-left-img G-flex">
+                    <img
+                      src="assets/images/breviews1.webp"
+                      alt="reviews-author"
+                      width="386"
+                      height="260"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="reviews-left-info">
+                    <div class="reviews-item-header G-justify-between">
+                      <div class="reviews-author">
+                        <h4 class="">Роман</h4>
+                        <p>графический дизайнер</p>
+                      </div>
+                      <div class="reviews-icon G-flex">
+                        <img
+                          src="assets/images/estimation1.svg"
+                          alt="estimation"
+                          width="32"
+                          height="32"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                    <div class="reviews-item-text">
+                      «Теперь не трачу часы на ручную обработку — просто
+                      загружаю фото, и нейросеть сама увеличивает разрешение без
+                      потери качества. Идеально для реставрации, печати и
+                      быстрой подготовки материалов».
+                    </div>
+                  </div>
+                </div>
+                <div class="b-reviews-swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews-mobile-item">
+                      <div class="a-reviews-item G-flex">
+                        <div class="face-reviews-left-img">
+                          <img
+                            src="assets/images/areviews1.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-left-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4 class="">Роман</h4>
+                              <p>графический дизайнер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text text-mobile-size">
+                            «Теперь не трачу часы на ручную обработку — просто
+                            загружаю фото, и нейросеть сама увеличивает
+                            разрешение без потери качества. Идеально для
+                            реставрации, печати и быстрой подготовки
+                            материалов».
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="a-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/areviews2.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Дмитрий П.</h4>
+                              <p>Фотограф</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Наконец-то можно оживить старые фото! Увеличиваю
+                            разрешение в пару кликов — и качество как у снимков
+                            с новой камеры. Просто магия!"
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="a-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/areviews8.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Олег С.</h4>
+                              <p>Бизнес-консультант</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Делаю презентации для клиентов — важно, чтобы
+                            изображения были кристально чёткими. Этот инструмент
+                            — находка!"
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="a-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/areviews3.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Мария Л.</h4>
+                              <p>SMM-менеджер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Сервис спасает, когда нужно быстро подготовить
+                            картинки для постов. Картинка чёткая, всё
+                            автоматически — и не нужно звать дизайнера!"
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="a-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/areviews4.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Олег С.</h4>
+                              <p>Дизайнер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Использую upscale, чтобы готовить крупные баннеры
+                            без потери качества. Сервис вытягивает даже слабые
+                            изображения — идеально для макетов."
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="a-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/areviews5.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Виктория С.</h4>
+                              <p>Художник</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Очень порадовало, как сохраняются текстуры на
+                            цифровых работах! Теперь могу печатать свои арты в
+                            большом формате без страха."
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="a-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/areviews6.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Евгений М.</h4>
+                              <p>Студент</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Нужно было увеличить картинку для курсовой — всё
+                            сделал за минуту. Без фотошопа, без нервов. Просто
+                            загрузил, получил HD."
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="a-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/areviews7.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Елена М.</h4>
+                              <p>Преподаватель</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Я часто показываю изображения на проекторе — раньше
+                            они были расплывчатыми. Теперь всё чётко, даже
+                            мелкие детали видно!"
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="a-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/areviews9.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Наталья К.</h4>
+                              <p>Маркетолог</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Раньше тратила время на поиск качественных фото,
+                            теперь просто увеличиваю нужные. Быстро, удобно и
+                            результат — как из фотостудии."
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews-pagination swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="b-try section">
+          <div class=" container">
+            <div class="b-try__body fade-bottom">
+              <div class="b-try__image">
+                <img
+                  src="assets/images/try.webp"
+                  alt="img"
+                  width=""
+                  heigth=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="try__icon">
+                <img
+                  src="assets/images/gallery-favorite.png"
+                  alt="img"
+                  width=""
+                  heigth=""
+                  loading="lazy"
+                />
+              </div>
+              <h2 class="b-try__title ">Попробуйте бесплатно!</h2>
+              <p class="b-try__text">
+                Загрузите изображение, а нейросеть за секунды изменит разрешение
+              </p>
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="white-btn b-try-btn"
+              >
+                <span class="white-btn-bg G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+                <span class="white-btn-text">Начать бесплатно</span>
+              </a>
+            </div>
+          </div>
+        </section>
+      </main>
+      <footer>
+        <div class="container">
+          <div class="footer-body">
+            <a class="footer-logo G-flex fade-bottom" href="index.html">
+              <img
+                src="assets/images/logoBig.svg"
+                alt="Company logo"
+                width="705"
+                height="180"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </a>
+
+            <div class="footer-cnt fade-bottom">
+              <div class="footer-grid G-flex">
+                <picture>
+                  <source
+                    srcset="assets/images/footerGridMobile.png"
+                    media="(max-width: 576px)"
+                    type="image/png"
+                  />
+                  <img
+                    src="assets/images/footerGrid.png"
+                    alt="footer grid"
+                    width="1160"
+                    height="491"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="white-btn footer-btn"
+              >
+                <span class="white-btn-bg G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+                <span class="white-btn-text">Начать бесплатно</span>
+              </a>
+
+              <nav class="footer-menu">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer-policy">
+                <ul>
+                  <li>
+                    <a href="#">Оферта</a>
+                  </li>
+                  <li>
+                    <a href="#">Политика конфиденциальности</a>
+                  </li>
+                </ul>
+              </nav>
+              <p class="footer-text">© 2025 Nexa AI. Все права защищены</p>
+            </div>
+
+            <div class="footer-blur G-flex">
+              <picture>
+                <source
+                  srcset="assets/images/footerBlurMobile.webp"
+                  media="(max-width: 576px)"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/images/footerBlur.webp"
+                  alt="footerBlur"
+                  width="1160"
+                  height="491"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zurb-twentytwenty@0.1.1/js/jquery.twentytwenty.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

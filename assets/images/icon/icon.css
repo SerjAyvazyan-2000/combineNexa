@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+.icon {
+  display: inline-block;
+  height: 1em;
+  width: 1em;
+  mask-size: contain;
+  -webkit-mask-size: contain;
+  mask-repeat: no-repeat;
+  -webkit-mask-repeat: no-repeat;
+  mask-position: center;
+  -webkit-mask-position: center;
+}
+.icon-person {
+  mask-image: url(person.svg);
+  -webkit-mask-image: url(person.svg);
+}
+.icon-person-edit {
+  mask-image: url(person_edit.svg);
+  -webkit-mask-image: url(person_edit.svg);
+}
+.icon-stars {
+  mask-image: url(stars.svg);
+  -webkit-mask-image: url(stars.svg);
+}
+
+.icon-deblur {
+  mask-image: url(deblur.svg);
+  -webkit-mask-image: url(deblur.svg);
+}
+.icon-clock{
+    mask-image: url(clock.svg);
+  -webkit-mask-image: url(clock.svg);
+}
+.icon-key{
+      mask-image: url(key.svg);
+  -webkit-mask-image: url(key.svg);
+}
+.icon-transition_chop{
+      mask-image: url(transition_chop.svg);
+  -webkit-mask-image: url(transition_chop.svg);
+}
+.icon-arrow{
+        mask-image: url(arrow.svg);
+  -webkit-mask-image: url(arrow.svg);
+}
+.icon-check{
+        mask-image: url(check.svg);
+  -webkit-mask-image: url(check.svg);
+}
+.icon-upload{
+        mask-image: url(upload.svg);
+  -webkit-mask-image: url(upload.svg);
+}
+
+.icon-clock{
+       mask-image: url(clock.svg);
+  -webkit-mask-image: url(clock.svg);
+}
+.icon-text-align-left{
+         mask-image: url(text-align-left.svg);
+  -webkit-mask-image: url(text-align-left.svg);
+}
+.icon-calendar{
+         mask-image: url(calendar.svg);
+  -webkit-mask-image: url(calendar.svg);
+}
+.icon-arrowtriangle{
+      mask-image: url(arrowtriangle.svg);
+  -webkit-mask-image: url(arrowtriangle.svg);
+}
+
+.icon-flexibility{
+        mask-image: url(flexibility.svg);
+  -webkit-mask-image: url(flexibility.svg);
+}
+.icon-arrowtriangle{
+          mask-image: url(arrowtriangle.svg);
+  -webkit-mask-image: url(arrowtriangle.svg);
+}
+.icon-star2{
+            mask-image: url(stars2.svg);
+  -webkit-mask-image: url(stars2.svg);
+}

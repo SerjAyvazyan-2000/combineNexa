@@ -1,0 +1,213 @@
+
+
+let heroSwiper = new Swiper(".a-hero-swiper", {
+  spaceBetween: 20,
+  slidesPerView: 3,
+  loop: true,
+  centeredSlides: true,
+
+  autoplay: {
+    delay: 1,
+    disableOnInteraction: false,
+  },
+  speed: 3000,
+  on: {
+    slideChange: updateImproveHeroStyle,
+    transitionStart: updateImproveHeroStyle,
+  },
+  breakpoints: {
+    320: { slidesPerView: 2.1, spaceBetween: 8 },
+    400: { slidesPerView: 2.5, spaceBetween: 8 },
+    500: { slidesPerView: 3 },
+    600: { slidesPerView: 2.5 },
+    700: { slidesPerView: 3 },
+    800: { slidesPerView: 4 },
+    1000: { slidesPerView: 5, spaceBetween: 12 },
+    1399: { slidesPerView: 5.3, spaceBetween: 12 },
+  },
+});
+
+function updateImproveHeroStyle() {
+  const allItemsImprove = document.querySelectorAll(".a-improve-hero-card");
+
+  allItemsImprove.forEach((item) => {
+    const lowQuality = item.getAttribute("data-low");
+    const highQuality = item.getAttribute("data-high");
+    const cardName = item.querySelector(".a-improve-card-name p");
+
+    const slide = item.closest(".a-hero-swiper .swiper-slide");
+    if (slide.classList.contains("swiper-slide-active")) {
+      item.classList.add("active");
+
+      // setTimeout(() => {
+      //     cardName.textContent = "Результат";
+      // }, 300);
+
+      // Обновляем фон плавно
+      // setTimeout(() => {
+      //     if (highQuality) {
+      //         item.style.backgroundImage = `url('${highQuality}')`;
+      //
+      //     }
+      // }, 300);
+    } else {
+      // cardName.textContent = "Оригинал";
+      item.classList.remove("active");
+      //
+      // if (lowQuality) {
+      //     item.style.backgroundImage = `url('${lowQuality}')`;
+      //
+      // }
+    }
+  });
+}
+
+updateImproveHeroStyle();
+
+
+
+let swiperWhy = null
+
+function initSwipers() {
+    const width = window.innerWidth
+
+    if (width <= 1024 && !swiperWhy) {
+        swiperWhy = new Swiper('.b-why__swiper', {
+            slidesPerView: 'auto',
+            spaceBetween: 20,
+            pagination: {
+                el: '.b-why__pagination',
+                clickable: true,
+            },
+        })
+    } else if (width > 1024 && swiperWhy) {
+        swiperWhy.destroy(true, true)
+        swiperWhy = null
+    }
+
+}
+
+initSwipers()
+
+window.addEventListener('resize', () => {
+    initSwipers()
+})
+
+
+
+
+
+
+
+const sliderSettings = {
+  "b-reviews-swiper": {
+    desktopSlides: 2.7,
+    mobileSlides: 1
+  },
+  "a-reviews-swiper": {
+    desktopSlides: 3,
+    mobileSlides: 1
+  },
+  "c-reviews-swiper": {
+    desktopSlides: 2.8,
+    mobileSlides: 1
+  },
+ "d-reviews-swiper": {
+    desktopSlides: 3,
+    mobileSlides: 1
+  },
+ "f-reviews-section": {
+    desktopSlides: 3,
+    mobileSlides: 1
+  },
+ 
+};
+
+let swipers = []; 
+
+function initAllReviewSwipers() {
+  const isDesktop = window.innerWidth >= 992;
+
+  swipers.forEach(obj => obj.instance.destroy(true, true));
+  swipers = [];
+
+  document.querySelectorAll(".reviews-swiper").forEach(sliderEl => {
+    
+    const className = [...sliderEl.classList].find(c => c.endsWith("-reviews-swiper"));
+
+    const config = sliderSettings[className] || {
+      desktopSlides: 3,
+      mobileSlides: 1
+    };
+
+    const swiperInstance = new Swiper(sliderEl, {
+      direction: isDesktop ? "vertical" : "horizontal",
+      slidesPerView: isDesktop ? config.desktopSlides : config.mobileSlides,
+      spaceBetween: 10,
+      autoHeight:true,
+
+      freeMode: {
+        enabled: isDesktop,
+        momentum: false,
+      },
+
+      pagination: {
+        el: sliderEl.querySelector(".reviews-pagination"),
+        clickable: true,
+      },
+
+      loop: true,
+      allowTouchMove: !isDesktop,
+    });
+
+    const data = {
+      el: sliderEl,
+      instance: swiperInstance,
+      translate: 0,
+      scrolling: true
+    };
+
+    swipers.push(data);
+
+    if (isDesktop) startInfiniteScroll(data);
+  });
+}
+
+function startInfiniteScroll(swiperObj) {
+  function animate() {
+    if (!swiperObj.scrolling) return requestAnimationFrame(animate);
+
+    const speed = 0.35;
+    swiperObj.translate -= speed;
+
+    const maxTranslate =
+      swiperObj.el.querySelector(".swiper-wrapper").scrollHeight / 2;
+
+    if (Math.abs(swiperObj.translate) >= maxTranslate) {
+      swiperObj.translate = 0;
+    }
+
+    swiperObj.el.querySelector(".swiper-wrapper").style.transform =
+      `translate3d(0, ${swiperObj.translate}px, 0)`;
+
+    requestAnimationFrame(animate);
+  }
+
+  requestAnimationFrame(animate);
+
+  swiperObj.el.addEventListener("mouseenter", () => {
+    swiperObj.scrolling = false;
+  });
+
+  swiperObj.el.addEventListener("mouseleave", () => {
+    swiperObj.scrolling = true;
+  });
+}
+
+window.addEventListener("load", initAllReviewSwipers);
+
+let resizeTimer;
+window.addEventListener("resize", () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(initAllReviewSwipers, 200);
+});

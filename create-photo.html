@@ -1,0 +1,1211 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Create photos</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header-body G-justify-between">
+            <a class="header-logo G-flex" href="index.html">
+              <picture>
+                <source
+                  srcset="assets/images/logoMobile.svg"
+                  media="(max-width: 576px)"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/logo.svg"
+                  alt="Company logo"
+                  width="28"
+                  height="28"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </picture>
+            </a>
+
+            <nav class="menu">
+              <div class="menu-wrapper">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+
+                <div class="menu-mobile-actions">
+                  <a href="https://nexa.ru/sign-up" target="_blank" class="btn-login G-align-center">
+                    <span class="login-btn-bg G-center">
+                      <i class="icon icon-person"></i>
+                    </span>
+                    <span class="login-btn-text">Войти</span>
+                  </a>
+
+                  <a href="https://nexa.ru/sign-up" target="_blank" class="btn-register G-align-center">
+                    <span class="register-btn-bg G-center">
+                      <i class="icon icon-person-edit"></i>
+                    </span>
+                    <span class="register-btn-text">Регистрация</span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+            <div class="menu-bg"></div>
+
+            <div class="header-actions G-align-center">
+              <a href="https://nexa.ru/sign-up" target="_blank" class="btn-login G-align-center">
+                <span class="login-btn-bg G-center">
+                  <i class="icon icon-person"></i>
+                </span>
+                <span class="login-btn-text">Войти</span>
+              </a>
+
+              <a href="https://nexa.ru/sign-up" target="_blank" class="btn-register G-align-center">
+                <span class="register-btn-bg G-center">
+                  <i class="icon icon-person-edit"></i>
+                </span>
+                <span class="register-btn-text">Регистрация</span>
+              </a>
+
+              <div class="burger-bg G-center">
+                <div class="burger">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="hero" class="f-hero-section">
+          <div class="container">
+            <div class="f-hero-body">
+              <div class="f-hero-titles">
+                <h1 class="fade-top">
+                  Создавайте фото
+                  <span class="text-wrap">с помощью нейросети</span>
+                </h1>
+                <p class="fade-bottom">
+                  Художественные стили, реализм,
+                  <span class="mobile-text-wrap"
+                    >концепт-арт и многое другое</span
+                  >
+                </p>
+                <a href="https://nexa.ru/sign-up" target="_blank" class="white-btn f-hero-btn">
+                  <span class="white-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="white-btn-text">Начать бесплатно</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="f-hero-bg G-flex">
+            <picture>
+              <source
+                srcset="assets/images/FheroBgMobile.webp"
+                media="(max-width: 576px)"
+                type="image/svg+xml"
+              />
+              <img
+                src="assets/images/FheroBg.webp"
+                alt="photo"
+                width=""
+                height=""
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </picture>
+          </div>
+
+          <div class="f-hero-marquee">
+            <div class="f-hero-marquee-track">
+              <div>
+                <p>Продуктовые изображения</p>
+                <i class="icon icon-star2"></i>
+                <p>Студийная фотография</p>
+                <i class="icon icon-star2"></i>
+                <p>Быстрая генерация</p>
+                <i class="icon icon-star2"></i>
+                <p>Реализм</p>
+                <i class="icon icon-star2"></i>
+                <p>Иллюстрация</p>
+                <i class="icon icon-star2"></i>
+              </div>
+
+              <div>
+                <p>Продуктовые изображения</p>
+                <i class="icon icon-star2"></i>
+                <p>Студийная фотография</p>
+                <i class="icon icon-star2"></i>
+                <p>Быстрая генерация</p>
+                <i class="icon icon-star2"></i>
+                <p>Реализм</p>
+                <i class="icon icon-star2"></i>
+                <p>Иллюстрация</p>
+                <i class="icon icon-star2"></i>
+              </div>
+
+              <div>
+                <p>Продуктовые изображения</p>
+                <i class="icon icon-star2"></i>
+                <p>Студийная фотография</p>
+                <i class="icon icon-star2"></i>
+                <p>Быстрая генерация</p>
+                <i class="icon icon-star2"></i>
+                <p>Реализм</p>
+                <i class="icon icon-star2"></i>
+                <p>Иллюстрация</p>
+                <i class="icon icon-star2"></i>
+              </div>
+
+              <div>
+                <p>Продуктовые изображения</p>
+                <i class="icon icon-star2"></i>
+                <p>Студийная фотография</p>
+                <i class="icon icon-star2"></i>
+                <p>Быстрая генерация</p>
+                <i class="icon icon-star2"></i>
+                <p>Реализм</p>
+                <i class="icon icon-star2"></i>
+                <p>Иллюстрация</p>
+                <i class="icon icon-star2"></i>
+              </div>
+
+              <div>
+                <p>Продуктовые изображения</p>
+                <i class="icon icon-star2"></i>
+                <p>Студийная фотография</p>
+                <i class="icon icon-star2"></i>
+                <p>Быстрая генерация</p>
+                <i class="icon icon-star2"></i>
+                <p>Реализм</p>
+                <i class="icon icon-star2"></i>
+                <p>Иллюстрация</p>
+                <i class="icon icon-star2"></i>
+              </div>
+            </div>
+          </div>
+          <div class="f-light-gradient"></div>
+        </section>
+
+        <section class="f-advantages-secion">
+          <div class="container">
+            <div class="f-advantages-body">
+              <div class="section-titles fade-bottom">
+                <h2>Преимущества</h2>
+                <p>Почему стоит попробовать прямо сейчас</p>
+              </div>
+
+              <div class="f-advantages-items block-cnt G-flex">
+                <div class="f-advantage-item fade-left">
+                  <div class="f-advantage-item-titles">
+                    <h3 class="block-title">Любой стиль</h3>
+                    <p class="block-text">от реализма до абстракции</p>
+                  </div>
+                  <div class="f-advantage-tools">
+                    <div class="f-advantage-item-tags">
+                      <button class="active">Реалистичный</button>
+                      <button>Иллюстрация</button>
+                      <button>Графический</button>
+                      <button>Кино</button>
+                      <button>Портрет</button>
+                      <button>Аниме</button>
+                      <button>+4 стиля</button>
+                    </div>
+                    <div class="f-advantage-item-img G-flex">
+                      <picture>
+                        <source
+                          srcset="assets/images/FadvantageImg1Mobile.webp"
+                          media="(max-width: 576px)"
+                          type="image/svg+xml"
+                        />
+                        <img
+                          src="assets/images/FadvantageImg1.webp"
+                          alt=""
+                          width="340"
+                          height="138"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+                  </div>
+
+                  <div class="f-advantage-item-bg G-flex">
+                    <img
+                      src="assets/images/FadvantageBg.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+
+                <div class="f-advantage-item fade-bottom">
+                  <div class="f-advantage-item-titles">
+                    <h3 class="block-title">Мгновенный результат</h3>
+                    <p class="block-text">генерация за 3–10 секунд</p>
+                  </div>
+
+                  <div class="f-advantage-img--two G-flex">
+                    <img
+                      src="assets/images/FadvantageImg2.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="eager"
+                      fetchpriority="high"
+                      decoding="async"
+                    />
+
+                    <span></span>
+                  </div>
+
+                  <div class="f-advantage-item-bg G-flex">
+                    <img
+                      src="assets/images/FadvantageBg.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+
+                <div class="f-advantage-item fade-right">
+                  <div class="f-advantage-item-titles">
+                    <h3 class="block-title">Свободное использование</h3>
+                    <p class="block-text">изображения принадлежат только вам</p>
+                  </div>
+
+                  <div class="f-advantage-img--tree G-flex">
+                    <img
+                      src="assets/images/FadvantageImg3.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="f-advantage-item-bg G-flex">
+                    <img
+                      src="assets/images/FadvantageBg.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="howWork" class="f-how-work-section section">
+          <div class="container">
+            <div class="f-how-work-body">
+              <div class="section-titles fade-bottom">
+                <h2>Как это работает</h2>
+                <p>Всего 4 шага до готового изображения</p>
+              </div>
+
+              <div class="f-how-work-items fade-bottom block-cnt G-flex">
+                <div class="f-how-work-item G-flex-column">
+                  <div class="f-how-work-img G-flex">
+                    <img
+                      src="assets/images/Fsphere1.webp"
+                      alt="photo"
+                      width="164"
+                      height="168"
+                      loading="lazy"
+                    />
+                    <p>Запрос</p>
+                  </div>
+
+                  <div class="f-how-work-info">
+                    <h3 class="block-title">
+                      Опишите то,
+                      <span class="text-wrap">что хотите получить</span>
+                    </h3>
+                    <p class="block-text">
+                      Напишите запрос — от «город на Марсе» до «портрет девушки
+                      в винтажном стиле»
+                    </p>
+                  </div>
+                </div>
+
+                <div class="f-how-work-item G-flex-column">
+                  <div class="f-how-work-img G-flex">
+                    <img
+                      src="assets/images/Fsphere1.webp"
+                      alt="photo"
+                      width="164"
+                      height="168"
+                      loading="lazy"
+                    />
+                    <p>Стиль</p>
+                  </div>
+
+                  <div class="f-how-work-info">
+                    <h3 class="block-title">Выберите стиль</h3>
+                    <p class="block-text">
+                      Реализм, анимация, фэнтези, пиксель-арт и другие — вы
+                      можете выбрать стиль вручную или довериться нейросети
+                    </p>
+                  </div>
+                </div>
+
+                <div class="f-how-work-item G-flex-column">
+                  <div class="f-how-work-img G-flex">
+                    <img
+                      src="assets/images/FFsphere2.webp"
+                      alt="photo"
+                      width="164"
+                      height="168"
+                      loading="lazy"
+                    />
+                    <p>Результат</p>
+                  </div>
+
+                  <div class="f-how-work-info">
+                    <h3 class="block-title">Получите результат</h3>
+                    <p class="block-text">
+                      Через несколько секунд вы увидете результат. Вы можете
+                      изменить запрос, уточнить детали или пересоздать
+                    </p>
+                  </div>
+                </div>
+
+                <div class="f-how-work-item G-flex-column">
+                  <div class="f-how-work-img G-flex">
+                    <img
+                      src="assets/images/FFsphere2.webp"
+                      alt="photo"
+                      width="164"
+                      height="168"
+                      loading="lazy"
+                    />
+                    <p>Использование</p>
+                  </div>
+
+                  <div class="f-how-work-info">
+                    <h3 class="block-title">
+                      Скачайте <span class="text-wrap">или поделитесь</span>
+                    </h3>
+                    <p class="block-text">
+                      Сохраните изображение в высоком качестве или поделитесь
+                      им в один клик
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="f-how-work-blur G-flex">
+                <picture>
+                  <source
+                    srcset="assets/images/FhowWorkBlurMobile.png"
+                    media="(max-width: 576px)"
+                    type="image/svg+xml"
+                  />
+                  <img
+                    src="assets/images/FhowWorkBlur.webp"
+                    alt="photo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="possibilities" class="f-possibilities-section section">
+          <div class="container">
+            <div class="f-possibilities-body">
+              <div class="section-titles fade-bottom">
+                <h2>Возможности</h2>
+                <p>Нейросеть, которая понимает вас с полуслова</p>
+              </div>
+
+              <div class="f-possibilities-columns block-cnt G-flex-column">
+                <div class="f-possibilities-column G-flex">
+                  <div class="f-possibilities-text-item fade-left">
+                    <h3 class="block-title">
+                      Уникальные портреты
+                      <span class="mobile-text-wrap">и аватары</span>
+                    </h3>
+                    <p class="block-text">
+                      Получайте изображения для соцсетей,
+                      <span class="text-wrap"
+                        >презентаций, проектов — по описанию</span
+                      >
+                      или загруженному фото
+                    </p>
+                  </div>
+                  <div class="f-possibilities-img-item fade-right G-flex">
+                    <img
+                      src="assets/images/FpossibilitiesImg1.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
+                <div class="f-possibilities-column G-flex">
+                  <div class="f-possibilities-img-item fade-left G-flex">
+                    <img
+                      src="assets/images/FpossibilitiesImg2.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="f-possibilities-text-item fade-right">
+                    <h3 class="block-title">Концепт-арт и креатив</h3>
+                    <p class="block-text">
+                      Быстрый визуал для дизайнеров,
+                      <span class="text-wrap">авторов и креативных команд</span>
+                    </p>
+                  </div>
+                </div>
+
+                <div class="f-possibilities-column G-flex">
+                  <div class="f-possibilities-text-item fade-left">
+                    <h3 class="block-title">
+                      Продуктовые и рекламные
+                      <span class="text-wrap">изображения</span>
+                    </h3>
+                    <p class="block-text">
+                      Генерируйте сцены с нужным товаром
+                      <span class="text-wrap"
+                        >или атмосферой без фотосессий</span
+                      >
+                    </p>
+                  </div>
+                  <div class="f-possibilities-img-item fade-right G-flex">
+                    <img
+                      src="assets/images/FpossibilitiesImg3.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
+                <div class="f-possibilities-column G-flex">
+                  <div class="f-possibilities-img-item fade-left G-flex">
+                    <img
+                      src="assets/images/FpossibilitiesImg4.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <div class="f-possibilities-text-item fade-right">
+                    <h3 class="block-title">Стилизация по фото</h3>
+                    <p class="block-text">
+                      Загрузите своё фото — и получите новый образ, стиль
+                      или художественную обработку
+                    </p>
+                  </div>
+                </div>
+              </div>
+
+              <div class="f-possibilities-animation-block animation">
+                <div class="f-animation-left-img G-flex">
+                  <img
+                    src="assets/images/Fanimation1.webp"
+                    alt="photo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="f-animation-right-img G-flex">
+                  <img
+                    src="assets/images/Fanimation2.webp"
+                    alt="photo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="f-animation-img--one G-flex">
+                  <img
+                    src="assets/images/Fanimation3.webp"
+                    alt="photo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="f-animation-img--two G-flex">
+                  <img
+                    src="assets/images/Fanimation4.webp"
+                    alt="photo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="f-animation-img--tree G-flex">
+                  <img
+                    src="assets/images/Fanimation5.webp"
+                    alt="photo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="f-animation-texts G-flex-column">
+                  <p>Начните прямо сейчас!</p>
+
+                  <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn f-possibilities-btn">
+                    <span class="black-btn-bg G-center">
+                      <i class="icon icon-stars"></i>
+                    </span>
+                    <span class="black-btn-text">Попробовать бесплатно</span>
+                  </a>
+                </div>
+
+                <div class="f-possibilities-animation-bg G-flex">
+                  <picture>
+                    <source
+                      srcset="assets/images/FanimationBGMobile.webp"
+                      media="(max-width: 576px)"
+                      type="image/svg+xml"
+                    />
+                    <img
+                      src="assets/images/FanimationBG.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews" class="f-reviews-section section">
+          <div class="container">
+            <div class="reviews-body G-column-center">
+              <div class="section-titles fade-bottom">
+                <h2>
+                  Что говорят наши
+                  <span class="mobile-text-wrap">пользователи</span>
+                </h2>
+              </div>
+
+              <div class="reviews-box block-cnt G-justify-between">
+                <div class="reviews-left-item fade-left">
+                  <div class="face-reviews-left-img G-flex">
+                    <img
+                      src="assets/images/Freviews2.webp"
+                      alt="reviews-author"
+                      width="386"
+                      height="260"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="reviews-left-info">
+                    <div class="reviews-item-header G-justify-between">
+                      <div class="reviews-author">
+                        <h4 class="">Денис Л.</h4>
+                        <p>Маркетолог</p>
+                      </div>
+                      <div class="reviews-icon G-flex">
+                        <img
+                          src="assets/images/estimation1.svg"
+                          alt="estimation"
+                          width="32"
+                          height="32"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                    <div class="reviews-item-text">
+                      «Нужен был визуал для резюме — получился профессиональный
+                      портрет за пару минут, будто из студии. Это уже не просто
+                      AI-игрушка, а рабочий инструмент».
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper f-reviews-swiper reviews-swiper  fade-right">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews-mobile-item">
+                      <div class="face-reviews-item G-flex">
+                        <div class="face-reviews-left-img">
+                          <img
+                            src="assets/images/Freviews2.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-left-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4 class="">Денис Л.</h4>
+                              <p>Маркетолог</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text text-mobile-size">
+                            «Нужен был визуал для резюме — получился
+                            профессиональный портрет за пару минут,
+                            будто из студии. Это уже не просто AI-игрушка,
+                            а рабочий инструмент».
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Freviews8.webp"
+                            alt="reviews-author"
+                            width="124"
+                            height="124"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Виктория Н.</h4>
+                              <p>Блогер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            «Я делаю генерации для обложек рилсов и сторис. Люди
+                            даже не догадываются, что это не настоящие фото,
+                            а сгенерированные. Очень удобно».
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Freviews3.webp"
+                            alt="reviews-author"
+                            width="124"
+                            height="124"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Олег В.</h4>
+                              <p>Видеограф</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            «Меня впечатлило, как точно нейросеть воссоздаёт
+                            освещение и текстуры. Фото выглядят живыми,
+                            как будто их действительно кто‑то снял на камеру».
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Freviews4.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Дарья С.</h4>
+                              <p>SMM-специалист</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            «Очень круто: загрузила своё селфи — и получила
+                            десятки вариантов с разными фонами, светом
+                            и стилями. Всё выглядит как реальные фото».
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Freviews5.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Илья Р.</h4>
+                              <p>Фотограф</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            «Я использовал нейросеть, чтобы собрать локации
+                            и интерьерные фоны для фейковых фотосессий. Выглядит
+                            как настоящая съёмка, и отлично работает
+                            в портфолио».
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Freviews6.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Ксения П.</h4>
+                              <p>Инфлюенсер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            “Нейросеть сгенерировала такие фотореалистичные
+                            изображения, что мои подписчики подумали, что я
+                            действительно была на этой съёмке.”
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Freviews7.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Артём Б.</h4>
+                              <p>Бренд-менеджер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            «Мне нужно было быстро сделать фотографию продукта
+                            для презентации. Описал сцену — и через 10 секунд
+                            получил идеальное фото. Даже не пришлось идти
+                            в студию».
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Freviews10.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Алина М.</h4>
+                              <p>Продюсер контента</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            «Я создаю реалистичные портреты с помощью
+                            нейросети — и часто использую их как аватары
+                            в соцсетях. Качество как у профессиональной
+                            фотосессии».
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews-pagination swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="f-faq-section section">
+          <div class="container">
+            <div class="faq-body">
+              <div class="section-titles fade-bottom">
+                <h2>
+                  Все, что нужно знать
+                  <span class="mobile-text-wrap">о Nexa AI</span>
+                </h2>
+              </div>
+
+              <div
+                id="accordion"
+                class="faq-items block-cnt G-flex-column fade-bottom"
+              >
+                <div class="faq-item">
+                  <div class="faq-item-header link G-align-center">
+                    <h3>Что такое Nexa AI?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Nexa AI — это нейросеть, которая создаёт фотореалистичные
+                    изображения на основе вашего запроса. Просто опишите, что
+                    хотите — и получите результат, который выглядит как
+                    настоящее фото.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Чем Nexa AI отличается от других генераторов?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Большинство нейросетей создают картинки с очевидными
+                    артефактами. Нейросеть фокусируется именно на реализме:
+                    освещение, кожа, текстуры, фон — всё выглядит как будто
+                    снято на камеру.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Нужно ли загружать свои фото?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Нет. Вы можете просто описать, что хотите получить. Но если
+                    вы хотите получить портрет с вашим лицом — есть возможность
+                    загрузки изображения.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>
+                      Можно ли использовать созданные изображения в коммерческих
+                      целях?
+                    </h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Да. Вы получаете полные права на сгенерированные фото и
+                    можете использовать их в коммерческих проектах, соцсетях и
+                    рекламе.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Какие типы фото можно создать?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Портреты, фэшн, предметная съёмка, интерьер, концептуальные
+                    кадры, фоны и многое другое — почти всё, что можно описать
+                    словами.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Как долго генерируется изображение?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    В среднем от 5 до 15 секунд. Всё зависит от сложности
+                    запроса и текущей нагрузки.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div class="footer-body">
+            <a class="footer-logo G-flex fade-bottom" href="index.html">
+              <img
+                src="assets/images/logoBig.svg"
+                alt="Company logo"
+                width="705"
+                height="180"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </a>
+
+            <div class="footer-cnt fade-bottom">
+              <div class="footer-grid G-flex">
+                <picture>
+                  <source
+                    srcset="assets/images/footerGridMobile.png"
+                    media="(max-width: 576px)"
+                    type="image/png"
+                  />
+                  <img
+                    src="assets/images/footerGrid.png"
+                    alt="footer grid"
+                    width="1160"
+                    height="491"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <a href="https://nexa.ru/sign-up" target="_blank" class="white-btn footer-btn">
+                <span class="white-btn-bg G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+                <span class="white-btn-text">Начать бесплатно</span>
+              </a>
+
+              <nav class="footer-menu">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer-policy">
+                <ul>
+                  <li>
+                    <a href="#">Оферта</a>
+                  </li>
+                  <li>
+                    <a href="#">Политика конфиденциальности</a>
+                  </li>
+                </ul>
+              </nav>
+              <p class="footer-text">© 2025 Nexa AI. Все права защищены</p>
+            </div>
+
+            <div class="footer-blur G-flex">
+              <picture>
+                <source
+                  srcset="assets/images/footerBlurMobile.webp"
+                  media="(max-width: 576px)"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/images/footerBlur.webp"
+                  alt="footerBlur"
+                  width="1160"
+                  height="491"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

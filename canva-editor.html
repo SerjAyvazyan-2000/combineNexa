@@ -1,0 +1,1470 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Canva photo editor</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header-body G-justify-between">
+            <a class="header-logo G-flex" href="index.html">
+              <picture>
+                <source
+                  srcset="assets/images/logoMobile.svg"
+                  media="(max-width: 576px)"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/logo.svg"
+                  alt="Company logo"
+                  width="28"
+                  height="28"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </picture>
+            </a>
+
+            <nav class="menu">
+              <div class="menu-wrapper">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+
+                <div class="menu-mobile-actions">
+                  <a
+                    href="https://nexa.ru/sign-up"
+                    class="btn-login G-align-center"
+                  >
+                    <span class="login-btn-bg G-center">
+                      <i class="icon icon-person"></i>
+                    </span>
+                    <span class="login-btn-text">Войти</span>
+                  </a>
+
+                  <a
+                    href="https://nexa.ru/sign-up"
+                    class="btn-register G-align-center"
+                  >
+                    <span class="register-btn-bg G-center">
+                      <i class="icon icon-person-edit"></i>
+                    </span>
+                    <span class="register-btn-text">Регистрация</span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+            <div class="menu-bg"></div>
+
+            <div class="header-actions G-align-center">
+              <a
+                target="_blank"
+                href="https://nexa.ru/sign-up"
+                class="btn-login G-align-center"
+              >
+                <span class="login-btn-bg G-center">
+                  <i class="icon icon-person"></i>
+                </span>
+                <span class="login-btn-text">Войти</span>
+              </a>
+
+              <a
+                target="_blank"
+                href="https://nexa.ru/sign-up"
+                class="btn-register G-align-center"
+              >
+                <span class="register-btn-bg G-center">
+                  <i class="icon icon-person-edit"></i>
+                </span>
+                <span class="register-btn-text">Регистрация</span>
+              </a>
+
+              <div class="burger-bg G-center">
+                <div class="burger">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="hero" class="q-hero-section">
+          <div class="container">
+            <div class="q-hero-body">
+              <div class="herq-titles">
+                <h1 class="fade-top">Canva фоторедактор</h1>
+                <p class="fade-bottom">
+                  Полноценный фоторедактор
+                  <span class="text-wrap">с поддержкой ИИ-инструментов</span>
+                </p>
+                <a
+                  target="_blank"
+                  href="https://nexa.ru/sign-up"
+                  class="black-btn dark-black-btn herq-btn"
+                >
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Начать бесплатно</span>
+                </a>
+              </div>
+
+              <div class="q-herq-media fade-bottom G-flex">
+                <picture>
+                  <source
+                    srcset="assets/images/qHeroMediaMobile.webp"
+                    media="(max-width: 576px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/qHeroMedia.webp"
+                    alt="photo"
+                    width=""
+                    height=""
+                    loading="eager"
+                    decoding="async"
+                  />
+                </picture>
+
+                <div class="q-herq-cat-mobile">
+                  <img
+                    src="assets/images/qHeroCat.webp"
+                    alt="photo"
+                    loading="eager"
+                    decoding="async"
+                    fetchpriority="high"
+                    width=""
+                    height=""
+                  />
+                </div>
+              </div>
+
+              <div class="q-herq-tag fade-left q-herq-tag--one G-align-center">
+                <span></span>
+                <p>Безлимит запросов</p>
+              </div>
+
+              <div class="q-herq-tag fade-right q-herq-tag--two G-align-center">
+                <span></span>
+                <p>Без VPN</p>
+              </div>
+
+              <div class="q-herq-tag fade-left q-herq-tag--tree G-align-center">
+                <span></span>
+                <p>HD-качество</p>
+              </div>
+
+              <div class="q-herq-decor fade-right q-herq-decor--one G-flex">
+                <img
+                  src="assets/images/qHeroDecor1.webp"
+                  alt="photo"
+                  loading="eager"
+                  decoding="async"
+                  fetchpriority="high"
+                  width=""
+                  height=""
+                />
+              </div>
+
+              <div class="q-herq-decor fade-left q-herq-decor--two G-flex">
+                <img
+                  src="assets/images/qHeroDecor2.webp"
+                  alt="photo"
+                  loading="eager"
+                  decoding="async"
+                  fetchpriority="high"
+                  width=""
+                  height=""
+                />
+              </div>
+
+              <div class="q-herq-cat fade-right G-flex">
+                <img
+                  src="assets/images/qHeroCat.webp"
+                  alt="photo"
+                  loading="eager"
+                  decoding="async"
+                  fetchpriority="high"
+                  width=""
+                  height=""
+                />
+              </div>
+
+              <div class="q-herq-cnt fade-top">
+                <h2>AI</h2>
+                <p>
+                  Все инструменты
+                  <span class="text-wrap">редактора <a>поддерживают</a></span>
+                  ИИ-генерации
+                </p>
+
+                <span class="q-herq-cnt-tag">NEW</span>
+
+                <div class="q-herq-decor q-herq-decor--for G-flex">
+                  <img
+                    src="assets/images/qHeroDecor3.webp"
+                    alt="photo"
+                    loading="eager"
+                    decoding="async"
+                    fetchpriority="high"
+                    width=""
+                    height=""
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="q-hero-bg G-flex">
+            <picture>
+              <source
+                srcset="assets/images/QheroBgMobile.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/QheroBg.webp"
+                alt="photo"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+                width=""
+                height=""
+              />
+            </picture>
+          </div>
+        </section>
+
+        <section id="howWork" class="q-how-work-section section">
+          <div class="container">
+            <div class="how-work-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-clue">Как работает</span>
+                <h2>
+                  Редактор
+                  <span class="text-primary"
+                    >нового
+                    <span class="mobile-text-wrap">поколения</span></span
+                  >
+                </h2>
+                <p>
+                  Превращайте многочасовую
+                  <span class="text-wrap">работу в мгновенное решение</span>
+                </p>
+              </div>
+              <div class="q-how-work-cnt block-cnt-big">
+                <div class="q-work-tag q-work-tag--one fade-right">
+                  <p>
+                    Сложные функции теперь делаются
+                    <span class="mobile-text-wrap">всего <a>за 1 клик</a></span>
+                  </p>
+                  <div class="q-work-tag-decor G-flex">
+                    <img
+                      src="assets/images/qWorkDecor.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width=""
+                      height=""
+                    />
+                  </div>
+                </div>
+                <div class="q-how-work-media fade-bottom G-flex">
+                  <picture>
+                    <source
+                      srcset="assets/images/qWorkMediaMobile.webp"
+                      media="(max-width: 576px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/qWorkMedia.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width=""
+                      height=""
+                    />
+                  </picture>
+                </div>
+
+                <div class="q-work-horse fade-top G-flex">
+                  <img
+                    src="assets/images/qWorkHorse.webp"
+                    alt="photo"
+                    loading="lazy"
+                    decoding="async"
+                    width=""
+                    height=""
+                  />
+                </div>
+
+                <div class="q-work-tag fade-left q-work-tag--two">
+                  <p>
+                    <span>Профессиональный</span>
+                    <a class="mobile-text-wrap">результат даже</a> без
+                    специальных навыков
+                  </p>
+                  <div class="q-work-tag-img q-work-tag-img--one G-flex">
+                    <img
+                      src="assets/images/qWorkImg1.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width=""
+                      height=""
+                    />
+                  </div>
+
+                  <div class="q-work-tag-img q-work-tag-img--two G-flex">
+                    <img
+                      src="assets/images/qWorkImg2.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width=""
+                      height=""
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="possibilities" class="q-advantages-section section">
+          <div class="container">
+            <div class="q-advantages-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-clue">Возможности</span>
+                <h2>
+                  Все инструменты
+                  <span class="text-primary text-wrap">в одном месте</span>
+                </h2>
+                <p>
+                  Ещё никогда работа с проектами
+                  <span class="text-wrap">не была такой простой!</span>
+                </p>
+              </div>
+
+              <div class="q-advantages-cnt block-cnt-big">
+                <div class="q-advantages-media fade-bottom G-flex">
+                  <img
+                    src="assets/images/qAdvantagesMedia.webp"
+                    alt="phoyo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="q-advantages-clue fade-left q-advantages-clue--one">
+                  <div class="q-advantage-header G-align-center">
+                    <img
+                      src="assets/images/qAdvantageIcon.webp"
+                      alt="phoyo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                    <h3>Текст</h3>
+                  </div>
+                  <p class="block-text">
+                    Красивые шрифты и удобный редактор — к вашим услугам
+                  </p>
+                </div>
+
+                <div class="q-advantages-clue fade-left q-advantages-clue--two">
+                  <div class="q-advantage-header G-align-center">
+                    <img
+                      src="assets/images/qAdvantageIcon2.webp"
+                      alt="phoyo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                    <h3>Картинки</h3>
+                  </div>
+                  <p class="block-text">
+                    Создавайте уникальные изображения по вашему запросу
+                  </p>
+                </div>
+
+                <div class="q-advantages-clue fade-top q-advantages-clue--tree">
+                  <div class="q-advantage-header G-align-center">
+                    <img
+                      src="assets/images/qAdvantageIcon3.webp"
+                      alt="phoyo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                    <h3>Редактура</h3>
+                  </div>
+                  <p class="block-text">
+                    Мгновенно улучшайте и редактируйте любые фото с помощью ИИ
+                  </p>
+                </div>
+
+                <div
+                  class="q-advantages-clue fade-right q-advantages-clue--for"
+                >
+                  <div class="q-advantage-header G-align-center">
+                    <img
+                      src="assets/images/qAdvantageIcon4.webp"
+                      alt="phoyo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                    <h3>Графика</h3>
+                  </div>
+                  <p class="block-text">
+                    Добавляйте стикеры, эмодзи, иконки и другое оформление в
+                    один клик
+                  </p>
+                </div>
+
+                <div class="q-advantage-decor q-advantage-decor--one G-flex">
+                  <picture>
+                    <source
+                      srcset="assets/images/qAdvantageDecor3Mobile.webp"
+                      media="(max-width: 576px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/qAdvantageDecor1.webp"
+                      alt="phoyo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+
+                <div class="q-advantage-decor q-advantage-decor--two G-flex">
+                  <img
+                    src="assets/images/qAdvantageDecor2.webp"
+                    alt="photo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="q-advantage-decor q-advantage-decor--tree G-flex">
+                  <img
+                    src="assets/images/qAdvantageDecor3.webp"
+                    alt="phoyo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="q-advantage-decor q-advantage-decor--for G-flex">
+                  <picture>
+                    <source
+                      srcset="assets/images/qAdvantageDecor1Mobile.webp"
+                      media="(max-width: 576px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/qAdvantageDecor4.webp"
+                      alt="phoyo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+
+                <a
+                  target="_blank"
+                  href="https://nexa.ru/sign-up"
+                  class="q-possibilities-round"
+                >
+                  <img
+                    src="assets/images/roundTextImg.webp"
+                    alt="phoyo"
+                    class="q-round-text-img"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/images/roundTextImgLight.webp"
+                    alt="phoyo"
+                    class="q-round-text-img-light"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/images/roundBorderImg.webp"
+                    alt="phoyo"
+                    class="q-round-border-img"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                  <i class="icon icon-arrow-right3"></i>
+                </a>
+
+                <div class="q-advantages-mobile-decor">
+                  <img
+                    src="assets/images/qAdvantagesMobileDecor.webp"
+                    alt="photo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="gallery-section section">
+          <div class="container">
+            <div class="gallery-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-clue">Галерея</span>
+                <h2>Галерея ваших творений</h2>
+                <p>
+                   Здесь живут ваши творения —
+                  <span class="desktop-text-wrap"
+                    ><span class="mobile-text-wrap"
+                      >от черновиков до готовых</span
+                    >
+                    шедевров</span
+                  >
+                </p>
+
+                <a
+                  target="_blank"
+                  href="https://nexa.ru/sign-up"
+                  class="black-btn dark-black-btn gallery-btn"
+                >
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Начать работу</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="gallery-media fade-bottom G-flex">
+            <picture>
+              <source
+                srcset="assets/images/QgalleryMediaMobile.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/QgalleryMedia.webp"
+                alt="photo"
+                loading="lazy"
+                decoding="async"
+                width=""
+                height=""
+              />
+            </picture>
+          </div>
+        </section>
+
+        <section class="functions-section">
+          <div class="container">
+            <div class="functions-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-clue">Функции</span>
+                <h2>
+                  Цифровая студия
+                  <span class="text-primary text-wrap">с нейросетью внути</span>
+                </h2>
+                <p>
+                  Полный набор функций
+                  <span class="mobile-text-wrap"
+                    >для воплощения ваших замыслов</span
+                  >
+                  <span class="desktop-text-wrap">теперь в одном месте</span>
+                </p>
+              </div>
+
+              <div class="functions-items G-flex-column block-cnt-big">
+                <a target="_blank" href="https://nexa.ru/sign-up"
+                  class="function-item fade-bottom G-align-center"
+                >
+                  <div class="function-item-texts">
+                    <h3 class="block-title">Создать картинку</h3>
+                    <p class="block-text">
+                      Просто опишите идею и получите картинку в нужном стиле
+                    </p>
+                  </div>
+                  <div class="function-item-media G-flex">
+                    <img
+                      src="assets/images/QfunctionItemImg.webp"
+                      alt="photo"
+                      loading="lazy"
+                      decoding="async"
+                      width=""
+                      height=""
+                    />
+                  </div>
+
+                  <div class="function-item-link" >
+                    <i class="icon icon-arrow-right3"></i>
+                  </div>
+                  
+                </a>
+
+                <a target="_blank" href="https://nexa.ru/sign-up" class="function-item fade-bottom G-align-center">
+                  <div class="function-item-texts">
+                    <h3 class="block-title">Создать текст на картинке</h3>
+                    <p class="block-text">
+                      Выбирайте шрифты, цвета и расположение текста для
+                      выразительности
+                    </p>
+                  </div>
+                  <div class="function-item-media G-flex">
+                    <picture>
+                      <source
+                        srcset="assets/images/QfunctionItemImg2Mobile.webp"
+                        media="(max-width: 992px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/QfunctionItemImg2.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width=""
+                        height=""
+                      />
+                    </picture>
+                  </div>
+
+                  <div
+                   
+                    class="function-item-link"
+                  >
+                    <i class="icon icon-arrow-right3"></i>
+                  </div>
+                </a>
+
+                <a target="_blank" href="https://nexa.ru/sign-up" class="function-item fade-bottom G-align-center">
+                  <div class="function-item-texts">
+                    <h3 class="block-title">Создать аватар</h3>
+                    <p class="block-text">
+                      Для вашего профиля в соцсетях или игрового персонажа — на
+                      основе описания или картинки
+                    </p>
+                  </div>
+                  <div class="function-item-media G-flex">
+                    <picture>
+                      <source
+                        srcset="assets/images/QfunctionItemImg3Mobile.webp"
+                        media="(max-width: 992px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/QfunctionItemImg3.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width=""
+                        height=""
+                      />
+                    </picture>
+                  </div>
+
+                  <div
+                    class="function-item-link"
+                  >
+                    <i class="icon icon-arrow-right3"></i>
+                  </div>
+                </a>
+
+                <a target="_blank" href="https://nexa.ru/sign-up" class="function-item fade-bottom G-align-center">
+                  <div class="function-item-texts">
+                    <h3 class="block-title">Отредактировать картинку</h3>
+                    <p class="block-text">
+                      Улучшите ваши фотографии: измените цвета, добавьте фильтры
+                      или уберите лишние объекты
+                    </p>
+                  </div>
+                  <div class="function-item-media G-flex">
+                    <picture>
+                      <source
+                        srcset="assets/images/QfunctionItemImg4Mobile.webp"
+                        media="(max-width: 992px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/QfunctionItemImg4.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width=""
+                        height=""
+                      />
+                    </picture>
+                  </div>
+
+                  <div
+                    class="function-item-link"
+                  >
+                    <i class="icon icon-arrow-right3"></i>
+                  </div>
+                </a>
+
+                <a target="_blank" href="https://nexa.ru/sign-up" class="function-item fade-bottom G-align-center">
+                  <div class="function-item-texts">
+                    <h3 class="block-title">Сделать арт-коллаж</h3>
+                    <p class="block-text">
+                      Объедините несколько изображений в одну гармоничную
+                      композицию
+                    </p>
+                  </div>
+                  <div class="function-item-media G-flex">
+                    <picture>
+                      <source
+                        srcset="assets/images/QfunctionItemImg5Mobile.webp"
+                        media="(max-width: 992px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/QfunctionItemImg5.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width=""
+                        height=""
+                      />
+                    </picture>
+                  </div>
+
+                  <div
+                    class="function-item-link"
+                  >
+                    <i class="icon icon-arrow-right3"></i>
+                  </div>
+                </a>
+
+                <da target="_blank" href="https://nexa.ru/sign-up"v class="function-item fade-bottom G-align-center">
+                  <div class="function-item-texts">
+                    <h3 class="block-title">И другое!</h3>
+                    <p class="block-text">
+                      Исследуйте дополнительные возможности: от изменения фона
+                      до стилизации изображения
+                    </p>
+                  </div>
+                  <div class="function-item-media G-flex">
+                    <picture>
+                      <source
+                        srcset="assets/images/QfunctionItemImg6Mobile.webp"
+                        media="(max-width: 992px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/QfunctionItemImg6.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        width=""
+                        height=""
+                      />
+                    </picture>
+                  </div>
+
+                  <div
+                    class="function-item-link"
+                  >
+                    <i class="icon icon-arrow-right3"></i>
+                  </div>
+                </a>
+              </div>
+
+              <a
+                target="_blank"
+                href="https://nexa.ru/sign-up"
+                class="black-btn functions-btn"
+              >
+                <span class="black-btn-bg dark-black-btn G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+
+                <span class="black-btn-text">Попробовать всё</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews" class="q-reviews-section">
+          <div class="container">
+            <div class="reviews-body G-column-center">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-clue">Отзывы</span>
+                <h2>
+                  Что говорят
+                  <span class="mobile-text-wrap">пользователи</span>
+                </h2>
+                <p class="desktop-block">
+                  Жизненные истории, связанные с сервисом
+                </p>
+              </div>
+
+              <div class="reviews-box block-cnt-big G-justify-between">
+                <div class="k-reviews-left-item fade-left">
+                  <div class="face-reviews-left-img G-flex">
+                    <img
+                      src="assets/images/Qreviews2.webp"
+                      alt="reviews-author"
+                      width="386"
+                      height="260"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="reviews-left-info">
+                    <div class="reviews-item-header G-justify-between">
+                      <div class="reviews-author">
+                        <h4>Виктория Л.</h4>
+                        <p>Ведущая мероприятий</p>
+                      </div>
+                      <div class="reviews-icon G-flex">
+                        <img
+                          src="assets/images/estimation1.svg"
+                          alt="estimation"
+                          width="32"
+                          height="32"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                    <div class="l-reviews-item-text">
+                      Раньше часами сидела в сложных редакторах, чтобы сделать
+                      постер для своего мероприятия. Теперь ИИ генерирует основу
+                      за секунды, а я просто добавляю ключевые детали, финальный
+                      текст и стикеры вручную.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper reviews-swiper l-reviews-swiper fade-right">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews-mobile-item">
+                      <div class="face-reviews-item G-flex">
+                        <div class="face-reviews-left-img">
+                          <img
+                            src="assets/images/Qreviews2.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-left-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Виктория Л.</h4>
+                              <p>Ведущая мероприятий</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text text-mobile-size">
+                            Раньше часами сидела в сложных редакторах, чтобы
+                            сделать постер для своего мероприятия. Теперь ИИ
+                            генерирует основу за секунды, а я просто добавляю
+                            ключевые детали, финальный текст и стикеры вручную.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Qreviews8.webp"
+                            alt="reviews-author"
+                            width="124"
+                            height="124"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Галя З.</h4>
+                              <p>SMM-менеджер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            ИИ генерирует шикарные шаблоны, а я потом вручную
+                            добавляю финальные правки и стикеры. Идеальный
+                            симбиоз технологий и контроля!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Qreviews3.webp"
+                            alt="reviews-author"
+                            width="124"
+                            height="124"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Игорь М.</h4>
+                              <p>Менеджер проектов</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Презентации теперь не проблема. Красивый дизайн от
+                            ИИ, а все пояснения и схемы легко дорисовываю сам.
+                            Экономит уйму времени.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Qreviews4.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Артем К.</h4>
+                              <p>Организатор мероприятий</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Делаю яркие афиши за минуты. ИИ предлагает идеи, а я
+                            легко редактирую текст и добавляю уникальные детали.
+                            Очень быстро и удобно.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Qreviews5.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Милана В.</h4>
+                              <p>Блогер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Обожаю! ИИ создает концепт, а я довожу до ума,
+                            добавляя веселые стикеры и рукописные шрифты. Мои
+                            посты теперь вне конкуренции.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Qreviews6.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Денис П.</h4>
+                              <p>Преподаватель</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Создаю визуалы для уроков без дизайнерских навыков.
+                            ИИ помогает, а ручной редактор позволяет точно
+                            расставить акценты в тексте.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Qreviews7.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Олег С.</h4>
+                              <p>Владелец кафе</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Делаю акционные карточки сам. Нейросеть рисует
+                            основу, а я в пару кликов меняю цены и добавляю
+                            стикеры "Новинка". Просто спасение!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Qreviews10.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Алина Р.</h4>
+                              <p>Копирайтер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            ИИ — мой соавтор для идей. А потом я легко управляю
+                            текстом вручную, чтобы он идеально звучал. Лучший
+                            инструмент для контента.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Qreviews11.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>София Т.</h4>
+                              <p>Студентка</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Делаю креативные проекты и открытки. Люблю, что
+                            можно начать с ИИ, а потом добавить милые стикеры и
+                            свой почерк. Вдохновляет!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews-pagination swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="q-faq-section another-color-faq section-big">
+          <div class="container">
+            <div class="faq-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-clue">FAQ</span>
+                <h2>
+                  Все, что нужно
+                  <span class="mobile-text-wrap">знать о Nexa AI</span>
+                </h2>
+              </div>
+
+              <div
+                id="accordion"
+                class="faq-items block-cnt-big G-flex-column fade-bottom"
+              >
+                <div class="faq-item">
+                  <div class="faq-item-header link G-align-center">
+                    <h3>Как создать изображение с помощью нейросети?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Просто опишите желаемую картинку в текстовом поле на русском
+                    или английском языке, и алгоритм сгенерирует для вас
+                    уникальное изображение по этому описанию.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>
+                      Можно ли использовать изображения в коммерческих целях?
+                    </h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Да, вы получаете полные права на использование всех
+                    созданных вами изображений, в том числе для коммерческих
+                    проектов и монетизации.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>
+                      Как работает редактирование существующих фотографий?
+                    </h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Загрузите ваше изображение, а затем используйте текстовые
+                    запросы или встроенные инструменты (например, кисть для
+                    выделения), чтобы указать нейросети, какие изменения внести
+                    (удалить объект, изменить стиль и т.д.).
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Что такое «арт-коллаж» в вашей нейросети?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Это функция, которая позволяет объединить несколько ваших
+                    изображений или сгенерированных картинок в одну гармоничную
+                    композицию, используя стили и шаблоны, заданные нейросетью.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Могу ли я создать собственный стиль для аватара?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Да, вы можете как сгенерировать аватар полностью с нуля по
+                    описанию, так и загрузить свое фото для стилизации в
+                    выбранном вами художественном стиле.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Моя картинка сохраняется в истории?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Да, все созданные и отредактированные вами изображения
+                    сохраняются в вашем личном кабинете, чтобы вы могли
+                    вернуться к ним в любое время.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+         <footer class="p-footer">
+        <div class="container">
+          <div class="footer-body">
+            <a class="footer-logo G-flex fade-bottom" href="index.html">
+              <img
+                src="assets/images/logoBig.svg"
+                alt="Company logo"
+                width="705"
+                height="180"
+                loading="lazy"
+              />
+            </a>
+
+            <div class="footer-cnt fade-bottom">
+              <div class="footer-grid G-flex">
+                <picture>
+                  <source
+                    srcset="assets/images/JfooterGridMobile.png"
+                    media="(max-width: 576px)"
+                    type="image/png"
+                  />
+                  <img
+                    src="assets/images/JfooterGrid.png"
+                    alt="footer grid"
+                    width="1160"
+                    height="491"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="white-btn footer-btn"
+              >
+                <span class="white-btn-bg G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+                <span class="white-btn-text">Начать бесплатно</span>
+              </a>
+
+              <nav class="footer-menu">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer-policy">
+                <ul>
+                  <li>
+                    <a href="#">Оферта</a>
+                  </li>
+                  <li>
+                    <a href="#">Политика конфиденциальности</a>
+                  </li>
+                </ul>
+              </nav>
+              <p class="footer-text">© 2025 Nexa AI. Все права защищены</p>
+            </div>
+
+            <div class="footer-blur G-flex">
+              <picture>
+                <source
+                  srcset="assets/images/footerBlurMobile3.png"
+                  media="(max-width: 576px)"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/images/JfooterBlur2.webp"
+                  alt="footerBlur"
+                  width="1160"
+                  height="491"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js " defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+
+    <script src="assets/js/swiper.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+  </body>
+</html>

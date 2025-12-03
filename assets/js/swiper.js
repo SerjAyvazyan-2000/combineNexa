@@ -144,6 +144,10 @@ const sliderSettings = {
     desktopSlides: 2.8,
     mobileSlides: 1
   },
+      "n-reviews-swiper": {
+    desktopSlides: 2.8,
+    mobileSlides: 1
+  },
 };
 
 let swipers = []; 
@@ -369,6 +373,72 @@ const swiperProcess = new Swiper(".l-process-swiper", {
 
     1100: {
       slidesPerView: 3,
+    },
+  },
+});
+
+const nHeroSwiper = new Swiper(".n-hero-swiper", {
+  spaceBetween: 10,
+  slidesPerView: 1,
+  pagination: {
+    el: ".n-hero-pagination",
+    clickable: true,
+  },
+});
+
+
+const howWorkSwiper = new Swiper(".o-how-work-swiper", {
+  spaceBetween: 10,
+  slidesPerView:3,
+  pagination: {
+    el: ".o-work-swiper-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    320: { slidesPerView: 1 },
+    490: { slidesPerView: 1 },
+    530: { slidesPerView: 1 },
+    620: { slidesPerView: 1.5 , },
+    810: { slidesPerView: 2 },
+    992: { slidesPerView: 2.5 },
+    1263: { slidesPerView: 2.6 },
+    1300: { slidesPerView: 3 },
+  },
+});
+
+const advantagesSwiper = new Swiper(".p-advantages-swiper", {
+  slidesPerView: 1.2,
+  spaceBetween: 10,
+  autoHeight:true,
+
+  pagination: {
+    el: ".p-advantages-pagination",
+    clickable: true,
+  },
+  loop: true,
+
+     breakpoints: {
+      320: { slidesPerView: 1 },
+       450: { slidesPerView: 1.2 },
+
+      576: { slidesPerView: 1.2 },
+
+    },
+});
+const swiperAdvantages = new Swiper(".w-advantages__swiper", {
+  spaceBetween: 10,
+  slidesPerView: 2,
+  pagination: {
+    el: ".w-advantages__pagination",
+    clickable: true,
+  },
+  breakpoints: {
+    300: {
+      slidesPerView: 1,
+    },
+     540: {
+      slidesPerView: 1.5,
     },
   },
 });

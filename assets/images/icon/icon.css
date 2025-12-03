@@ -90,3 +90,28 @@
           mask-image: url(arrowRight2.svg);
   -webkit-mask-image: url(arrowRight2.svg);
 }
+
+.icon-heart{
+          mask-image: url(heart.svg);
+  -webkit-mask-image: url(heart.svg);
+}
+.icon-infinity{
+          mask-image: url(infinity.svg);
+  -webkit-mask-image: url(infinity.svg);
+}
+.icon-heart2{
+            mask-image: url(heart2.svg);
+  -webkit-mask-image: url(heart2.svg);
+}
+.icon-arrow-right{
+        mask-image: url(arrowRight.svg);
+  -webkit-mask-image: url(arrowRight.svg);
+}
+.icon-arrow-right3{
+        mask-image: url(arrowRight3.svg);
+  -webkit-mask-image: url(arrowRight3.svg);
+}
+.icon-arrow-up{
+        mask-image: url(arrow-up.svg);
+  -webkit-mask-image: url(arrow-up.svg);
+}

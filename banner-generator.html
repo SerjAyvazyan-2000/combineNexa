@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Banner Generator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+   <style>
+    body,html {
+          background: #121316;
+    }
+  
+  </style>
+
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header-body G-justify-between">
+            <a class="header-logo G-flex" href="index.html">
+              <picture>
+                <source
+                  srcset="assets/images/logoMobile.svg"
+                  media="(max-width: 576px)"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/logo.svg"
+                  alt="Company logo"
+                  width="28"
+                  height="28"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </picture>
+            </a>
+
+            <nav class="menu">
+              <div class="menu-wrapper">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+
+                <div class="menu-mobile-actions">
+                  <a href="#" class="btn-login G-align-center">
+                    <span class="login-btn-bg G-center">
+                      <i class="icon icon-person"></i>
+                    </span>
+                    <span class="login-btn-text">Войти</span>
+                  </a>
+
+                  <a href="#" class="btn-register G-align-center">
+                    <span class="register-btn-bg G-center">
+                      <i class="icon icon-person-edit"></i>
+                    </span>
+                    <span class="register-btn-text">Регистрация</span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+            <div class="menu-bg"></div>
+
+            <div class="header-actions G-align-center">
+              <a target="_blank" href="https://nexa.ru/sign-up" class="btn-login G-align-center">
+                <span class="login-btn-bg G-center">
+                  <i class="icon icon-person"></i>
+                </span>
+                <span class="login-btn-text">Войти</span>
+              </a>
+
+              <a target="_blank" href="https://nexa.ru/sign-up" class="btn-register G-align-center">
+                <span class="register-btn-bg G-center">
+                  <i class="icon icon-person-edit"></i>
+                </span>
+                <span class="register-btn-text">Регистрация</span>
+              </a>
+
+              <div class="burger-bg G-center">
+                <div class="burger">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="hero" class="p-hero-section">
+          <div class="container">
+            <div class="p-hero-body">
+              <div class="p-hero-titles">
+                <h1 class="fade-top">
+                  Генератор баннера
+                  <span class="text-wrap">бесплатно</span>
+                </h1>
+                <p class="fade-bottom">
+                  Нейросеть для создания баннеров
+                  <span class="text-wrap"
+                    >различного типа — с текстом и без него</span
+                  >
+                </p>
+                <a target="_blank" href="https://nexa.ru/sign-up" class="black-btn dark-black-btn p-hero-btn">
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Начать бесплатно</span>
+                </a>
+              </div>
+
+              <a target="_blank" href="https://nexa.ru/sign-up" class="p-hero-media-mobile">
+                <img
+                  src="assets/images/PheroMediaMobile.webp"
+                  alt="photo"
+                  width=""
+                  height=""
+                  loading="eager"
+                  decoding="async"
+                />
+
+       
+              </a>
+              <div class="p-hero-pictrue--one fade-bottom G-flex">
+                <img
+                  src="assets/images/PheroPictrue1.webp"
+                  alt="photo"
+                  width=""
+                  height=""
+                  loading="eager"
+                  decoding="async"
+                />
+                <div class="p-hero-picture-texts">
+                  <h2>Завал <span class="text-wrap">на работе?</span></h2>
+
+                  <a target="_blank" href="https://nexa.ru/sign-up">
+                    <span>Читать статью</span>
+                    <i class="icon icon-arrow-up"></i>
+                  </a>
+                </div>
+              </div>
+
+              <div class="p-hero-pictrue--two fade-left G-flex">
+                <img
+                  src="assets/images/PheroPictrue2.webp"
+                  alt="photo"
+                  width=""
+                  height=""
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="p-hero-pictrue--tree fade-right G-flex">
+                <img
+                  src="assets/images/PheroPictrue3.webp"
+                  alt="photo"
+                  width=""
+                  height=""
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+              <div class="p-hero-decor fade-top p-hero-decor--one">
+                <img
+                  src="assets/images/PHeroDecor1.webp"
+                  alt="photo"
+                  width=""
+                  height=""
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+              <div class="p-hero-decor fade-bottom p-hero-decor--two">
+                <img
+                  src="assets/images/pHeroDecor2.webp"
+                  alt="photo"
+                  width=""
+                  height=""
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="p-hero-decor fade-right p-hero-decor--tree">
+                <img
+                  src="assets/images/pHeroDecor3.webp"
+                  alt="photo"
+                  width=""
+                  height=""
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="p-hero-decor fade-right p-hero-decor--for">
+                <img
+                  src="assets/images/pHeroDecor4.webp"
+                  alt="photo"
+                  width=""
+                  height=""
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+              <div class="p-hero-decor fade-right p-hero-decor--five">
+                <img
+                  src="assets/images/pHeroDecor5.webp"
+                  alt="photo"
+                  width=""
+                  height=""
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="p-hero-decor fade-top p-hero-decor--six">
+                <img
+                  src="assets/images/pHeroDecor6.webp"
+                  alt="photo"
+                  width=""
+                  height=""
+                  loading="eager"
+                  decoding="async"
+                />
+              </div>
+              <a target="_blank" href="https://nexa.ru/sign-up" class="p-hero-orange-link fade-bottom G-align-center">
+                <span>Попробовать </span>
+                <i class="icon icon-arrow-up"></i>
+              </a>
+
+              <a target="_blank" href="https://nexa.ru/sign-up" class="p-hero-green-link fade-right G-align-center">
+                <span>Заказать </span>
+                <i class="icon icon-arrow-up"></i>
+              </a>
+            </div>
+          </div>
+
+          <div class="p-hero-bg G-flex">
+            <picture>
+              <source
+                srcset="assets/images/PheroBgMobile2.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/PheroBg.webp"
+                alt="photo"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+                width=""
+                height=""
+              />
+            </picture>
+          </div>
+        </section>
+
+        <section id="howWork" class="p-advantages-section section">
+          <div class="container">
+            <div class="p-advantages-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-tag">[ Преимущества ]</span>
+                <h2>
+                  После ИИ
+                  <span class="mobile-text-wrap">вам не захочется</span>
+                  <span class="text-wrap text-primary">делать вручную</span>
+                </h2>
+              </div>
+
+              <div class="p-advantages-columns G-flex-column block-cnt-big">
+                <div class="p-advantage-column G-flex">
+                  <div class="p-advantage-big-item fade-left G-align-center">
+                    <div class="p-advantage-big-texts">
+                      <h3>
+                        Все фотографии для баннеров генериуются в
+                        <strong>ультра HD</strong>, сохраняя исходное качество
+                      </h3>
+                      <a target="_blank" href="https://nexa.ru/sign-up" class="black-btn dark-black-btn p-advantage-btn">
+                        <span class="black-btn-bg G-center">
+                          <i class="icon icon-stars"></i>
+                        </span>
+                        <span class="black-btn-text">Проверить самому</span>
+                      </a>
+                    </div>
+                    <div class="p-advantage-big-media G-flex">
+                      <img
+                        src="assets/images/PadvantageBigMedia1.webp"
+                        alt="photo"
+                        width=""
+                        height=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                  </div>
+
+                  <div class="p-advantage-small-item fade-right G-flex">
+                    <img
+                      src="assets/images/PadvantageSmallMedia.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+
+                <div class="p-advantage-column G-flex">
+                  <div class="p-advantage-small-item fade-left G-flex">
+                    <img
+                      src="assets/images/PadvantageSmallMedia2.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+
+                  <div class="p-advantage-big-item fade-right G-align-center">
+                    <div class="p-advantage-big-texts">
+                      <h3>
+                        <strong>Попадание в цель</strong> вашего запроса, вне
+                        зависимости от сложности промпта
+                      </h3>
+                      <a target="_blank" href="https://nexa.ru/sign-up" class="black-btn dark-black-btn p-advantage-btn">
+                        <span class="black-btn-bg G-center">
+                          <i class="icon icon-stars"></i>
+                        </span>
+                        <span class="black-btn-text">Попробовать</span>
+                      </a>
+                    </div>
+                    <div class="p-advantage-big-media G-flex">
+                      <img
+                        src="assets/images/PadvantageBigMedia2.webp"
+                        alt="photo"
+                        width=""
+                        height=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                    <div class="p-advantage-decor G-flex">
+                      <img
+                        src="assets/images/PAdvantageDecor1.webp"
+                        alt="photo"
+                        width=""
+                        height=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-advantages-slider block-cnt-big">
+                <div class="p-advantages-swiper swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="p-advantage-big-item G-align-center">
+                        <div class="p-advantage-big-texts">
+                          <h3>
+                            Все фотографии для баннеров генериуются в
+                            <strong>ультра HD</strong>, сохраняя исходное
+                            качество
+                          </h3>
+                          <a target="_blank" href="https://nexa.ru/sign-up" class="black-btn dark-black-btn p-advantage-btn">
+                            <span class="black-btn-bg G-center">
+                              <i class="icon icon-stars"></i>
+                            </span>
+                            <span class="black-btn-text">Проверить самому</span>
+                          </a>
+                        </div>
+                        <div class="p-advantage-big-media G-flex">
+                          <picture>
+                            <source
+                              srcset="
+                                assets/images/PadvantageBigMedia1Mobile.webp
+                              "
+                              media="(max-width: 576px)"
+                              type="image/png"
+                            />
+                            <img
+                              src="assets/images/PadvantageBigMedia1.webp"
+                              alt="photo"
+                              width=""
+                              height=""
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="p-advantage-small-item G-flex">
+                        <img
+                          src="assets/images/PadvantageSmallMedia.webp"
+                          alt="photo"
+                          width=""
+                          height=""
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="p-advantage-big-item G-align-center">
+                        <div class="p-advantage-big-texts">
+                          <h3>
+                            <strong>Попадание в цель</strong> вашего запроса,
+                            вне зависимости от сложности промпта
+                          </h3>
+                          <a target="_blank" href="https://nexa.ru/sign-up" class="black-btn dark-black-btn p-advantage-btn">
+                            <span class="black-btn-bg G-center">
+                              <i class="icon icon-stars"></i>
+                            </span>
+                            <span class="black-btn-text">Попробовать</span>
+                          </a>
+                        </div>
+                        <div class="p-advantage-big-media G-flex">
+                          <picture>
+                            <source
+                              srcset="
+                                assets/images/PadvantageBigMedia2Mobile.webp
+                              "
+                              media="(max-width: 576px)"
+                              type="image/png"
+                            />
+                            <img
+                              src="assets/images/PadvantageBigMedia2.webp"
+                              alt="photo"
+                              width=""
+                              height=""
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="p-advantage-decor G-flex">
+                          <img
+                            src="assets/images/pAdvantageDecor1.webp"
+                            alt="photo"
+                            width=""
+                            height=""
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="p-advantage-small-item G-flex">
+                        <img
+                          src="assets/images/PadvantageSmallMedia2.webp"
+                          alt="photo"
+                          width=""
+                          height=""
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="p-advantages-pagination swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="possibilities" class="p-possibilities-section section">
+          <div class="container">
+            <div class="p-possibilities-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-tag">[ Возможности ]</span>
+                <h2>
+                  <span class="text-wrap text-primary"
+                    >На 100% эффективная</span
+                  >
+                  работа с графикой
+                </h2>
+              </div>
+              <div class="p-possibilities-columns G-flex-column block-cnt-big">
+                <div class="p-possibilities-column fade-bottom G-flex">
+                  <div class="p-possibilities-img-item G-flex">
+                    <picture>
+                      <source
+                        srcset="assets/images/pPossibilitiesMedia1Mobile.webp"
+                        media="(max-width: 576px)"
+                        type="image/png"
+                      />
+                      <img
+                        src="assets/images/pPossibilitiesMedia1.webp"
+                        alt="photo"
+                        width=""
+                        height=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <div class="p-possibilities-text-item">
+                    <div class="p-possibilities-text-header G-align-center">
+                      <img
+                        src="assets/images/Pfire.webp"
+                        alt="photo"
+                        width=""
+                        height=""
+                        loading="lazy"
+                      />
+                      <h3 class="block-title">Смелые идеи</h3>
+                    </div>
+                    <p class="block-text">
+                      ИИ понимает ваше видение и на его основе генерирует
+                      трендовые дизайны, которые точно привлекут внимание
+                    </p>
+                    <a target="_blank" href="https://nexa.ru/sign-up" class="black-btn dark-black-btn p-possibilities-btn">
+                      <span class="black-btn-bg G-center">
+                        <i class="icon icon-stars"></i>
+                      </span>
+                      <span class="black-btn-text">Попробовать</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="p-possibilities-column fade-bottom G-flex">
+                  <div class="p-possibilities-text-item">
+                    <div class="p-possibilities-text-header G-align-center">
+                      <img
+                        src="assets/images/PcardTitle2.webp"
+                        alt="photo"
+                        width=""
+                        height=""
+                        loading="lazy"
+                      />
+                      <h3 class="block-title">Любой формат</h3>
+                    </div>
+                    <p class="block-text">
+                      Нейросеть автоматически подгоняет размер и разрешение
+                      изображения под любую площадку. Вы получаете идеальный
+                      результат с первого клика, без лишних правок
+                    </p>
+                    <a target="_blank" href="https://nexa.ru/sign-up" class="black-btn dark-black-btn p-possibilities-btn">
+                      <span class="black-btn-bg G-center">
+                        <i class="icon icon-stars"></i>
+                      </span>
+                      <span class="black-btn-text">Попробовать</span>
+                    </a>
+                  </div>
+
+                  <div class="p-possibilities-img-item G-flex">
+                    <picture>
+                      <source
+                        srcset="assets/images/pPossibilitiesMedia2Mobile.webp"
+                        media="(max-width: 576px)"
+                        type="image/png"
+                      />
+                      <img
+                        src="assets/images/pPossibilitiesMedia2.webp"
+                        alt="photo"
+                        width=""
+                        height=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div class="p-possibilities-column fade-bottom G-flex">
+                  <div class="p-possibilities-img-item G-flex">
+                    <picture>
+                      <source
+                        srcset="assets/images/pPossibilitiesMedia4Mobile.webp"
+                        media="(max-width: 576px)"
+                        type="image/png"
+                      />
+                      <img
+                        src="assets/images/pPossibilitiesMedia3.webp"
+                        alt="photo"
+                        width=""
+                        height=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                  <div class="p-possibilities-text-item">
+                    <div class="p-possibilities-text-header G-align-center">
+                      <img
+                        src="assets/images/pen.webp"
+                        alt="photo"
+                        width=""
+                        height=""
+                        loading="lazy"
+                      />
+                      <h3 class="block-title">Добавление текста</h3>
+                    </div>
+                    <p class="block-text">
+                      ИИ профессионально разместит ваш текст на баннере,
+                      подобрав идеальное сочетание стиля, цвета и размера
+                    </p>
+                    <a target="_blank" href="https://nexa.ru/sign-up" class="black-btn dark-black-btn p-possibilities-btn">
+                      <span class="black-btn-bg G-center">
+                        <i class="icon icon-stars"></i>
+                      </span>
+                      <span class="black-btn-text">Попробовать</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="p-possibilities-column fade-bottom G-flex">
+                  <div class="p-possibilities-text-item">
+                    <div class="p-possibilities-text-header G-align-center">
+                      <img
+                        src="assets/images/PcardTitle4.webp"
+                        alt="photo"
+                        width=""
+                        height=""
+                        loading="lazy"
+                      />
+                      <h3 class="block-title">Стикеры! Наклейки!</h3>
+                    </div>
+                    <p class="block-text">
+                      <strong>Хотите добавить изюминку?</strong> Нейросеть
+                      создаст для вас уникальные стикеры, чтобы дизайн стал ещё
+                      более уникальным
+                    </p>
+                    <a target="_blank" href="https://nexa.ru/sign-up" class="black-btn dark-black-btn p-possibilities-btn">
+                      <span class="black-btn-bg G-center">
+                        <i class="icon icon-stars"></i>
+                      </span>
+                      <span class="black-btn-text">Попробовать</span>
+                    </a>
+                  </div>
+
+                  <div class="p-possibilities-img-item G-flex">
+                    <picture>
+                      <source
+                        srcset="assets/images/pPossibilitiesMedia3Mobile.webp"
+                        media="(max-width: 576px)"
+                        type="image/png"
+                      />
+                      <img
+                        src="assets/images/pPossibilitiesMedia4.webp"
+                        alt="photo"
+                        width=""
+                        height=""
+                        loading="lazy"
+                        decoding="async"
+                      />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+
+              <div class="p-trust-block fade-bottom block-cnt-big desktop-block">
+                <div class="section-big-titles fade-top G-column-center">
+                  <h2> Хватит зависеть от шаблонов!</h2>
+                  <p>
+                    Не ищите идею — просто сформулируйте её.
+                    <span class="desktop-text-wrap"
+                      >Нейросеть сделает всё остальное</span
+                    >
+                  </p>
+
+                  <a target="_blank" href="https://nexa.ru/sign-up" class="black-btn dark-black-btn p-trust-btn">
+                    <span class="black-btn-bg G-center">
+                      <i class="icon icon-stars"></i>
+                    </span>
+                    <span class="black-btn-text">Cоздать свой</span>
+                  </a>
+                </div>
+                <div class="p-trust-bg G-flex">
+                  <img
+                    src="assets/images/pTrusBg.webp"
+                    alt="photo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews" class="p-reviews-section section-big">
+          <div class="container">
+            <div class="reviews-body G-column-center">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-tag">[ Отзывы ]</span>
+                <h2>
+                  Что говорят
+                  <span class="mobile-text-wrap">пользователи</span>
+                </h2>
+                <p class="desktop-block">
+                  Жизненные истории, связанные с сервисом
+                </p>
+              </div>
+
+              <div class="reviews-box block-cnt-big G-justify-between">
+                <div class="k-reviews-left-item fade-left">
+                  <div class="face-reviews-left-img G-flex">
+                    <img
+                      src="assets/images/Previews2.webp"
+                      alt="reviews-author"
+                      width="386"
+                      height="260"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="reviews-left-info">
+                    <div class="reviews-item-header G-justify-between">
+                      <div class="reviews-author">
+                        <h4>Марина Щ.</h4>
+                        <p>Предприниматель</p>
+                      </div>
+                      <div class="reviews-icon G-flex">
+                        <img
+                          src="assets/images/estimation1.svg"
+                          alt="estimation"
+                          width="32"
+                          height="32"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                    <div class="l-reviews-item-text">
+                      Когда вязала свою первую партию шапок, даже не думала, как
+                      буду её рекламировать. Нейросеть помогла создать баннер,
+                      который передал всю любовь, вложенную в мои изделия &lt;3
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper reviews-swiper l-reviews-swiper fade-right">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews-mobile-item">
+                      <div class="face-reviews-item G-flex">
+                        <div class="face-reviews-left-img">
+                          <img
+                            src="assets/images/Previews2.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-left-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Марина Щ.</h4>
+                              <p>Предприниматель</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text text-mobile-size">
+                            Когда вязала свою первую партию шапок, даже не
+                            думала, как буду её рекламировать. Нейросеть помогла
+                            создать баннер, который передал всю любовь,
+                            вложенную в мои изделия &lt;3
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Previews8.webp"
+                            alt="reviews-author"
+                            width="124"
+                            height="124"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Алина К.</h4>
+                              <p>SMM-специалист в ритейле</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            За полгода не повторился ни один баннер! ИИ выдает
+                            такие сочетания цветов, до которых я сама бы не
+                            додумалась.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Previews3.webp"
+                            alt="reviews-author"
+                            width="124"
+                            height="124"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Максим Т.</h4>
+                              <p>Performance-маркетолог</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Тестируем баннеры для таргета — CTR вырос на 15%.
+                            Теперь вся команда использует нейросеть для
+                            креатива.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Previews4.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Роман К.</h4>
+                              <p>Основатель интернет-магазина</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Забыл, что такое часами сидеть в конструкторе. За 5
+                            минут получаю 3 варианта на пробу — это нереально
+                            экономит время.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Previews5.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Дарья Л.</h4>
+                              <p>Основатель бренда</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Использую для быстрых идей для постов в Instagram.
+                            Клиенты в восторге от уникального визуала нашего
+                            бренда.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Previews6.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Игорь С.</h4>
+                              <p>Дизайнер в e-commerce</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Даже наш строгий арт-директор принял работу,
+                            сделанную через ИИ. Теперь используем для подготовки
+                            мудбордов.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Previews7.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Оксана В.</h4>
+                              <p>Владелица кофейни</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Для маленького бизнеса это спасение. Не нужно
+                            нанимать дизайнера для каждого баннера — всё можно
+                            сделать самой.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Previews10.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Анна М.</h4>
+                              <p>Контент-менеджер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            От описания «сочные ягоды, лето, скидка» получается
+                            готовый к использованию макет. Мечта, а не
+                            инструмент!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Previews11.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Роман З.</h4>
+                              <p>Маркетолог в финтех-компании</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Теперь даже сложные темы вроде финансовых услуг
+                            можно визуализировать просто и стильно. Клиенты
+                            ценят современный подход.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews-pagination swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="p-trust-mobile-section">
+          <div class="container">
+            <div class="p-trust-block fade-bottom block-cnt-big ">
+              <div class="section-big-titles fade-top G-column-center">
+                <h2> Хватит зависеть <span class="text-wrap">от шаблонов!</span></h2>
+                <p>
+                  <span class="mobile-text-wrap">Не ищите идею — просто</span> сформулируйте её.
+                  <span class="desktop-text-wrap"
+                    >Нейросеть <span class="mobile-text-wrap">сделает всё остальное</span></span
+                  >
+                </p>
+
+                <a target="_blank" href="https://nexa.ru/sign-up" class="black-btn dark-black-btn p-trust-btn">
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Начать бесплатно</span>
+                </a>
+              </div>
+              <div class="p-trust-bg G-flex">
+                <img
+                  src="assets/images/pTrusBg.webp"
+                  alt="photo"
+                  width=""
+                  height=""
+                  loading="lazy"
+                  decoding="async"
+                />
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="faq-section section another-color-faq">
+          <div class="container">
+            <div class="faq-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-tag">[ FAQ ] </span>
+                <h2>
+                  Все, что нужно 
+                  <span class="mobile-text-wrap">знать о Nexa AI</span>
+                </h2>
+              </div>
+
+              <div
+                id="accordion"
+                class="faq-items block-cnt-big G-flex-column fade-bottom"
+              >
+                <div class="faq-item">
+                  <div class="faq-item-header link G-align-center">
+                    <h3>Что это за инструмент?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Это генератор баннеров на основе искусственного интеллекта,
+                    который превращает ваше текстовое описание в готовый к
+                    использованию профессиональный дизайн за считанные секунды.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Чем он лучше обычных конструкторов?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Вам не нужны навыки дизайна или время на подбор шаблонов. ИИ
+                    не использует шаблоны — он создает уникальные дизайны с
+                    нуля, понимая контекст вашего запроса. Это креативный
+                    партнер, а просто инструмент.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Для каких целей можно использовать баннеры?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Идеально для рекламы (соцсети, таргетированная реклама),
+                    контента для соцсетей (посты, сторис), оформления сайта,
+                    email-рассылок, презентаций и многого другого.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Какой запрос (промпт) нужно писать?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    <p>Чем конкретнее, тем лучше! Опишите:</p>
+                    <ul>
+                      <li>
+                        Что: «Баннер для скидки на осеннюю коллекцию обуви».
+                      </li>
+                      <li>
+                        Детали: «Желтые кленовые листья, девушка в ботинках,
+                        улыбка».
+                      </li>
+                      <li>Стиль: «Яркий, минимализм, светлый фон».</li>
+                      <li>Текст: «Скидка 30% до конца октября».</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Какие форматы и размеры баннеров доступны?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Мы генерируем все популярные форматы: квадрат (1:1),
+                    горизонтальный (16:9), вертикальный (9:16), а также
+                    специальные размеры для Stories, Reels, рекламных баннеров и
+                    обложек сообществ.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Кому принадлежат права на сгенерированный баннер?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Вы получаете полную коммерческую лицензию на все
+                    изображения, созданные с помощью нашего сервиса. Вы можете
+                    использовать их в рекламе, на сайте, в печати и т.д.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+     <footer class="footer">
+        <div class="container">
+          <div class="footer-body">
+            <a class="footer-logo G-flex fade-bottom" href="index.html">
+              <img
+                src="assets/images/logoBig.svg"
+                alt="Company logo"
+                width="705"
+                height="180"
+                loading="lazy"
+              />
+            </a>
+
+            <div class="footer-cnt fade-bottom">
+              <div class="footer-grid G-flex">
+                <picture>
+                  <source
+                    srcset="assets/images/JfooterGridMobile.png"
+                    media="(max-width: 576px)"
+                    type="image/png"
+                  />
+                  <img
+                    src="assets/images/JfooterGrid.png"
+                    alt="footer grid"
+                    width="1160"
+                    height="491"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <a href="https://nexa.ru/sign-up" target="_blank" class="white-btn footer-btn">
+                <span class="white-btn-bg G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+                <span class="white-btn-text">Начать бесплатно</span>
+              </a>
+
+              <nav class="footer-menu">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer-policy">
+                <ul>
+                  <li>
+                    <a href="#">Оферта</a>
+                  </li>
+                  <li>
+                    <a href="#">Политика конфиденциальности</a>
+                  </li>
+                </ul>
+              </nav>
+              <p class="footer-text">© 2025 Nexa AI. Все права защищены</p>
+            </div>
+
+            <div class="footer-blur G-flex">
+              <picture>
+                <source
+                  srcset="assets/images/footerBlurMobile2.webp"
+                  media="(max-width: 576px)"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/images/JfooterBlur2.webp"
+                  alt="footerBlur"
+                  width="1160"
+                  height="491"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js " defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+
+    <script src="assets/js/swiper.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+  </body>
+</html>

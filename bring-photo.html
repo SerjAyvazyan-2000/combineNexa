@@ -1,0 +1,1691 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Bring a photo to life</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <style>
+    body,html{
+    background: #111215;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header-body G-justify-between">
+            <a class="header-logo G-flex" href="index.html">
+              <picture>
+                <source
+                  srcset="assets/images/logoMobile.svg"
+                  media="(max-width: 576px)"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/logo.svg"
+                  alt="Company logo"
+                  width="28"
+                  height="28"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </picture>
+            </a>
+
+            <nav class="menu">
+              <div class="menu-wrapper">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibility"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+
+                <div class="menu-mobile-actions">
+                  <a
+                    href="https://nexa.ru/sign-up"
+                    target="_blank"
+                    class="btn-login G-align-center"
+                  >
+                    <span class="login-btn-bg G-center">
+                      <i class="icon icon-person"></i>
+                    </span>
+                    <span class="login-btn-text">Войти</span>
+                  </a>
+
+                  <a
+                    href="https://nexa.ru/sign-up"
+                    target="_blank"
+                    class="btn-register G-align-center"
+                  >
+                    <span class="register-btn-bg G-center">
+                      <i class="icon icon-person-edit"></i>
+                    </span>
+                    <span class="register-btn-text">Регистрация</span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+            <div class="menu-bg"></div>
+
+            <div class="header-actions G-align-center">
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="btn-login G-align-center"
+              >
+                <span class="login-btn-bg G-center">
+                  <i class="icon icon-person"></i>
+                </span>
+                <span class="login-btn-text">Войти</span>
+              </a>
+
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="btn-register G-align-center"
+              >
+                <span class="register-btn-bg G-center">
+                  <i class="icon icon-person-edit"></i>
+                </span>
+                <span class="register-btn-text">Регистрация</span>
+              </a>
+
+              <div class="burger-bg G-center">
+                <div class="burger">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="hero" class="w-hero-section">
+          <div class="container">
+            <div class="w-hero-body">
+              <div class="w-hero-titles">
+                <h1 class="fade-top">
+                  <span class="title-color"> Оживите ваши фото</span> с помощью
+                  <br />
+                  нейросети Nexa AI
+                </h1>
+                <p class="fade-bottom desktop-block">
+                  Загружаете изображение —
+                  <span style="font-weight: 600"
+                    >получаете видео <br />
+                    с плавной анимацией</span
+                  >
+                </p>
+                <p class="fade-bottom mobile-block">
+                  Загружаете изображение —
+                  <span style="font-weight: 600"
+                    >получаете <br />
+                    видео с плавной анимацией</span
+                  >
+                </p>
+                <a
+                  href="https://nexa.ru/sign-up"
+                  target="_blank"
+                  class="black-btn dark-black-btn w-hero-btn"
+                >
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Оживить фото бесплатно</span>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-hero-images fade-right G-flex">
+            <div class="w-hero-image G-flex">
+              <img
+                src="assets/images/WheroImg7.webp"
+                alt="phoyo"
+                width=""
+                height=""
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+
+            <div class="w-hero-image G-flex">
+              <img
+                src="assets/images/WheroImg5.webp"
+                alt="phoyo"
+                width=""
+                height=""
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+
+            <div class="w-hero-image G-flex">
+              <img
+                src="assets/images/WheroImg1.webp"
+                alt="phoyo"
+                width=""
+                height=""
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+
+            <div class="w-hero-gif G-flex">
+              <img
+                src="assets/images/WheroGif.gif"
+                alt="phoyo"
+                width=""
+                height=""
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+
+            <div class="w-hero-image G-flex">
+              <img
+                src="assets/images/WheroImg3.webp"
+                alt="phoyo"
+                width=""
+                height=""
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+
+            <div class="w-hero-image G-flex">
+              <img
+                src="assets/images/WheroImg4.webp"
+                alt="phoyo"
+                width=""
+                height=""
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+
+            <div class="w-hero-image G-flex">
+              <img
+                src="assets/images/WheroImg6.webp"
+                alt="phoyo"
+                width=""
+                height=""
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </div>
+          </div>
+
+          <div class="w-hero-bg G-flex">
+            <picture>
+              <source
+                srcset="assets/images/WheroBgMobile2.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/WheroBg.webp"
+                alt="photo"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+                width=""
+                height=""
+              />
+            </picture>
+          </div>
+          <div class="w-hero-dots">
+            <img
+              src="assets/images/Wdots.webp"
+              alt="phoyo"
+              width=""
+              height=""
+              loading="eager"
+              fetchpriority="high"
+              decoding="async"
+            />
+          </div>
+        </section>
+
+        <section class="w-advantages section">
+          <div class="container">
+            <div class="w-advantages__top fade-right">
+              <div class="section-big-titles fade-top G-column-center">
+                            <span class="section-clue">Преимущества</span>
+
+                <h2>
+                  Nexa AI — ваш лучший <br />
+                  выбор <span class="title-color">для оживления фото</span>
+                </h2>
+                <p>
+                  Сочетание
+                  <span style="font-weight: 600">мощных технологий</span> <br />
+                  с простотой использования
+                </p>
+              </div>
+              <div class="w-advantages__result">
+                <div class="w-advantages__image">
+                  <img
+                    src="assets/images/Wclock.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="w-advantages__bg">
+                  <img
+                    src="assets/images/WadvantagesGrid.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="w-advantages__subtitle">Мгновенный результат</h3>
+                <p class="w-advantages__text">
+                  <strong>Всего 15–30 секунд</strong>
+                  от загрузки фото до готового видео — не нужно ждать часами
+                </p>
+              </div>
+            </div>
+            <div class="w-advantages__bottom fade-left">
+              <div class="w-advantages__column">
+                <div class="w-advantages__blur">
+                  <img
+                    src="assets/images/WadvantagesBlur.png"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="w-advantages__image">
+                  <img
+                    src="assets/images/Wheart.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="w-advantages__subtitle">Универсальность</h3>
+                <p class="w-advantages__text">
+                  Отлично работает
+                  <strong>с любыми видами фото</strong>
+                </p>
+              </div>
+              <div class="w-advantages__column">
+                <div class="w-advantages__blur">
+                  <img
+                    src="assets/images/WadvantagesBlur.png"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="w-advantages__image">
+                  <img
+                    src="assets/images/Wfilm.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="w-advantages__subtitle">Высокое качество</h3>
+                <p class="w-advantages__text">
+                  Результат в формате MP4 с разрешением
+                  <strong>до 1080p</strong>
+                </p>
+              </div>
+              <div class="w-advantages__column w-advantages__column-big">
+                <div class="w-advantages__number">100%</div>
+                <h3 class="w-advantages__subtitle">
+                  Сохранение естественности
+                </h3>
+                <p class="w-advantages__text">
+                  Движения выглядят
+                  <strong>абсолютно натурально</strong>, без искусственных
+                  искажений
+                </p>
+              </div>
+            </div>
+            <div class="w-advantages__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="w-advantages__result">
+                    <div class="w-advantages__image">
+                      <img
+                        src="assets/images/Wclock.webp"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="w-advantages__bg">
+                      <img
+                        src="assets/images/WadvantagesGrid.webp"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="w-advantages__subtitle">Мгновенный результат</h3>
+                    <p class="w-advantages__text">
+                      <strong>Всего 15–30 секунд</strong>
+                      от загрузки фото до готового видео — не нужно ждать часами
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-advantages__column">
+                    <div class="w-advantages__blur">
+                      <img
+                        src="assets/images/WadvantagesBlur.png"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="w-advantages__image">
+                      <img
+                        src="assets/images/Wheart.webp"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="w-advantages__subtitle">Универсальность</h3>
+                    <p class="w-advantages__text">
+                      Отлично работает <br />
+                      <strong>с любыми видами фото</strong>
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-advantages__column">
+                    <div class="w-advantages__blur">
+                      <img
+                        src="assets/images/WadvantagesBlur.png"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="w-advantages__image">
+                      <img
+                        src="assets/images/Wfilm.webp"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <h3 class="w-advantages__subtitle">Высокое качество</h3>
+                    <p class="w-advantages__text">
+                      Результат в формате <br />
+                      MP4 с разрешением
+                      <span style="font-weight: 600">до 1080p</span>
+                    </p>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="w-advantages__column advantages__column-big">
+                    <div class="w-advantages__number">100%</div>
+                    <h3 class="w-advantages__subtitle">
+                      Сохранение естественности
+                    </h3>
+                    <p class="w-advantages__text">
+                      Движения выглядят
+                      <span style="font-weight: 600"
+                        >абсолютно <br />
+                        натурально</span
+                      >, без искусственных искажений
+                    </p>
+                  </div>
+                </div>
+              </div>
+              <div class="w-advantages__pagination"></div>
+            </div>
+          </div>
+        </section>
+
+        <section id="possibility" class="w-possibility section">
+          <div class="container">
+            <div class="section-big-titles fade-top G-column-center">
+              <span class="section-clue">Возможности</span>
+              <h2>
+                Функционал, который
+                <span style="color: #dce8ff">вдохнёт жизнь в ваши фото</span>
+              </h2>
+              <p>
+                От базового оживления до профессиональных эффектов —
+                <strong>всё для вашего творчества</strong>
+              </p>
+            </div>
+            <div class="w-possibility__columns">
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="w-possibility__column"
+              >
+                <div class="w-possibility__content">
+                  <h3 class="w-possibility__subtitle">
+                    <img
+                      src="assets/images/Wmask.png"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                    Естественная анимация лиц
+                  </h3>
+                  <p class="w-possibility__text">
+                    Мягкие движения: лёгкая улыбка, моргание, поворот головы.
+                    Выглядит
+                    <span class="w-title-color">абсолютно натурально</span>
+                  </p>
+                </div>
+                <div class="w-possibility__button">
+                  <img
+                    src="assets/images/arrow.png"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="w-possibility__image">
+                  <picture>
+                    <source
+                      srcset="assets/images/Wpossibility1Mobile.webp"
+                      media="(max-width: 768px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/Wpossibility1.webp"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="w-possibility__column"
+              >
+                <div class="w-possibility__content">
+                  <h3 class="w-possibility__subtitle">
+                    <img
+                      src="assets/images/Wwave.png"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                    Оживление природы
+                  </h3>
+                  <p class="w-possibility__text">
+                    Плавное движение воды, парение облаков. Превращает
+                    <strong>статичные пейзажи в живые сцены</strong>
+                  </p>
+                </div>
+                <div class="w-possibility__button">
+                  <img
+                    src="assets/images/arrow.png"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="w-possibility__image">
+                  <picture>
+                    <source
+                      srcset="assets/images/Wpossibility2Mobile.webp"
+                      media="(max-width: 768px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/Wpossibility2.webp"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="w-possibility__column"
+              >
+                <div class="w-possibility__content">
+                  <h3 class="w-possibility__subtitle">
+                    <img
+                      src="assets/images/photo2.png"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                    Работа с архивными фото
+                  </h3>
+                  <p class="w-possibility__text">
+                    Эффективное оживление старых и черно-белых снимков
+                    <strong>с сохранением атмосферы</strong>
+                  </p>
+                </div>
+                <div class="w-possibility__button">
+                  <img
+                    src="assets/images/arrow.png"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="w-possibility__image">
+                  <picture>
+                    <source
+                      srcset="assets/images/Wpossibility3Mobile.webp"
+                      media="(max-width: 768px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/Wpossibility3.webp"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </a>
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="w-possibility__column"
+              >
+                <div class="w-possibility__content">
+                  <h3 class="w-possibility__subtitle">
+                    <img
+                      src="assets/images/star.png"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                    Динамические эффекты
+                  </h3>
+                  <p class="w-possibility__text">
+                    Добавление лёгкого движения волос, одежды, аксессуаров
+                    <strong>для большей реалистичности</strong>
+                  </p>
+                </div>
+                <div class="w-possibility__button">
+                  <img
+                    src="assets/images/arrow.png"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="w-possibility__image">
+                  <picture>
+                    <source
+                      srcset="assets/images/Wpossibility4Mobile.webp"
+                      media="(max-width: 768px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/Wpossibility4.webp"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+              </a>
+            </div>
+            <a
+              href="https://nexa.ru/sign-up"
+              target="_blank"
+              class="black-btn dark-black-btn w-possibility-btn"
+            >
+              <span class="black-btn-bg G-center">
+                <i class="icon icon-stars"></i>
+              </span>
+              <span class="black-btn-text">Оживить фото сейчас</span>
+            </a>
+          </div>
+        </section>
+
+        <section id="howWork" class="w-work section">
+          <div class="container">
+            <div class="section-big-titles fade-top G-column-center">
+              <span class="section-clue">Процесс работы</span>
+              <h2>
+                Оживите фото <span class="title-color">за 3 простых шага</span>
+              </h2>
+              <p>
+                Весь процесс занимает
+                <span style="font-weight: 600">меньше минуты</span>
+              </p>
+            </div>
+            <div class="w-work__body">
+              <div class="w-work__column w-work__column-1 fade-bottom">
+                <div class="w-work__top">
+                  <p class="w-work__date">01<span>-03</span></p>
+                  <div class="w-work__image">
+                    <picture>
+                      <source
+                        srcset="assets/images/Wwork1Mobile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/Wwork1.webp"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </picture>
+                  </div>
+                </div>
+                <div class="w-work__content">
+                  <h3 class="w-work__subtitle">
+                    <img
+                      src="assets/images/Wphoto.png"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                    Загрузите фото
+                  </h3>
+                  <p class="work__text">
+                    Выберите нужное изображение с устройства или перетащите
+                    его в окно браузера
+                  </p>
+                </div>
+                <div class="w-work__blur">
+                  <img
+                    src="assets/images/WworkBlur.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="w-work__column w-work__column-2 fade-bottom">
+                <div class="w-work__top">
+                  <p class="w-work__date">02<span>-03</span></p>
+                  <div class="w-work__block">
+                    Анимация плавного движения: едва заметные повороты головы,
+                    глубокое дыхание, мягкое мерцание света на лице<span
+                      >|</span
+                    >
+                  </div>
+                  <div class="w-work__image">
+                    <img
+                      src="assets/images/Wwork2.webp"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="w-work__content">
+                  <h3 class="w-work__subtitle">
+                    <img
+                      src="assets/images/Wpen.png"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                    Опишите анимацию
+                  </h3>
+                  <p class="work__text">
+                    Напишите, что должно двигаться, или доверьте выбор анимации
+                    Nexa AI
+                  </p>
+                </div>
+                <div class="w-work__blur">
+                  <img
+                    src="assets/images/WworkBlur.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+              <div class="w-work__column w-work__column-3 fade-bottom">
+                <p class="w-work__date w-work__date-mobile">
+                  03<span>-03</span>
+                </p>
+                <div class="w-work__image">
+                  <img
+                    src="assets/images/Wwork3.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="w-work__wrapper">
+                  <div class="w-work__info">
+                    <p class="w-work__date">03<span>-03</span></p>
+                    <div class="w-work__content">
+                      <h3 class="w-work__subtitle">
+                        <img
+                          src="assets/images/surprise.png"
+                          alt="img"
+                          width=""
+                          heigth=""
+                          loading="lazy"
+                        />
+                        Скачайте готовое видео
+                      </h3>
+                      <p class="w-work__text">
+                        Получите MP4-файл
+                        <span style="font-weight: 600"
+                          >с плавной анимацией в высоком качестве</span
+                        >
+                        длительностью 3–5 секунд
+                      </p>
+                    </div>
+                  </div>
+                  <a
+                    href="https://nexa.ru/sign-up"
+                    target="_blank"
+                    class="w-work__animate"
+                  >
+                    <div class="w-work__round">
+                      <img
+                        src="assets/images/WroundBorderImg.webp"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="w-work__arrow">
+                      <img
+                        src="assets/images/arrow.png"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="w-work__animate-image">
+                      <img
+                        src="assets/images/Wbtn.webp"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </div>
+                    <div
+                      class="w-work__animate-image w-work__animate-image-hover"
+                    >
+                      <img
+                        src="assets/images/Wbtn-hover.webp"
+                        alt="img"
+                        width=""
+                        heigth=""
+                        loading="lazy"
+                      />
+                    </div>
+                  </a>
+                  <div class="w-work__grid">
+                    <img
+                      src="assets/images/WworkGrid.webp"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="w-work__blur">
+                  <img
+                    src="assets/images/WworkBlur.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+            <a
+              href="https://nexa.ru/sign-up"
+              target="_blank"
+              class="black-btn w-work-btn w-work__button"
+            >
+              <span class="black-btn-bg G-center">
+                <i class="icon icon-stars"></i>
+              </span>
+              <span class="black-btn-text">Оживить фото сейчас</span>
+            </a>
+          </div>
+        </section>
+
+        <section class="w-inspire section">
+          <div class="container">
+            <div class="w-inspire__body fade-bottom">
+              <div class="w-inspire__grid">
+                <img
+                  src="assets/images/WinspireGrid.webp"
+                  alt="img"
+                  width=""
+                  heigth=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="w-inspire__content">
+                <h2>
+                  <span>Вдохните жизнь</span> <br />
+                  в ваши фотографии!
+                </h2>
+                <p>
+                  Просто загрузите фото — и наблюдайте,
+                  <span style="font-weight: 600"
+                    >как оживают ваши любимые моменты</span
+                  >
+                </p>
+                <a
+                  href="https://nexa.ru/sign-up"
+                  target="_blank"
+                  class="black-btn dark-black-btn w-inspire-btn"
+                >
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Оживить фото сейчас</span>
+                </a>
+              </div>
+              <div class="w-inspire__blur">
+                <picture>
+                  <source
+                    srcset="assets/images/WinspireBlurMobile.webp"
+                    media="(max-width: 576px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/WinspireBlur.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-inspire__image fade-bottom">
+            <picture>
+              <source
+                srcset="assets/images/WinspireMobile.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/Winspire.webp"
+                alt="img"
+                width=""
+                heigth=""
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </section>
+
+        <section id="reviews" class="w-reviews-section section">
+          <div class="container">
+            <div class="reviews-body G-column-center">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-clue">Отзывы</span>
+                <h2>
+                  Что говорят <span class="mobile-text-wrap">пользователи</span>
+                </h2>
+              </div>
+
+              <div class="reviews-box block-cnt G-justify-between">
+                <div class="k-reviews-left-item fade-left">
+                  <div class="face-reviews-left-img G-flex">
+                    <img
+                      src="assets/images/Wreviews2.webp"
+                      alt="reviews-author"
+                      width="386"
+                      height="260"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="reviews-left-info">
+                    <div class="reviews-item-header G-justify-between">
+                      <div class="reviews-author">
+                        <h4>Кристина Т.</h4>
+                        <p>Фотограф</p>
+                      </div>
+                      <div class="reviews-icon G-flex">
+                        <img
+                          src="assets/images/estimation1.svg"
+                          alt="estimation"
+                          width="32"
+                          height="32"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                    <div class="l-reviews-item-text">
+                      Использую для создания живых обложек для портфолио.
+                      Клиенты в восторге — когда портрет оживает, это производит
+                      совсем другое впечатление.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper reviews-swiper l-reviews-swiper fade-right">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews-mobile-item">
+                      <div class="face-reviews-item G-flex">
+                        <div class="face-reviews-left-img">
+                          <img
+                            src="assets/images/Wreviews2.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-left-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Кристина Т.</h4>
+                              <p>Фотограф</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text text-mobile-size">
+                            Использую для создания живых обложек для портфолио.
+                            Клиенты в восторге — когда портрет оживает,
+                            это производит совсем другое впечатление.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Wreviews3.webp"
+                            alt="reviews-author"
+                            width="124"
+                            height="124"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Сергей Т.</h4>
+                              <p>Преподователь</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Оживил старую фотографию бабушки с дедушкой —
+                            они немного улыбнулись, глаза стали живее. Родные
+                            плакали, когда увидели.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Wreviews4.webp"
+                            alt="reviews-author"
+                            width="124"
+                            height="124"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Марина Я.</h4>
+                              <p>Блогер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Идеально для Reels! Загружаю пейзажное фото —
+                            нейросеть добавляет движение облаков, воды, листьев.
+                            Получается максимально натурально!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Wreviews5.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Мария В.</h4>
+                              <p>Организатор мероприятий</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Делаем «живые» пригласительные — фото именинника
+                            оживает с улыбкой. Гости в восторге! Уже 3 заказа
+                            на свадьбы получили!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Wreviews6.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Даниил С.</h4>
+                              <p>Художник</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Оживляю свои картины — получаются цифровые шедевры.
+                            Технология отлично передаёт текстуру мазков, смысл
+                            и настроение картины.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Wreviews7.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Роман Е.</h4>
+                              <p>Экскурсовод</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Создаю ожившие фото исторических личностей. Когда
+                            Пушкин вдруг подмигивает — все слушают в 3 раза
+                            внимательнее!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Wreviews8.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Полина Ш.</h4>
+                              <p>Свадебный планировщик</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Создаём живые фото-приглашения — пары оживают
+                            на картинке. Такой подход увеличил количество ранних
+                            бронирований на 25%.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Wreviews9.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Алевтина Р.</h4>
+                              <p>Гейм-дизайнер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Использую для быстрого прототипирования анимаций
+                            персонажей. Накладываю на арт — получаю базовую
+                            анимацию.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Wreviews10.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Элина Т.</h4>
+                              <p>Event-менеджер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Для корпоратива создали «живую» фотозону — гости
+                            делали фото, а потом их изображения мягко оживали
+                            на экране.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews-pagination swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section class="w-inspire w-inspire-mobile section">
+          <div class="container">
+            <div class="w-inspire__body">
+              <div class="w-inspire__grid">
+                <img
+                  src="assets/images/WinspireGrid.webp"
+                  alt="img"
+                  width=""
+                  heigth=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="w-inspire__content">
+                <h2>
+                  <span class="w-title-color">Вдохните жизнь</span> <br />
+                  в ваши фотографии!
+                </h2>
+                <p>
+                  Просто загрузите фото — и наблюдайте,
+                  <span style="font-weight: 600"
+                    >как оживают ваши любимые моменты</span
+                  >
+                </p>
+                <a class="black-btn dark-black-btn w-inspire-btn">
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Оживить фото сейчас</span>
+                </a>
+              </div>
+              <div class="w-inspire__blur">
+                <picture>
+                  <source
+                    srcset="assets/images/WinspireBlurMobile.webp"
+                    media="(max-width: 576px)"
+                    type="image/webp"
+                  />
+                  <img
+                    src="assets/images/WinspireBlur.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </picture>
+              </div>
+            </div>
+          </div>
+
+          <div class="w-inspire__image">
+            <picture>
+              <source
+                srcset="assets/images/WinspireMobile.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/Winspire.webp"
+                alt="img"
+                width=""
+                heigth=""
+                loading="lazy"
+              />
+            </picture>
+          </div>
+        </section>
+
+        <section id="faq" class="w-faq-section another-color-faq section">
+          <div class="container">
+            <div class="faq-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-clue">FAQ</span>
+                <h2>
+                  Все, что нужно знать
+                  <span class="mobile-text-wrap"> о Nexa AI</span>
+                </h2>
+              </div>
+
+              <div
+                id="accordion"
+                class="faq-items block-cnt G-flex-column fade-bottom"
+              >
+                <div class="faq-item">
+                  <div class="faq-item-header link G-align-center">
+                    <h3>Какие фото лучше всего подходят для оживления?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Лучше всего работают чёткие фото с хорошим освещением,
+                    где видно лицо или объект. Портреты, селфи, фото природы
+                    и животных получаются особенно хорошо.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Сколько времени занимает обработка одного фото?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    <p>
+                      В среднем 15–30 секунд в зависимости от размера файла
+                      и сложности анимации.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>В каком формате я получу результат?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Вы получите видеофайл в формате MP4 длительностью 3–5 секунд
+                    с плавной анимацией.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Есть ли ограничения по размеру загружаемого файла?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    <p>
+                      Да, максимальный размер — 20 МБ. Поддерживаются форматы
+                      JPG, PNG, WEBP.
+                    </p>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Требуется ли установка приложения?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Нет, сервис работает полностью онлайн через браузер на любом
+                    устройстве.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>
+                      Можно ли использовать результат в коммерческих целях?
+                    </h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    <p>Да, вы получаете все права на созданные анимации.</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="container">
+          <div class="footer-body">
+            <a class="footer-logo G-flex fade-bottom" href="index.html">
+              <img
+                src="assets/images/logoBig.svg"
+                alt="Company logo"
+                width="705"
+                height="180"
+                loading="lazy"
+              />
+            </a>
+
+            <div class="footer-cnt fade-bottom">
+              <div class="footer-grid G-flex">
+                <picture>
+                  <source
+                    srcset="assets/images/JfooterGridMobile.png"
+                    media="(max-width: 576px)"
+                    type="image/png"
+                  />
+                  <img
+                    src="assets/images/JfooterGrid.png"
+                    alt="footer grid"
+                    width="1160"
+                    height="491"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="white-btn footer-btn"
+              >
+                <span class="white-btn-bg G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+                <span class="white-btn-text">Начать бесплатно</span>
+              </a>
+
+              <nav class="footer-menu">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer-policy">
+                <ul>
+                  <li>
+                    <a href="#">Оферта</a>
+                  </li>
+                  <li>
+                    <a href="#">Политика конфиденциальности</a>
+                  </li>
+                </ul>
+              </nav>
+              <p class="footer-text">© 2025 Nexa AI. Все права защищены</p>
+            </div>
+
+            <div class="footer-blur G-flex">
+              <picture>
+                <source
+                  srcset="assets/images/footerBlurMobile3.png"
+                  media="(max-width: 576px)"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/images/JfooterBlur2.webp"
+                  alt="footerBlur"
+                  width="1160"
+                  height="491"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js " defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+
+    <script src="assets/js/swiper.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+  </body>
+</html>

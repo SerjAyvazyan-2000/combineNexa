@@ -1,0 +1,1515 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Post generation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+
+
+
+  <style>
+    body,html {
+      background: #111215;
+    }
+  
+  </style>
+
+
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header-body G-justify-between">
+            <a class="header-logo G-flex" href="index.html">
+              <picture>
+                <source
+                  srcset="assets/images/logoMobile.svg"
+                  media="(max-width: 576px)"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/logo.svg"
+                  alt="Company logo"
+                  width="28"
+                  height="28"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </picture>
+            </a>
+
+            <nav class="menu">
+              <div class="menu-wrapper">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+
+                <div class="menu-mobile-actions">
+                  <a
+                    href="https://nexa.ru/sign-up"
+                    target="_blank"
+                    class="btn-login G-align-center"
+                  >
+                    <span class="login-btn-bg G-center">
+                      <i class="icon icon-person"></i>
+                    </span>
+                    <span class="login-btn-text">Войти</span>
+                  </a>
+
+                  <a
+                    href="https://nexa.ru/sign-up"
+                    target="_blank"
+                    class="btn-register G-align-center"
+                  >
+                    <span class="register-btn-bg G-center">
+                      <i class="icon icon-person-edit"></i>
+                    </span>
+                    <span class="register-btn-text">Регистрация</span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+            <div class="menu-bg"></div>
+
+            <div class="header-actions G-align-center">
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="btn-login G-align-center"
+              >
+                <span class="login-btn-bg G-center">
+                  <i class="icon icon-person"></i>
+                </span>
+                <span class="login-btn-text">Войти</span>
+              </a>
+
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="btn-register G-align-center"
+              >
+                <span class="register-btn-bg G-center">
+                  <i class="icon icon-person-edit"></i>
+                </span>
+                <span class="register-btn-text">Регистрация</span>
+              </a>
+
+              <div class="burger-bg G-center">
+                <div class="burger">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="hero" class="n-hero-section">
+          <div class="container">
+            <div class="n-hero-body">
+              <div class="n-hero-titles">
+                <h1 class="fade-top">
+                  Генерация постов
+                  <span class="text-wrap">в Instagram бесплатно</span>
+                </h1>
+                <p class="fade-bottom">
+                  Нейросеть превратит вашу идею
+                  <span class="desktop-text-wrap"
+                    ><span class="mobile-text-wrap">в цепляющий визуал</span>
+                    для Instagram — за секунды</span
+                  >
+                </p>
+                <a
+                  href="https://nexa.ru/sign-up"
+                  target="_blank"
+                  class="black-btn dark-black-btn n-hero-btn"
+                >
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Начать бесплатно</span>
+                </a>
+              </div>
+
+              <div class="n-hero-media fade-bottom">
+                <img
+                  src="assets/images/NHeroMedia.webp"
+                  alt="phoyo"
+                  width=""
+                  height=""
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="n-hero-heart fade-left G-flex">
+                <img
+                  src="assets/images/NheroHeart.webp"
+                  alt="photo"
+                  width=""
+                  height=""
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="n-hero-mobile-swiper-wrapper">
+                <div class="n-hero-mobile-swiper">
+                  <div class="n-hero-swiper swiper">
+                    <div class="swiper-wrapper">
+                      <div class="swiper-slide">
+                        <div class="n-hero-slide G-flex">
+                          <img
+                            src="assets/images/NHeroSlide.webp"
+                            alt="photo"
+                            width=""
+                            height=""
+                            loading="eager"
+                            fetchpriority="high"
+                            decoding="async"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="n-hero-slide G-flex">
+                          <img
+                            src="assets/images/NHeroSlide2.webp"
+                            alt="photo"
+                            width=""
+                            height=""
+                            loading="eager"
+                            fetchpriority="high"
+                            decoding="async"
+                          />
+                        </div>
+                      </div>
+                      <div class="swiper-slide">
+                        <div class="n-hero-slide G-flex">
+                          <img
+                            src="assets/images/NHeroSlide3.webp"
+                            alt="photo"
+                            width=""
+                            height=""
+                            loading="eager"
+                            fetchpriority="high"
+                            decoding="async"
+                          />
+                        </div>
+                      </div>
+                    </div>
+                    <div class="n-hero-pagination swiper-pagination"></div>
+                  </div>
+                </div>
+
+                <div class="n-hero-icon n-hero-icon--one">
+                  <i class="icon icon-heart"></i>
+                </div>
+
+                <div class="n-hero-icon n-hero-icon--two">
+                  <i class="icon icon-heart"></i>
+                </div>
+
+                <div class="n-hero-icon n-hero-icon--tree">
+                  <i class="icon icon-heart"></i>
+                </div>
+              </div>
+
+              <div class="n-hero-heart--two fade-left G-flex">
+                <img
+                  src="assets/images/NheroHeart2.webp"
+                  alt="photo"
+                  width="97"
+                  height="99"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="n-hero-heart--tree fade-right G-flex">
+                <img
+                  src="assets/images/NheroHeart3.webp"
+                  alt="photo"
+                  width="337"
+                  height="314"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="n-hero-decor--one fade-left G-flex">
+                <img
+                  src="assets/images/NHeroDecor1.webp"
+                  alt="photo"
+                  width="186"
+                  height="186"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="n-hero-decor--two fade-right G-flex">
+                <img
+                  src="assets/images/NHeroDecor1.webp"
+                  alt="photo"
+                  width="125"
+                  height="125"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="n-hero-icon-desktop n-hero-icon--one">
+                <i class="icon icon-heart"></i>
+              </div>
+
+              <div class="n-hero-icon-desktop n-hero-icon--two">
+                <i class="icon icon-heart"></i>
+              </div>
+
+              <div class="n-hero-icon-desktop n-hero-icon--tree">
+                <i class="icon icon-heart"></i>
+              </div>
+            </div>
+          </div>
+
+          <div class="n-hero-bg G-flex">
+            <picture>
+              <source
+                srcset="assets/images/NheroBgMobile2.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/NheroBg.webp"
+                alt="photo"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+                width=""
+                height=""
+              />
+            </picture>
+          </div>
+        </section>
+
+        <section class="n-advantages-section section">
+          <div class="container">
+            <div class="n-advantages-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-tag">[ Преимущества ]</span>
+                <h2>
+                  <span class="text-wrap text-primary"> Яркое будущее </span>
+                  креативных постов
+                </h2>
+                <p>
+                  Стильно. Оригинально. Быстро.
+                  <span class="text-wrap">Что ещё нужно для счастья?</span>
+                </p>
+              </div>
+
+              <div class="n-advantages-cnt block-cnt-big">
+                <div class="n-advantage-border-item fade-left">
+                  <h3>100%</h3>
+                  <p>Экономия времени</p>
+
+                  <div class="n-advantage-border-decor G-flex">
+                    <img
+                      src="assets/images/nAdvantageDecor.webp"
+                      alt="photo"
+                      width="194"
+                      height="140"
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+                <div class="n-advantage-text-item fade-left G-flex-column">
+                  <div class="n-advantage-stories mobile-block">
+                    <img
+                      src="assets/images/nAdvantageStories.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                  </div>
+
+                  <p>
+                    <span>
+                      Превратите идеи в визуальные шедевры.
+                      <span class="desktop-text-wrap"
+                        >Откройте для себя силу
+                        <strong>настоящего</strong> искусства,</span
+                      >
+                      созданного искусственным интеллектом
+                    </span>
+
+                    <span>
+                      Превратите идеи
+                      <a class="mobile-text-wrap">в визуальные шедевры</a></span
+                    >
+                  </p>
+
+                  <a
+                    href="https://nexa.ru/sign-up"
+                    target="_blank"
+                    class="black-btn dark-black-btn n-advantage-btn"
+                  >
+                    <span class="black-btn-bg G-center">
+                      <i class="icon icon-stars"></i>
+                    </span>
+                    <span class="black-btn-text">Начать бесплатно</span>
+                  </a>
+                </div>
+
+                <div class="n-advantage-stories fade-right G-flex">
+                  <img
+                    src="assets/images/nAdvantageStories.webp"
+                    alt="photo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="n-advantage-tag fade-right n-advantage-tag--one">
+                  <h3>5 сек</h3>
+                  <p>Скорость генерации</p>
+                </div>
+
+                <div class="n-advantage-tag fade-left n-advantage-tag--two">
+                  <h3>4.9</h3>
+                  <p>Средняя оценка</p>
+
+                  <div class="n-advantage-gradient G-flex">
+                    <img
+                      src="assets/images/nAdvantageGradient.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                  </div>
+                </div>
+
+                <div class="n-advantage-tag fade-right n-advantage-tag--tree">
+                  <h3>500к+</h3>
+                  <p>
+                    Пользователей
+                    <span>в сети</span>
+                  </p>
+                </div>
+
+                <div class="n-advantage-tag fade-left n-advantage-tag--for">
+                  <i class="icon icon-infinity"></i>
+                  <p>Доступ <a class="mobile-text-wrap">к генерации</a></p>
+                </div>
+
+                <div class="n-advantage-rocket fade-right G-flex">
+                  <picture>
+                    <source
+                      srcset="assets/images/nAdvantageRocketMobile.webp"
+                      media="(max-width: 576px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/nAdvantageRocket.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                    />
+                  </picture>
+                </div>
+
+                <div class="n-advantage-smoke G-flex">
+                  <img
+                    src="assets/images/Nsmoke.webp"
+                    alt="photo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="possibilities" class="n-possibilities-section section">
+          <div class="container">
+            <div class="n-possibilities-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-tag">[ Возможности ]</span>
+                <h2>
+                  Теперь ваш пост наберёт
+                  <span class="text-wrap"
+                    >тысячи лайков
+
+                    <i class="icon icon-heart2"></i>
+                     </span
+                  >
+                </h2>
+              </div>
+
+              <div class="n-possibilities-columns block-cnt-big G-flex-column">
+                <div class="n-possibilities-column fade-bottom G-flex">
+                  <div class="n-possibilities-big-item">
+                    <div class="n-possibilities-img G-flex">
+                      <picture>
+                        <source
+                          srcset="assets/images/NpossibilitiesBigImgMobile.webp"
+                          media="(max-width: 576px)"
+                          type="image/webp"
+                        />
+
+                        <img
+                          src="assets/images/NpossibilitiesBigImg.webp"
+                          alt="photo"
+                          width="575"
+                          height="480"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+                    <div class="n-possibilities-item-info">
+                      <h3 class="block-big-title ">AI-фотосессии</h3>
+                      <p class="block-big-text ">
+                        Превратите одно селфи в целую фотосессию! Просто опишите
+                        желаемый образ, фон или стиль
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="n-possibilities-small-item">
+                    <div class="n-possibilities-img G-flex">
+                      <picture>
+                        <source
+                          srcset="
+                            assets/images/NpossibilitiesBigImg2Mobile.webp
+                          "
+                          media="(max-width: 576px)"
+                          type="image/webp"
+                        />
+
+                        <img
+                          src="assets/images/NpossibilitiesBigImg2.webp"
+                          alt="photo"
+                          width="283"
+                          height="283"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+                    <div class="n-possibilities-item-info">
+                      <h3 class="block-big-title ">Автоулучшение</h3>
+                      <p class="block-big-text ">
+                        Готовые изображения
+                        <span class="mobile-text-wrap"
+                          >в высоком разрешении</span
+                        >
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="n-possibilities-average-item">
+                    <div class="n-possibilities-img G-flex">
+                      <picture>
+                        <source
+                          srcset="assets/images/NpossibilitiesImg3Mobile.webp"
+                          media="(max-width: 576px)"
+                          type="image/webp"
+                        />
+                        <img
+                          src="assets/images/NpossibilitiesImg3.webp"
+                          alt="photo"
+                          width="282"
+                          height="380"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+
+                    <div class="n-possibilities-statistics G-align-end">
+                      <p><span>1:1</span></p>
+                      <p><span>3:4</span></p>
+                      <p><span>4:3</span></p>
+                      <p><span>9:16</span></p>
+                      <p><span>16:9</span></p>
+                    </div>
+                    <div class="n-possibilities-item-info">
+                      <h3 class="block-big-title ">Нужный формат</h3>
+                      <p class="block-big-text ">
+                        Все изображения подходят
+                        <span class="mobile-text-wrap">под Instagram</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="n-possibilities-column fade-bottom G-flex">
+                  <div class="n-possibilities-average-item">
+                    <div class="n-possibilities-img G-flex">
+                      <picture>
+                        <source
+                          srcset="assets/images/NpossibilitiesImg4Mobile.webp"
+                          media="(max-width: 576px)"
+                          type="image/webp"
+                        />
+
+                        <img
+                          src="assets/images/NpossibilitiesImg5.webp"
+                          alt="photo"
+                          width="282"
+                          height="380"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+
+                    <div class="n-possibilities-item-info">
+                      <h3 class="block-big-title ">Трансформация</h3>
+                      <p class="block-big-text ">
+                        Меняйтесь и радуйте подписчиков
+                        <span class="mobile-text-wrap">креативом</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="n-possibilities-small-item">
+                    <div class="n-possibilities-img G-flex">
+                      <img
+                        src="assets/images/NpossibilitiesImg6.webp"
+                        alt="photo"
+                        width="283"
+                        height="283"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="n-possibilities-item-info">
+                      <h3 class="block-big-title ">Можно всё!</h3>
+                      <p class="block-big-text ">
+                        Как по мановению волшебной
+                        <span class="mobile-text-wrap">палочки</span>
+                      </p>
+
+                      <a
+                        href="https://nexa.ru/sign-up"
+                        target="_blank"
+                        class="black-btn dark-black-btn n-possibilities-btn-mobile"
+                      >
+                        <span class="black-btn-bg G-center">
+                          <i class="icon icon-stars"></i>
+                        </span>
+                        <span class="black-btn-text"
+                          >Попробовать бесплатно</span
+                        >
+                      </a>
+                    </div>
+                  </div>
+
+                  <div class="n-possibilities-big-item">
+                    <div class="n-possibilities-img G-flex">
+                      <picture>
+                        <source
+                          srcset="
+                            assets/images/NpossibilitiesBigImg4Mobile.webp
+                          "
+                          media="(max-width: 576px)"
+                          type="image/webp"
+                        />
+
+                        <img
+                          src="assets/images/NpossibilitiesBigImg4.webp"
+                          alt="photo"
+                          width="575"
+                          height="480"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+                    <div class="n-possibilities-item-info">
+                      <h3 class="block-big-title ">Генерация новых элементов</h3>
+                      <p class="block-big-text ">
+                        Добавьте изюминку! Опишите объекты, которые хотите
+                        видеть, и Nexa AI органично впишет их в фото
+                      </p>
+                    </div>
+
+                    <div class="n-possibilities-big-text">
+                      <p>
+                        Кот сидит на моих плечах и закрывает мне глаза,
+                        показывая язык
+                      </p>
+                    </div>
+
+                    <div class="n-possibilities-heart mobile-block">
+                      <img
+                        src="assets/images/NpossibilitiesHeart.webp"
+                        alt="photo"
+                        width="206"
+                        height="200"
+                        loading="lazy"
+                      />
+                    </div>
+                  </div>
+                </div>
+
+                <div class="n-possibilities-heart desktop-block">
+                  <img
+                    src="assets/images/NpossibilitiesHeart.webp"
+                    alt="photo"
+                    width="206"
+                    height="200"
+                    loading="lazy"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="n-possibilities-bg G-flex">
+            <img
+              src="assets/images/NpossibilitiesBg.webp"
+              alt="photo"
+              loading="lazy"
+              width=""
+              height=""
+            />
+          </div>
+        </section>
+
+        <section id="howWork" class="n-process-section ">
+          <div class="container">
+            <div class="n-process-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-tag">[ Процесс работы ]</span>
+                <h2>
+                  <span class="text-primary text-wrap">Профессиональные</span>
+                  решения Nexa AI
+                </h2>
+                <p>Весь процесс занимает <strong>меньше минуты</strong></p>
+              </div>
+
+              <div class="n-process-mobile-media">
+                <img
+                  src="assets/images/NprocessMediaMobile.webp"
+                  alt="photo"
+                  loading="lazy"
+                  width=""
+                  height=""
+                />
+              </div>
+
+              <div class="n-process-cnt block-cnt-big fade-bottom G-flex">
+                <div class="n-process-media G-flex">
+                  <img
+                    src="assets/images/NprocessMedia.webp"
+                    alt="photo"
+                    loading="lazy"
+                    width=""
+                    height=""
+                  />
+                </div>
+                <div class="n-process-description">
+                  <h3 class="block-big-title ">
+                    <span class="text-primary text-wrap">3 простых шага</span>
+                    для идеального поста
+                  </h3>
+
+                  <div class="n-process-steps G-flex-column">
+                    <div class="n-process-step G-align-start">
+                      <span class="section-clue">Шаг 1</span>
+                      <div class="n-process-step-texts G-flex-column">
+                        <h3>Опишите идею</h3>
+                        <p>Расскажите, какое изображение вы хотите создать</p>
+                      </div>
+                    </div>
+
+                    <div class="n-process-step G-align-start">
+                      <span class="section-clue">Шаг 2</span>
+                      <div class="n-process-step-texts G-flex-column">
+                        <h3>Автоматическая обработка</h3>
+                        <p>Генерация визуала, готового к публикации</p>
+                      </div>
+                    </div>
+
+                    <div class="n-process-step G-align-start">
+                      <span class="section-clue">Шаг 3</span>
+                      <div class="n-process-step-texts G-flex-column">
+                        <h3>Готовый результат</h3>
+                        <p>Получите пост, который подойдет для вашей ленты</p>
+                      </div>
+                    </div>
+
+                    <a
+                      href="https://nexa.ru/sign-up"
+                      target="_blank"
+                      class="black-btn dark-black-btn n-process-btn desktop-block"
+                    >
+                      <span class="black-btn-bg G-center">
+                        <i class="icon icon-stars"></i>
+                      </span>
+                      <span class="black-btn-text">Начать бесплатно</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="n-process-bg G-flex">
+                  <picture>
+                    <source
+                      srcset="assets/images/kAdvnatagesBgMobile.webp"
+                      media="(max-width: 576px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/NprocessBg.webp"
+                      alt="photo"
+                      loading="lazy"
+                      width=""
+                      height=""
+                    />
+                  </picture>
+                </div>
+              </div>
+
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="black-btn dark-black-btn n-process-btn-mobile"
+              >
+                <span class="black-btn-bg G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+                <span class="black-btn-text">Начать бесплатно</span>
+              </a>
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews" class="n-reviews-section section">
+          <div class="container">
+            <div class="reviews-body G-column-center">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-tag">[ Отзывы ]</span>
+                <h2>
+                  Что говорят <span class="mobile-text-wrap">пользователи</span>
+                </h2>
+                <p>
+                  Жизненные истории, связанные
+                  <span class="mobile-text-wrap">с сервисом</span>
+                </p>
+              </div>
+
+              <div class="reviews-box block-cnt-big G-justify-between">
+                <div class="k-reviews-left-item fade-left">
+                  <div class="face-reviews-left-img G-flex">
+                    <img
+                      src="assets/images/Nreviews2.webp"
+                      alt="reviews-author"
+                      width="386"
+                      height="260"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="reviews-left-info">
+                    <div class="reviews-item-header G-justify-between">
+                      <div class="reviews-author">
+                        <h4>Олеся З.</h4>
+                        <p>Тревел-блогер</p>
+                      </div>
+                      <div class="reviews-icon G-flex">
+                        <img
+                          src="assets/images/estimation1.svg"
+                          alt="estimation"
+                          width="32"
+                          height="32"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                    <div class="l-reviews-item-text">
+                      Нейросеть оживила воспоминания о моей поездке в Рим —
+                      улочки, залитые закатным светом, и тот самый столик с
+                      видом на собор. Новые сторис готовы!
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper n-reviews-swiper reviews-swiper fade-right">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews-mobile-item">
+                      <div class="face-reviews-item G-flex">
+                        <div class="face-reviews-left-img">
+                          <img
+                            src="assets/images/Nreviews2.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-left-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Олеся З.</h4>
+                              <p>Тревел-блогер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text text-mobile-size">
+                            Нейросеть оживила воспоминания о моей поездке в Рим
+                            — улочки, залитые закатным светом, и тот самый
+                            столик с видом на собор. Новые сторис готовы!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Nreviews8.webp"
+                            alt="reviews-author"
+                            width="124"
+                            height="124"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Лена К.</h4>
+                              <p>SMM-специалист</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Теперь создаю контент для сторис быстрее, чем пишу к
+                            нему текст! Нейросеть точно чувствует эстетику моего
+                            бренда.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Nreviews3.webp"
+                            alt="reviews-author"
+                            width="124"
+                            height="124"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Максим Т.</h4>
+                              <p>Контент-мейкер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Идеально для креативных обложек для рилсов. Больше
+                            не завишу от стоков и фотобанков — всё уникальное и
+                            в одном стиле.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Nreviews4.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Оля П.</h4>
+                              <p>Графический дизайнер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Генерирую текстуры и паттерны за секунды и больше не
+                            трачу время на поиски. Мои проекты стали уникальнее!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Nreviews5.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Антон В.</h4>
+                              <p>Интернет-маркетолог</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Просто описываю идею и получаю несколько вариантов
+                            визуала для поста. Это в разы ускоряет ведение
+                            соцсетей.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Nreviews6.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Карина М.</h4>
+                              <p>Бьюти-блогер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Наконец-то инструмент, который понимает запрос «как
+                            у той блогерши, но по-другому». Лучшее вложение в
+                            мой блог!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Nreviews7.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Денис Р.</h4>
+                              <p>Арт-директор</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Использую для быстрого создания визуальных концепций
+                            и мудбордов для клиентов. Все довольны скоростью и
+                            оригинальностью.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Nreviews10.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Алина Ч.</h4>
+                              <p>Основатель бренда одежды</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Правильные размеры под Инстаграм — это гениально!
+                            Больше не нужно обрезать и терять часть картинки.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Nreviews11.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Игорь С.</h4>
+                              <p>Владелец кофейни</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Даже с базовым описанием получается стильная
+                            картинка. Это делает качественный визуал доступным
+                            для маленьких бизнесов.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews-pagination swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="faq-section another-color-faq section">
+          <div class="container">
+            <div class="faq-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-tag">[ FAQ ] </span>
+                <h2>
+                  Все, что нужно
+                  <span class="mobile-text-wrap">знать о Nexa AI</span>
+                </h2>
+              </div>
+
+              <div
+                id="accordion"
+                class="faq-items block-cnt-big G-flex-column fade-bottom"
+              >
+                <div class="faq-item">
+                  <div class="faq-item-header link G-align-center">
+                    <h3>Что это такое?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Это специализированная нейросеть, созданная для генерации
+                    уникальных и стильных изображений, идеально подходящих для
+                    публикации в Instagram. В отличие от универсальных
+                    генераторов, она обучена понимать специфику платформы:
+                    правильные размеры, трендовые стили и форматы (посты,
+                    Stories, Reels).
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Чем вы отличаетесь от других?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    <p>
+                      Наша ключевая особенность — специализация на Instagram.
+                    </p>
+                    <ul>
+                      <li>
+                        Идеальные размеры: Все сгенерированные изображения
+                        автоматически имеют правильное соотношение сторон (1:1,
+                        4:5, 9:16) и высокое разрешение для Instagram.
+                      </li>
+                      <li>
+                        "Инстаграмный" стиль: Модель обучена на большом массиве
+                        данных из Instagram и лучше понимает запросы, связанные
+                        с эстетикой платформы (например, "лайфстайл-фото",
+                        "эстетичный флэт лэй", "яркий рилз-контент").
+                      </li>
+                      <li>
+                        Оптимизация: Изображения создаются с учетом особенностей
+                        отображения на мобильных устройствах.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Как это работает?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Вы даете текстовое описание (промпт) на русском или
+                    английском языке, например: "Кофе на деревянном столе у
+                    окна, утренний свет, минимализм, для сторис". Нейросеть
+                    анализирует ваш запрос и создает уникальное изображение,
+                    соответствующее ему.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>
+                      Какие форматы и размеры изображений вы поддерживаете?
+                    </h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    <p>
+                      Мы генерируем изображения для всех популярных форматов
+                      Instagram:
+                    </p>
+                    <ul>
+                      <li>Квадрат (1:1) - Классические посты в ленте.</li>
+                      <li>
+                        Портрет (4:5) - Вертикальные посты, которые занимают
+                        больше места в ленте.
+                      </li>
+                      <li>
+                        Stories/Reels (9:16) - Полноэкранный формат для
+                        вертикального контента.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>На каких языках можно писать промпты (запросы)?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Вы можете писать запросы на русском и английском языках.
+                    Модель отлично понимает оба.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>
+                      Можно ли генерировать изображения в определенном стиле?
+                    </h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    <p>Да! Вы можете указывать стиль прямо в запросе:</p>
+                    <ul>
+                      <li>"в стиле поп-арт"</li>
+                      <li>"акварельная иллюстрация"</li>
+                      <li>"фотография, похожая на снимок на пленку"</li>
+                      <li>"минимализм, пастельные тона"</li>
+                      <li>"неоновая эстетика киберпанк"</li>
+                    </ul>
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Есть ли ограничения на создание контента?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    <p>
+                      Да, мы соблюдаем строгие правила этики и безопасности.
+                      Нейросеть не будет генерировать изображения, содержащие:
+                    </p>
+                    <ul>
+                      <li>Насилие, ненависть или дискриминацию.</li>
+                      <li>Контент для взрослых (NSFW).</li>
+                      <li>
+                        Изображения известных людей с целью введения в
+                        заблуждение.
+                      </li>
+                      <li>
+                        Контент, нарушающий авторские права и товарные знаки.
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+     <footer class="footer">
+        <div class="container">
+          <div class="footer-body">
+            <a class="footer-logo G-flex fade-bottom" href="index.html">
+              <img
+                src="assets/images/logoBig.svg"
+                alt="Company logo"
+                width="705"
+                height="180"
+                loading="lazy"
+              />
+            </a>
+
+            <div class="footer-cnt fade-bottom">
+              <div class="footer-grid G-flex">
+                <picture>
+                  <source
+                    srcset="assets/images/JfooterGridMobile.png"
+                    media="(max-width: 576px)"
+                    type="image/png"
+                  />
+                  <img
+                    src="assets/images/JfooterGrid.png"
+                    alt="footer grid"
+                    width="1160"
+                    height="491"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <a href="https://nexa.ru/sign-up" target="_blank" class="white-btn footer-btn">
+                <span class="white-btn-bg G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+                <span class="white-btn-text">Начать бесплатно</span>
+              </a>
+
+              <nav class="footer-menu">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer-policy">
+                <ul>
+                  <li>
+                    <a href="#">Оферта</a>
+                  </li>
+                  <li>
+                    <a href="#">Политика конфиденциальности</a>
+                  </li>
+                </ul>
+              </nav>
+              <p class="footer-text">© 2025 Nexa AI. Все права защищены</p>
+            </div>
+
+            <div class="footer-blur G-flex">
+              <picture>
+                <source
+                  srcset="assets/images/footerBlurMobile2.webp"
+                  media="(max-width: 576px)"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/images/JfooterBlur2.webp"
+                  alt="footerBlur"
+                  width="1160"
+                  height="491"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js " defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+
+    <script src="assets/js/swiper.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+  </body>
+</html>

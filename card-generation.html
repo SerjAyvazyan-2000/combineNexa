@@ -1,0 +1,1391 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Product card generation service</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="preload"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      as="style"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;700&display=swap"
+      media="print"
+      onload="this.media='all'"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header-body G-justify-between">
+            <a class="header-logo G-flex" href="index.html">
+              <picture>
+                <source
+                  srcset="assets/images/logoMobile.svg"
+                  media="(max-width: 576px)"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/logo.svg"
+                  alt="Company logo"
+                  width="28"
+                  height="28"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </picture>
+            </a>
+
+            <nav class="menu">
+              <div class="menu-wrapper">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+
+                <div class="menu-mobile-actions">
+                  <a href="https://nexa.ru/sign-up" target="_blank" class="btn-login G-align-center">
+                    <span class="login-btn-bg G-center">
+                      <i class="icon icon-person"></i>
+                    </span>
+                    <span class="login-btn-text">Войти</span>
+                  </a>
+
+                  <a href="https://nexa.ru/sign-up" target="_blank" class="btn-register G-align-center">
+                    <span class="register-btn-bg G-center">
+                      <i class="icon icon-person-edit"></i>
+                    </span>
+                    <span class="register-btn-text">Регистрация</span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+            <div class="menu-bg"></div>
+
+            <div class="header-actions G-align-center">
+              <a href="https://nexa.ru/sign-up" target="_blank" class="btn-login G-align-center">
+                <span class="login-btn-bg G-center">
+                  <i class="icon icon-person"></i>
+                </span>
+                <span class="login-btn-text">Войти</span>
+              </a>
+
+              <a href="https://nexa.ru/sign-up" target="_blank" class="btn-register G-align-center">
+                <span class="register-btn-bg G-center">
+                  <i class="icon icon-person-edit"></i>
+                </span>
+                <span class="register-btn-text">Регистрация</span>
+              </a>
+
+              <div class="burger-bg G-center">
+                <div class="burger">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="hero" class="o-hero-section">
+          <div class="container">
+            <div class="o-hero-body">
+              <div class="o-hero-titles">
+                <h1 class="fade-top">
+                  Сервис <span class="text-primary">генерации карточек</span>
+                  <span class="desktop-text-wrap"
+                    >товаров
+                    <span class="mobile-text-wrap"
+                      >для маркетплейсов</span
+                    ></span
+                  >
+                </h1>
+                <p class="fade-bottom">
+                  От генерации фото по описанию до редактирования —
+                  <strong class="desktop-text-wrap"
+                    >все инструменты
+                    <span class="mobile-text-wrap">в одном месте</span></strong
+                  >
+                </p>
+                <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn dark-black-btn o-hero-btn">
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Создать бесплатно</span>
+                </a>
+              </div>
+
+              <div class="o-hero-media fade-bottom">
+                <img
+                  src="assets/images/OHeroMedia.webp"
+                  alt="phoyo"
+                  width=""
+                  height=""
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </div>
+
+              <div class="o-hero-media-mobile">
+                <div class="o-hero-media-mobile-items G-align-center">
+                  <div class="o-hero-media-mobile-item">
+                    <img
+                      src="assets/images/OheroMediaMobile2.webp"
+                      alt="phoyo"
+                      width=""
+                      height=""
+                      loading="eager"
+                      fetchpriority="high"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="o-hero-media-mobile-item">
+                    <img
+                      src="assets/images/OheroMediaMobile1.webp"
+                      alt="phoyo"
+                      width=""
+                      height=""
+                      loading="eager"
+                      fetchpriority="high"
+                      decoding="async"
+                    />
+                  </div>
+
+                  <div class="o-hero-media-mobile-item">
+                    <img
+                      src="assets/images/OheroMediaMobile3.webp"
+                      alt="phoyo"
+                      width=""
+                      height=""
+                      loading="eager"
+                      fetchpriority="high"
+                      decoding="async"
+                    />
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="o-hero-bg G-flex">
+            <picture>
+              <source
+                srcset="assets/images/OheroBgMobile2.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/OheroBg.webp"
+                alt="photo"
+                loading="eager"
+                decoding="async"
+                fetchpriority="high"
+                width=""
+                height=""
+              />
+            </picture>
+          </div>
+          <div class="o-hero-decor G-flex">
+            <picture>
+              <source
+                srcset="assets/images/OHeroDecorMobile.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+
+              <img
+                src="assets/images/OHeroDecor.webp"
+                alt="photo"
+                loading="lazy"
+                decoding="async"
+                width=""
+                height=""
+              />
+            </picture>
+          </div>
+
+          <div class="o-hero-dots G-flex">
+            <img
+              src="assets/images/OHeroDots.webp"
+              alt="photo"
+              loading="eager"
+              decoding="async"
+              fetchpriority="high"
+              width=""
+              height=""
+            />
+          </div>
+        </section>
+
+        <section class="o-advantages-section">
+          <div class="container">
+            <div class="o-advantages-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-clue">Преимущества</span>
+                <h2>
+                  Преимущества, которые
+                  <span class="text-primary text-wrap"
+                    >меняют подход к контенту</span
+                  >
+                </h2>
+                <p>
+                  Превращаем многочасовую работу
+                  <strong class="text-wrap">в мгновенное решение</strong>
+                </p>
+              </div>
+
+              <div class="o-advantages-cnt block-cnt-big">
+                <div class="o-advantages-media fade-bottom G-flex">
+                  <img
+                    src="assets/images/OAdvantagesMedia.webp"
+                    alt="phoyo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="o-advantages-clue o-advantages-clue--one">
+                  <div class="o-advantage-header G-align-center">
+                    <img
+                      src="assets/images/OAdvantageIcon.svg"
+                      alt="phoyo"
+                      width="48"
+                      height="48"
+                      loading="lazy"
+                    />
+                    <h3>Точность</h3>
+                  </div>
+                  <p class="block-big-text">
+                    <strong>Учёт всех деталей:</strong> цвет, материал, размер
+                    и особенности товара
+                  </p>
+                </div>
+
+                <div class="o-advantages-clue o-advantages-clue--two">
+                  <div class="o-advantage-header G-align-center">
+                    <img
+                      src="assets/images/OAdvantageIcon2.svg"
+                      alt="phoyo"
+                      width="48"
+                      height="48"
+                      loading="lazy"
+                    />
+                    <h3>Качество</h3>
+                  </div>
+                  <p class="block-big-text">
+                    <strong>Студийное качество:</strong> освещение, композиция
+                    и детализация.
+                  </p>
+                </div>
+
+                <div class="o-advantages-clue o-advantages-clue--tree">
+                  <div class="o-advantage-header G-align-center">
+                    <img
+                      src="assets/images/OAdvantageIcon3.svg"
+                      alt="phoyo"
+                      width="48"
+                      height="48"
+                      loading="lazy"
+                    />
+                    <h3>Оптимизация</h3>
+                  </div>
+                  <p class="block-big-text">
+                    Идеальные пропорции для
+                    <strong>Wildberries, OZON, Яндекс Маркета</strong>
+                  </p>
+                </div>
+
+                <div class="o-advantages-clue o-advantages-clue--for">
+                  <div class="o-advantage-header G-align-center">
+                    <img
+                      src="assets/images/OAdvantageIcon4.svg"
+                      alt="phoyo"
+                      width="48"
+                      height="48"
+                      loading="lazy"
+                    />
+                    <h3>Скорость</h3>
+                  </div>
+                  <p class="block-big-text">
+                    Готовое изображение <strong>за 30 секунд</strong> вместо
+                    часов фотосъёмки
+                  </p>
+                </div>
+
+                <div class="o-advantages-clue o-advantages-clue--five">
+                  <div class="o-advantage-header G-align-center">
+                    <img
+                      src="assets/images/OAdvantageIcon5.svg"
+                      alt="phoyo"
+                      width="48"
+                      height="48"
+                      loading="lazy"
+                    />
+                    <h3>Вариативность</h3>
+                  </div>
+                  <p class="block-big-text">
+                    Один товар <strong>в разных вариантах</strong> подачи
+                    и ракурсах
+                  </p>
+                </div>
+
+                <div class="o-advantage-decor o-advantage-decor--one G-flex">
+                  <img
+                    src="assets/images/OAdvantageDecor1.webp"
+                    alt="phoyo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="o-advantage-decor o-advantage-decor--two G-flex">
+                  <img
+                    src="assets/images/OAdvantageDecor2.webp"
+                    alt="phoyo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="o-advantage-decor o-advantage-decor--tree G-flex">
+                  <img
+                    src="assets/images/OAdvantageDecor3.webp"
+                    alt="phoyo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <div class="o-advantage-decor o-advantage-decor--for G-flex">
+                  <img
+                    src="assets/images/OAdvantageDecor4.webp"
+                    alt="photo"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                </div>
+
+                <a href="https://nexa.ru/sign-up" target="_blank" class="o-possibilities-round">
+                  <img
+                    src="assets/images/roundTextImg.webp"
+                    alt="phoyo"
+                    class="round-text-img"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/images/roundTextImgLight.webp"
+                    alt="phoyo"
+                    class="round-text-img-light"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                  <img
+                    src="assets/images/roundBorderImg.webp"
+                    alt="phoyo"
+                    class="round-border-img"
+                    width=""
+                    height=""
+                    loading="lazy"
+                  />
+                  <i class="icon icon-arrow-right"></i>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div class="o-advantages-decor G-flex">
+            <img
+              src="assets/images/OadvantagesDecor.png"
+              alt="photo"
+              loading="lazy"
+            />
+          </div>
+        </section>
+
+        <section id="possibilities" class="o-possibilities-section section">
+          <div class="container">
+            <div class="o-possibilities-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-clue">Возможности</span>
+                <h2>
+                  <span class="text-primary text-wrap"
+                    >Комплексное решение</span
+                  >
+                  для маркетплейсов
+                </h2>
+                <p>
+                  Все функции для создания
+                  <strong>эффективных карточек товаров</strong>
+                </p>
+              </div>
+
+              <div class="o-possibilities-columns block-cnt-big G-flex-column">
+                <div class="o-possibilities-column fade-bottom G-flex">
+                  <div class="o-possibilities-big-item">
+                    <div class="o-possibilities-img G-flex">
+                      <picture>
+                        <source
+                          srcset="assets/images/OpossibilitiesBigImgMobile.webp"
+                          media="(max-width: 576px)"
+                          type="image/webp"
+                        />
+
+                        <img
+                          src="assets/images/OpossibilitiesBigImg.webp"
+                          alt="photo"
+                          width="575"
+                          height="480"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+                    <div class="o-possibilities-item-info">
+                      <h3 class="block-big-title">Генерация изображений</h3>
+                      <p class="block-big-text">
+                        Создание фотореалистичных изображений
+                        <span class="text-wrap">по текстовому описанию</span>
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="o-possibilities-small-item">
+                    <div class="o-possibilities-img G-flex">
+                      <picture>
+                        <source
+                          srcset="
+                            assets/images/OpossibilitiesBigImg2Mobile.webp
+                          "
+                          media="(max-width: 576px)"
+                          type="image/webp"
+                        />
+
+                        <img
+                          src="assets/images/OpossibilitiesBigImg2.webp"
+                          alt="photo"
+                          width="283"
+                          height="283"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+                    <div class="o-possibilities-item-info">
+                      <h3 class="block-big-title">Пакетная обработка</h3>
+                      <p class="block-big-text">
+                        Одновременное создание карточек для 1 товара
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="o-possibilities-average-item">
+                    <div class="o-possibilities-img G-flex">
+                      <picture>
+                        <source
+                          srcset="assets/images/OpossibilitiesImg3Mobile.webp"
+                          media="(max-width: 576px)"
+                          type="image/webp"
+                        />
+                        <img
+                          src="assets/images/OpossibilitiesImg3.webp"
+                          alt="photo"
+                          width="282"
+                          height="380"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+
+                    <div class="o-possibilities-item-info">
+                      <h3 class="block-big-title">Выбор пропорций</h3>
+                      <p class="block-big-text">
+                        Оптимизация фото под требования площадок
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="o-possibilities-column fade-bottom G-flex">
+                  <div class="o-possibilities-average-item">
+                    <div class="o-possibilities-img G-flex">
+                      <picture>
+                        <source
+                          srcset="assets/images/OpossibilitiesImg4Mobile.webp"
+                          media="(max-width: 576px)"
+                          type="image/webp"
+                        />
+
+                        <img
+                          src="assets/images/OpossibilitiesImg5.webp"
+                          alt="photo"
+                          width="282"
+                          height="380"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+
+                    <div class="o-possibilities-item-info">
+                      <h3 class="block-big-title">Смена стилей</h3>
+                      <p class="block-big-text">
+                        Разные визуальные концепции для товара
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="o-possibilities-small-item">
+                    <div class="o-possibilities-img G-flex">
+                      <img
+                        src="assets/images/OpossibilitiesImg6.webp"
+                        alt="photo"
+                        width="283"
+                        height="283"
+                        loading="lazy"
+                      />
+                    </div>
+                    <div class="o-possibilities-item-info">
+                      <h3 class="block-big-title">Детализация</h3>
+                      <p class="block-big-text">
+                        Высокая резкость и проработка элементов
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="o-possibilities-big-item">
+                    <div class="o-possibilities-img G-flex">
+                      <picture>
+                        <source
+                          srcset="
+                            assets/images/OpossibilitiesBigImg4Mobile.webp
+                          "
+                          media="(max-width: 576px)"
+                          type="image/webp"
+                        />
+
+                        <img
+                          src="assets/images/OpossibilitiesBigImg4.webp"
+                          alt="photo"
+                          width="575"
+                          height="480"
+                          loading="lazy"
+                        />
+                      </picture>
+                    </div>
+                    <div class="o-possibilities-item-info">
+                      <h3 class="block-big-title">Замена фона и окружения</h3>
+                      <p class="block-big-text">
+                        Автоматическое размещение товара
+                        <span class="text-wrap">в подходящем контексте</span>
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="howWork" class="o-how-work-section section">
+          <div class="container">
+            <div class="o-how-work-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-clue">Процесс работы</span>
+                <h2>Как работает <span class="text-primary">Nexa AI</span></h2>
+                <p>
+                  <strong>Профессиональный результат</strong>
+                  <span class="mobile-text-wrap">
+                    без навыков
+                    <span class="desktop-text-wrap">редактирования</span>
+                  </span>
+                </p>
+              </div>
+
+              <div class="o-how-work-swiper block-cnt-big fade-bottom swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="o-how-work-slide">
+                      <div class="o-work-slide-header G-align-start">
+                        <p>01–03</p>
+                        <div class="o-work-slide-dots G-center">
+                          <span></span>
+                        </div>
+                      </div>
+
+                      <div class="o-work-slide-info">
+                        <h3 class="block-big-title">Загрузите фото товара</h3>
+                        <p class="block-big-text">
+                          Nexa AI сама удалит фон и улучшит качество. Или просто
+                          опишите товар текстом для генерации
+                        </p>
+                      </div>
+
+                      <div class="o-work-slide-media G-flex">
+                        <img
+                          src="assets/images/OworkSlideMedia.webp"
+                          alt="photo"
+                          width="332"
+                          height="202"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="o-how-work-slide">
+                      <div class="o-work-slide-header G-align-start">
+                        <p>02–03</p>
+                        <div class="o-work-slide-dots G-column-center">
+                          <span></span>
+                          <span></span>
+                        </div>
+                      </div>
+
+                      <div class="o-work-slide-info">
+                        <h3 class="block-big-title">Nexa AI создаёт контент</h3>
+                        <p class="block-big-text">
+                          Удаляет фон, улучшает качество, меняет фон и готовит
+                          изображение для маркетплейсов
+                        </p>
+                      </div>
+
+                      <div class="o-work-slide-media G-flex">
+                        <img
+                          src="assets/images/OworkSlideMedia2.webp"
+                          alt="photo"
+                          width="332"
+                          height="202"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="o-how-work-slide">
+                      <div class="o-work-slide-header G-align-start">
+                        <p>03–03</p>
+                        <div
+                          class="o-work-slide-dots o-work-many-dots G-center"
+                        >
+                          <div>
+                            <span></span>
+                            <span></span>
+                            <span></span>
+                          </div>
+                        </div>
+                      </div>
+
+                      <div class="o-work-slide-info">
+                        <h3 class="block-big-title">Получите готовую карточку</h3>
+                        <p class="block-big-text">
+                          Сохраняйте карточку товара в нужном размере под разные
+                          маркетплейсы
+                        </p>
+                      </div>
+
+                      <div class="o-work-slide-media G-flex">
+                        <img
+                          src="assets/images/OworkSlideMedia3.webp"
+                          alt="photo"
+                          width="332"
+                          height="202"
+                          loading="lazy"
+                        />
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="o-work-swiper-pagination swiper-pagination"></div>
+              </div>
+
+              <div class="o-how-work-cnt G-column-center">
+                <div class="section-big-titles fade-top G-column-center">
+                  <h2>
+                    Сгенерируйте идеальные карточки товаров
+                    <span class="text-primary">прямо сейчас!</span>
+                  </h2>
+                  <p>
+                    Начните работу с Nexa AI — получите готовые
+                    <span class="desktop-text-wrap"
+                      >карточки для маркетплейсов
+                      <strong>за 30 секунд</strong></span
+                    >
+                  </p>
+
+                  <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn dark-black-btn o-hero-btn">
+                    <span class="black-btn-bg G-center">
+                      <i class="icon icon-stars"></i>
+                    </span>
+                    <span class="black-btn-text">Попробовать бесплатно</span>
+                  </a>
+                </div>
+
+                <div class="o-how-work-bg G-flex">
+                  <picture>
+                    <source
+                      srcset="assets/images/OhowWorkBg2Mobile.webp"
+                      media="(max-width: 576px)"
+                      type="image/png"
+                    />
+                    <img
+                      src="assets/images/OhowWorkBg2.webp"
+                      alt="photo"
+                      width=""
+                      height=""
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews" class="o-reviews-section section-big">
+          <div class="container">
+            <div class="reviews-body G-column-center">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-clue">Отзывы</span>
+                <h2>
+                  Что говорят наши
+                  <span class="mobile-text-wrap">пользователи</span>
+                </h2>
+              </div>
+
+              <div class="reviews-box block-cnt-big G-justify-between">
+                <div class="k-reviews-left-item fade-left">
+                  <div class="face-reviews-left-img G-flex">
+                    <img
+                      src="assets/images/Oreviews2.webp"
+                      alt="reviews-author"
+                      width="386"
+                      height="260"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="reviews-left-info">
+                    <div class="reviews-item-header G-justify-between">
+                      <div class="reviews-author">
+                        <h4>Лев Н.</h4>
+                        <p>Селлер</p>
+                      </div>
+                      <div class="reviews-icon G-flex">
+                        <img
+                          src="assets/images/estimation1.svg"
+                          alt="estimation"
+                          width="32"
+                          height="32"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                    <div class="l-reviews-item-text">
+                      AI создаёт инфографику для сложных товаров, наглядно
+                      показывая характеристики. Понимание товара у клиентов
+                      улучшилось.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper reviews-swiper l-reviews-swiper fade-right">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews-mobile-item">
+                      <div class="face-reviews-item G-flex">
+                        <div class="face-reviews-left-img">
+                          <img
+                            src="assets/images/Oreviews2.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-left-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Лев Н.</h4>
+                              <p>Селлер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text text-mobile-size">
+                            AI создаёт инфографику для сложных товаров, наглядно
+                            показывая характеристики. Понимание товара
+                            у клиентов улучшилось.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Oreviews8.webp"
+                            alt="reviews-author"
+                            width="124"
+                            height="124"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Дмитрий Е.</h4>
+                              <p>Поставщик продуктов питания</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Nexa AI создаёт аппетитные изображения заморозки,
+                            которые выглядят лучше реальных фото, но без обмана
+                            покупателей.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Oreviews3.webp"
+                            alt="reviews-author"
+                            width="124"
+                            height="124"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Анна Л.</h4>
+                              <p>Селлер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Экономлю 40 000 ₽ в месяц на фотосессиях. Нейросеть
+                            создаёт стильные карточки по описанию и повышает
+                            конверсию
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Oreviews4.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Роман К.</h4>
+                              <p>Менеджер по продажам</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            AI автоматически адаптирует карточки под требования
+                            Ozon и Wildberries, учитывая сезонность. Продажи
+                            выросли на 23%.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Oreviews5.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Елена Н.</h4>
+                              <p>Основатель бренда</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            ИИ точно передаёт сложные запросы вроде
+                            «перламутровый омбре». Готовые фото использую
+                            даже в рекламных баннерах.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Oreviews6.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Руслан П.</h4>
+                              <p>Селлер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Nexa AI генерирует карточки с продуманной
+                            композицией, где виден каждый функциональный элемент
+                            товара, это вау!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Oreviews7.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Алина Р.</h4>
+                              <p>Продавец товаров</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            ИИ подбирает идеальные цветовые сочетания. Карточки
+                            выглядят профессионально даже без помощи дизайнера.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Oreviews10.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Диана Г.</h4>
+                              <p>Селлер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            Nexa AI генерирует сезонные варианты букетов.
+                            Карточки всегда актуальны и привлекают внимание
+                            к сезонным предложениям.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Oreviews11.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Леонид З.</h4>
+                              <p>Селлер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="l-reviews-item-text">
+                            AI идеально передаёт текстуры материалов —
+                            от глянцевого фарфора до матового керамогранита.
+                            Фотограф больше не нужен.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="reviews-pagination swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="faq" class="faq-section another-color-faq section">
+          <div class="container">
+            <div class="faq-body">
+              <div class="section-big-titles fade-top G-column-center">
+                <span class="section-clue">FAQ </span>
+                <h2>
+                  Все, что нужно знать
+                  <span class="mobile-text-wrap">о Nexa AI</span>
+                </h2>
+              </div>
+
+              <div
+                id="accordion"
+                class="faq-items block-cnt-big G-flex-column fade-bottom"
+              >
+                <div class="faq-item">
+                  <div class="faq-item-header link G-align-center">
+                    <h3>
+                      Можно ли использовать готовые карточки на всех
+                      маркетплейсах?
+                    </h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Да, Nexa AI оптимизирует контент под требования Wildberries,
+                    Ozon, Яндекс Маркета и других площадок.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>
+                      Что делать, если результат не соответствует ожиданиям?
+                    </h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Вы можете скорректировать запрос и перегенерировать
+                    карточку. Система обучается на ваших правках.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>
+                      Нужны ли специальные навыки для работы с нейросетью?
+                    </h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Нет, интерфейс интуитивно понятен. Достаточно уметь
+                    формулировать запросы на естественном языке.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Как Nexa AI справляется с нишевыми товарами?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Система обучена на миллионах товарных позиций и понимает
+                    специфику даже узких категорий.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Сохраняется ли конфиденциальность данных?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Все данные шифруются и не передаются третьим лицам.
+                    Вы сохраняете права на созданный контент.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Что отличает вашу нейросеть от других генераторов?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Глубокая специализация на e-commerce, постоянное обучение
+                    на актуальных данных маркетплейсов и умение работать
+                    с комплексными товарными описаниями.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+    <footer class="footer">
+        <div class="container">
+          <div class="footer-body">
+            <a class="footer-logo G-flex fade-bottom" href="index.html">
+              <img
+                src="assets/images/logoBig.svg"
+                alt="Company logo"
+                width="705"
+                height="180"
+                loading="lazy"
+              />
+            </a>
+
+            <div class="footer-cnt fade-bottom">
+              <div class="footer-grid G-flex">
+                <picture>
+                  <source
+                    srcset="assets/images/JfooterGridMobile.png"
+                    media="(max-width: 576px)"
+                    type="image/png"
+                  />
+                  <img
+                    src="assets/images/JfooterGrid.png"
+                    alt="footer grid"
+                    width="1160"
+                    height="491"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <a href="https://nexa.ru/sign-up" target="_blank" class="white-btn footer-btn">
+                <span class="white-btn-bg G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+                <span class="white-btn-text">Начать бесплатно</span>
+              </a>
+
+              <nav class="footer-menu">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer-policy">
+                <ul>
+                  <li>
+                    <a href="#">Оферта</a>
+                  </li>
+                  <li>
+                    <a href="#">Политика конфиденциальности</a>
+                  </li>
+                </ul>
+              </nav>
+              <p class="footer-text">© 2025 Nexa AI. Все права защищены</p>
+            </div>
+
+            <div class="footer-blur G-flex">
+              <picture>
+                <source
+                  srcset="assets/images/footerBlurMobile2.webp"
+                  media="(max-width: 576px)"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/images/JfooterBlur2.webp"
+                  alt="footerBlur"
+                  width="1160"
+                  height="491"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js " defer></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"
+      defer
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"
+      defer
+    ></script>
+
+    <script src="assets/js/swiper.js" defer></script>
+    <script src="assets/js/index.js" defer></script>
+  </body>
+</html>

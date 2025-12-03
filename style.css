@@ -10183,6 +10183,364 @@ footer {
 
 /* ======================================== Стили  для Улучшить фотографию END===================================== */
 
+/* ======================================== Стили  для Photoshop онлайн START===================================== */
+
+
+.s-hero-section {
+  position: relative;
+  padding: 154px 0 0;
+  z-index: 2;
+  min-height: 962px;
+}
+.s-hero-cursor {
+  display: none;
+}
+
+.s-hero-body {
+  position: relative;
+  z-index: 2;
+}
+.s-hero-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.s-hero-bg picture {
+  width: 100%;
+  height: 100%;
+  display: flex;
+}
+.s-hero-bg img {
+  width: 100%;
+  height: 100%;
+}
+.s-hero-titles {
+  position: relative;
+  z-index: 3;
+  margin: 0 auto;
+}
+
+.s-hero-titles h1 {
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 110%;
+  text-align: center;
+  color: #fafdff;
+}
+.s-hero-titles p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  text-align: center;
+  margin-top: 20px;
+  color: #a6afbf;
+}
+.s-hero-btn {
+  margin: 32px auto 0;
+  max-width: max-content;
+}
+.s-hero-media {
+  max-width: 1032px;
+  display: flex;
+  width: 100%;
+  margin: 11px auto 0;
+}
+
+.s-hero-icons {
+  max-width: 161px;
+  width: 100%;
+  position: absolute;
+  bottom: 78px;
+  left: 97px;
+}
+.s-hero-icons--two {
+  position: absolute;
+  bottom: 236px;
+  left: 259px;
+  max-width: 84px;
+  width: 100%;
+}
+.s-hero-plus {
+  max-width: 236px;
+  width: 100%;
+  position: absolute;
+  bottom: 236px;
+  left: 271px;
+}
+.s-hero-cart {
+  position: absolute;
+  bottom: 94px;
+  max-width: 153px;
+  right: 287px;
+}
+.s-hero-tag {
+  position: absolute;
+  padding: 13px 19px 13px 13px;
+  background: linear-gradient(
+    105.97deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  border: 1.09px solid #c2ccf61f;
+  border-radius: 9px;
+  display: flex;
+  gap: 9px;
+  align-items: center;
+  position: absolute;
+  backdrop-filter: blur(21px);
+  -webkit-backdrop-filter: blur(21px);
+}
+.s-hero-tag span {
+  width: 7px;
+  height: 7px;
+  flex: 0 0 7px;
+  display: block;
+  border-radius: 50%;
+  background: #dce8ff;
+  box-shadow: 0px 0px 19.63px 3.27px #dce8ff66;
+}
+.s-hero-tag p {
+  font-weight: 600;
+  font-size: 19.63px;
+  line-height: 130%;
+  color: #fafdff;
+}
+.s-hero-tag--one {
+  left: 60px;
+  bottom: 543px;
+}
+.s-hero-tag--two {
+  right: 245px;
+  bottom: 4px;
+}
+
+
+.s-possibilities-columns {
+  gap: 32px;
+  margin-top: 25px;
+}
+.s-possibilities-column {
+  gap: 10px;
+}
+.s-possibilities-left-item {
+  max-width: 282px;
+  width: 100%;
+}
+.s-possibilities-texts {
+  padding: 20px;
+}
+.s-possibilities-centes-item {
+  max-width: 575px;
+  width: 100%;
+}
+.s-possibilities-right-item {
+  max-width: 282px;
+  width: 100%;
+}
+.block-title-link {
+  gap: 10px;
+}
+
+
+
+.s-advantages-section {
+  padding: 0 0 37px 0;
+  position: relative;
+  z-index: 3;
+}
+.s-advantages-body {
+  position: relative;
+  z-index: 2;
+}
+.s-advantage-blur {
+  position: absolute;
+  left: -50px;
+  top: -50px;
+  z-index: -1;
+}
+.s-advantages-columns {
+  gap: 40px;
+}
+.s-advantages-column {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.s-advantages-column:nth-child(1) {
+  gap: 23px;
+}
+.s-advantages-column:nth-child(2) {
+  gap: 88px;
+}
+.s-advantage-big-item {
+  background: linear-gradient(
+    105.97deg,
+    rgba(0, 0, 0, 0.2) 0%,
+    rgba(0, 0, 0, 0.1) 100%
+  );
+  max-width: 369px;
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  border-radius: 30px;
+  overflow: hidden;
+  min-height: 241px;
+  padding: 0 24px 33px 0;
+  overflow: hidden;
+}
+.s-advantage-big-item::after {
+  content: "";
+  position: absolute;
+  inset: 0;
+  padding: 2px;
+  border-radius: 30px;
+  background: linear-gradient(180deg, #055ab6 0%, #201d66 100%);
+  -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+  -webkit-mask-composite: xor;
+  mask-composite: exclude;
+  pointer-events: none;
+  z-index: -1;
+}
+.s-advantage-big-icon {
+  top: -23px;
+  left: 0;
+  position: absolute;
+  max-width: 256px;
+}
+
+.s-advantage-big-texts {
+  margin-left: auto;
+  margin-top: auto;
+}
+.s-advantage-big-texts h3 {
+  font-weight: 500;
+  font-size: 80px;
+  line-height: 80px;
+  color: #dce8ff;
+  text-align: end;
+  letter-spacing: -6px;
+}
+.s-advantage-big-texts p {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 130%;
+  color: #fafdff;
+  text-align: end;
+}
+.s-advantage-items {
+  max-width: 406px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 23px;
+  justify-content: center;
+}
+.s-advantage-item {
+  position: relative;
+  z-index: 2;
+  padding: 20px;
+  background: #1b1c1f;
+  border: 0.53px solid #c2ccf61f;
+  border-radius: 16px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-width: 191px;
+  overflow: hidden;
+}
+.s-advantage-item i {
+  font-size: 36px;
+  background: #dce8ff;
+}
+.s-advantage-item p {
+  color: #fafdff;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 130%;
+}
+.s-advantage-item span {
+  color: #dce8ff;
+  font-weight: 600;
+  font-size: 36px;
+  line-height: 120%;
+  text-align: center;
+}
+.s-advantage-item-bg {
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: -1;
+  width: 100%;
+  height: 100%;
+}
+.s-advantage-item-bg picture {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.s-advantage-item-bg img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+.s-advantages-column .block-big-text {
+  max-width: 488px;
+  margin-top: 0;
+  
+}
+.s-advantage-lamp {
+  position: absolute;
+  top: 125px;
+  right: 30px;
+  max-width: 264px;
+  width: 100%;
+  transform: rotate(8deg);
+}
+
+
+.s-trust-section {
+  padding: 60px 0;
+  position: relative;
+  z-index: 2;
+}
+.s-trust-section-mobile {
+  display: none;
+}
+.s-trust-section {
+  max-width: 1440px;
+  margin: 140px auto 0;
+}
+.s-trust-body {
+  margin-top: -270px;
+}
+.s-trust-btn {
+  margin: 32px auto 0;
+}
+.s-trust-grid {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  top: 250px;
+  min-width: 1000px;
+  z-index: -1;
+}
+.s-trust-blur {
+  left: 50%;
+  position: absolute;
+  transform: translateX(-50%);
+  top: -250px;
+  min-width: 1200px;
+  z-index: 0;
+}
+
+/* ======================================== Стили  для Photoshop онлайн END===================================== */
+
+
+
+
 @media (max-width: 1400px) {
   /* ======================================== Стили  для  лэндинга  Увеличить разрешение фото  START===================================== */
 
@@ -10527,6 +10885,63 @@ footer {
 }
 
 @media (max-width: 992px) {
+
+  /* ======================================== Стили  для Photoshop онлайн START===================================== */
+  .s-trust-body {
+    margin-top: -170px;
+  }
+.s-advantages-column:nth-child(1) {
+    flex-direction: column-reverse;
+  }
+  .s-advantages-column:nth-child(2) {
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+  }
+  .s-advantages-column .block-big-text {
+    text-align: center;
+  }
+  .s-advantages-columns {
+    gap: 32px;
+  }
+  .s-advantages-section {
+    padding: 0;
+  }
+
+   .s-possibilities-column {
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .s-possibilities-right-item {
+    order: 3;
+  }
+  .s-possibilities-centes-item {
+    order: 1;
+  }
+  .s-possibilities-left-item {
+    order: 2;
+  }
+ .s-hero-tag {
+    display: none;
+  }
+  .s-hero-icons {
+    bottom: 0;
+    left: 0;
+  }
+  .s-hero-icons--two {
+    left: 0;
+  }
+  .s-hero-plus {
+    left: 0;
+  }
+  .s-hero-cart {
+    right: 0;
+    bottom: 0;
+  }
+
+
+  /* ======================================== Стили  для Photoshop онлайн END===================================== */
+
 
 /* ======================================== Стили  для Улучшить фотографию START===================================== */
  .r-possibilities-column {
@@ -11542,6 +11957,25 @@ footer {
 }
 
 @media (max-width: 768px) {
+
+    /* ======================================== Стили  для Photoshop онлайн START===================================== */
+ .s-trust-body {
+    margin-top: -50px;
+  }
+      .s-advantage-lamp {
+    max-width: 129px;
+  }
+     .s-hero-titles h1 {
+    font-size: 28px;
+    line-height: 120%;
+  }
+  .s-hero-plus {
+    bottom: 0;
+  }
+
+
+      /* ======================================== Стили  для Photoshop онлайн END===================================== */
+
 /* ======================================== Стили  для Улучшить фотографию START===================================== */
  .r-trust-dots img {
     display: none;
@@ -12877,6 +13311,152 @@ footer {
 
 
 @media (max-width: 576px) {
+      /* ======================================== Стили  для Photoshop онлайн START===================================== */
+.s-trust-section {
+    display: none;
+  }
+  .s-trust-section-mobile {
+    display: block;
+    margin-top: 120px;
+    position: relative;
+    z-index: 2;
+    min-height: 644px;
+  }
+  .s-trust-mobile-body {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    max-width: 288px;
+    width: 100%;
+  }
+  .s-trust-btn {
+    margin: 28px auto 0;
+}
+      .s-advantage-items {
+    flex-direction: column;
+    gap: 10px;
+  }
+  .s-advantage-items {
+    max-width: 100%;
+    width: 100%;
+  }
+  .s-advantage-item {
+    background: linear-gradient(
+      105.97deg,
+      rgba(0, 0, 0, 0.2) 0%,
+      rgba(0, 0, 0, 0.1) 100%
+    );
+  }
+  .s-advantage-blur {
+    display: none;
+  }
+  .s-advantage-big-item {
+    max-width: 100%;
+  }
+  .s-advantage-big-texts h3 {
+    font-size: 60px;
+    line-height: 60px;
+  }
+  .s-advantage-big-texts p {
+    font-size: 16px;
+    line-height: 22px;
+  }
+  .s-advantage-big-item {
+    border-radius: 16px;
+  }
+  .s-advantage-big-item::after {
+    border-radius: 16px;
+  }
+  .s-advantages-column:nth-child(1) {
+    gap: 10px;
+  }
+  .s-advantages-column .block-big-text {
+    max-width: 332px;
+  }
+  .s-advantage-lamp {
+    top: 350px;
+    right: -14px;
+    transform: rotate(19deg);
+    z-index: 2;
+  }
+
+
+
+
+       .s-possibilities-texts .block-title {
+    font-size: 22px;
+    line-height: 120%;
+  }
+  .s-possibilities-texts .block-text {
+    font-size: 18px;
+    line-height: 130%;
+  }
+  .s-possibilities-column {
+    gap: 32px;
+  }
+  .s-possibilities-columns {
+    margin-top: 32px;
+  }
+  .s-possibilities-left-item {
+    max-width: 100%;
+  }
+  .s-possibilities-right-item {
+    max-width: 100%;
+  }
+  .s-footer{
+    margin-top: 140px;
+  }
+
+
+.s-hero-titles p {
+    font-size: 16px;
+    line-height: 22px;
+    margin-top: 12px;
+  }
+  .s-hero-btn {
+    margin: 28px auto 0;
+  }
+
+   .s-hero-section {
+    padding: 128px 0 0;
+    min-height: 822px;
+  }
+  .s-hero-cart {
+    display: none;
+  }
+
+  .s-hero-plus {
+    bottom: unset;
+    max-width: 120px;
+    width: 100%;
+    left: 0;
+    top: 240px;
+  }
+  .s-hero-icons--two {
+    max-width: 45px;
+    left: -10px;
+    top: 320px;
+    bottom: unset;
+  }
+  .s-hero-icons {
+    bottom: 8px;
+    left: unset;
+    max-width: 73px;
+    left: unset;
+    right: 0;
+  }
+  .s-hero-cursor {
+    display: flex;
+    position: absolute;
+    max-width: 132px;
+    transform: rotate(-7deg);
+    right: -20px;
+    top: 180px;
+  }
+
+          /* ======================================== Стили  для Photoshop онлайн END===================================== */
+
 /* ======================================== Стили  для Улучшить фотографию START===================================== */
  .r-trust-section {
     margin-top: 60px;

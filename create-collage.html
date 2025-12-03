@@ -1,0 +1,1157 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Create a photo collage</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/GheroBlur.webp"
+      imagesrcset="assets/images/GheroBlurMobile.webp 576w, assets/images/GheroBlur.webp 1160w"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/zurb-twentytwenty@0.1.1/css/twentytwenty.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header-body G-justify-between">
+            <a class="header-logo G-flex" href="index.html">
+              <picture>
+                <source
+                  srcset="assets/images/logoMobile.svg"
+                  media="(max-width: 576px)"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/logo.svg"
+                  alt="Company logo"
+                  width="28"
+                  height="28"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </picture>
+            </a>
+            <nav class="menu">
+              <div class="menu-wrapper">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#steps">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+                <div class="menu-mobile-actions">
+                  <a href="https://nexa.ru/sign-up" target="_blank" class="btn-login G-align-center">
+                    <span class="login-btn-bg G-center">
+                      <i class="icon icon-person"></i>
+                    </span>
+                    <span class="login-btn-text">Войти</span>
+                  </a>
+                  <a href="https://nexa.ru/sign-up" target="_blank" class="btn-register G-align-center">
+                    <span class="register-btn-bg G-center">
+                      <i class="icon icon-person-edit"></i>
+                    </span>
+                    <span class="register-btn-text">Регистрация</span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+            <div class="menu-bg"></div>
+            <div class="header-actions G-align-center">
+              <a href="https://nexa.ru/sign-up" target="_blank" class="btn-login G-align-center">
+                <span class="login-btn-bg G-center">
+                  <i class="icon icon-person"></i>
+                </span>
+                <span class="login-btn-text">Войти</span>
+               </a>
+              <a href="https://nexa.ru/sign-up" target="_blank" class="btn-register G-align-center">
+                <span class="register-btn-bg G-center">
+                  <i class="icon icon-person-edit"></i>
+                </span>
+                <span class="register-btn-text">Регистрация</span>
+               </a>
+              <div class="burger-bg G-center">
+                <div class="burger">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="hero" class="g-hero-section">
+          <div class="container">
+            <div class="g-hero-body">
+              <div class="g-hero-titles">
+                <h1 class="fade-top">
+                  Нейросеть для создания <br />
+                  коллажей из фото
+                </h1>
+                <div class="g-hero-wrapper">
+                  <p class="fade-bottom">
+                    Загрузите фото — и получите стильный коллаж, будто собранный
+                    руками дизайнера
+                  </p>
+                  <a href="https://nexa.ru/sign-up" target="_blank" class="white-btn g-hero-btn">
+                    <span class="white-btn-bg G-center">
+                      <i class="icon icon-stars"></i>
+                    </span>
+                    <span class="white-btn-text">Создать коллаж</span>
+                  </a>
+                </div>
+              </div>
+              <div class="g-hero-image">
+                <div class="g-hero-card">
+                  <img
+                    src="assets/images/Ghero.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                  />
+                </div>
+                <div class="g-hero-decore g-hero-decore-1">
+                  <img
+                    src="assets/images/Ghero-decore.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                  />
+                </div>
+                <div class="g-hero-decore g-hero-decore-2">
+                  <img
+                    src="assets/images/Ghero-decore.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                  />
+                </div>
+                <div class="g-hero-blur">
+                  <img
+                    src="assets/images/GheroBlur.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                  />
+                </div>
+                <div
+                  class="g-hero-tag g-hero-tag--one G-align-center fade-right"
+                >
+                  <span>0,7</span> секунд на генерацию
+                </div>
+                <div
+                  class="g-hero-tag g-hero-tag--two G-align-center fade-right"
+                >
+                  <span>12+</span> стилей — минимализм, ретро и т.д.
+                </div>
+                <div
+                  class="g-hero-tag g-hero-tag--tree G-align-center fade-left"
+                >
+                  <span>100+</span> готовых шаблонов
+                </div>
+                <div
+                  class="g-hero-tag g-hero-tag--for G-align-center fade-left"
+                >
+                  <span>4</span> формата экспорта
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="g-hero-bg">
+            <picture>
+              <source
+                srcset="assets/images/GheroBg-mobile.webp"
+                media="(max-width: 576px)"
+              />
+              <img
+                src="assets/images/GheroBg.webp"
+                alt="img"
+                width=""
+                heigth=""
+              />
+            </picture>
+          </div>
+        </section>
+        <section class="g-why">
+          <div class="container">
+            <div class="section-titles fade-bottom">
+              <h2>Почему наш коллаж — больше, чем просто набор фото</h2>
+              <p>Стиль, смысл и удобство — всё на вашей стороне</p>
+            </div>
+            <div class="g-why__columns">
+              <div class="g-why__column">
+                <div class="g-why__image">
+                  <img
+                    src="assets/images/Gwhy01.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="g-why__subtitle">
+                  Любые фото — <br />
+                  в стильный коллаж
+                </h3>
+                <p class="g-why__text">
+                  Нейросеть подстраивается <br />
+                  под формат, свет и качество снимков
+                </p>
+              </div>
+              <div class="g-why__column">
+                <div class="g-why__image">
+                  <img
+                    src="assets/images/Gwhy02.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="g-why__subtitle">
+                  Простой и понятный <br />
+                  интерфейс
+                </h3>
+                <p class="g-why__text">
+                  Загрузите, выберите стиль, <br />
+                  скачайте — без лишних шагов
+                </p>
+              </div>
+              <div class="g-why__column">
+                <div class="g-why__image">
+                  <img
+                    src="assets/images/Gwhy03.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <h3 class="g-why__subtitle">
+                  Конфиденциальность — <br />
+                  приоритет
+                </h3>
+                <p class="g-why__text">
+                  Без хранения и передачи — <br />
+                  только вы и ваши кадры
+                </p>
+              </div>
+            </div>
+            <a href="https://nexa.ru/sign-up" target="_blank" class="white-btn g-why-btn">
+              <span class="white-btn-bg G-center">
+                <i class="icon icon-stars"></i>
+              </span>
+              <span class="white-btn-text">Попробовать бесплатно</span>
+            </a>
+          </div>
+        </section>
+        <section id="steps" class="g-steps section">
+          <div class="container">
+            <div class="section-titles fade-bottom">
+              <h2>3 шага — и коллаж готов</h2>
+              <p>Всего несколько кликов отделяют вас от стильного коллажа</p>
+            </div>
+            <div class="g-steps__body">
+              <div class="g-steps__wrapper g-steps__wrapper-1">
+                <div class="g-steps__number">01</div>
+                <div class="g-steps__column">
+                  <div class="g-steps__item">
+                    <h3 class="g-steps__subtitle">Загрузите фото</h3>
+                    <p class="g-steps__text">
+                      Выберите нужные кадры <br />
+                      с компьютера или телефона
+                    </p>
+                  </div>
+                  <div class="g-steps__image">
+                    <picture>
+                      <source
+                        srcset="assets/images/Gsteps01-mobile.webp"
+                        media="(max-width: 576px)"
+                      />
+                      <img src="assets/images/Gsteps01.webp" alt="MDN" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="g-steps__wrapper g-steps__wrapper-2">
+                <div class="g-steps__number">02</div>
+                <div class="g-steps__column">
+                  <div class="g-steps__item">
+                    <h3 class="g-steps__subtitle">Выберите стиль</h3>
+                    <p class="g-steps__text">
+                      Нейросеть предложит варианты коллажа, подходящие именно
+                      для ваших снимков
+                    </p>
+                  </div>
+                  <div class="g-steps__image">
+                    <picture>
+                      <source
+                        srcset="assets/images/Gsteps02-mobile.webp"
+                        media="(max-width: 576px)"
+                      />
+                      <img src="assets/images/Gsteps02.webp" alt="MDN" />
+                    </picture>
+                  </div>
+                </div>
+              </div>
+              <div class="g-steps__wrapper g-steps__wrapper-3">
+                <div class="g-steps__number">03</div>
+                <div class="g-steps__column">
+                  <div class="g-steps__item">
+                    <h3 class="g-steps__subtitle">Скачайте готовое</h3>
+                    <p class="g-steps__text">
+                      Получите коллаж в идеальном качестве, готовый для печати и
+                      публикации в соцсетях
+                    </p>
+                    <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn g-steps-btn">
+                      <span class="black-btn-bg G-center">
+                        <i class="icon icon-stars"></i>
+                      </span>
+                      <span class="black-btn-text">Создать коллаж</span>
+                     </a>
+                  </div>
+                  <div class="g-steps__image">
+                    <img
+                      src="assets/images/Gsteps03.webp"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                  </div>
+                  <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn g-steps-btn g-steps-btn-mobile">
+                    <span class="black-btn-bg G-center">
+                      <i class="icon icon-stars"></i>
+                    </span>
+                    <span class="black-btn-text">Создать коллаж</span>
+                  </a>
+                </div>
+              </div>
+              <div class="g-steps__blur">
+                <picture>
+                  <source
+                    srcset="assets/images/GstepsBlur-mobile.webp"
+                    media="(max-width: 768px)"
+                  />
+                  <img src="assets/images/GstepsBlur.webp" alt="MDN" />
+                </picture>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="possibilities" class="g-features section">
+          <div class="container">
+            <div class="g-possibilities-body">
+              <div class="section-titles fade-bottom">
+                <h2>
+                  <span>Коллажи —</span> для вдохновения, истории и красоты
+                </h2>
+                <p>
+                  Нейросеть помогает оформлять воспоминания, идеи и эмоции<span
+                    > — в личных, творческих и рабочих проектах</span
+                  >
+                </p>
+              </div>
+              <div class="g-features__swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="g-features__content">
+                      <h3 class="g-features__subtitle">
+                        В сторис, блог и соцсети
+                      </h3>
+                      <p class="g-features__text">
+                        Чтобы выделяться, цеплять <br />
+                        взгляд и рассказывать без слов
+                      </p>
+                      <ul class="g-features__list" style="max-width: 240px">
+                        <li class="g-features__item">реакции</li>
+                        <li class="g-features__item">Pinterest mood</li>
+                        <li class="g-features__item">контент</li>
+                        <li class="g-features__item">визуальный стиль</li>
+                      </ul>
+                    </div>
+                    <div class="g-features__image">
+                      <picture>
+                        <source
+                          srcset="assets/images/Gfeatures01-mobile.webp"
+                          media="(max-width: 992px)"
+                        />
+                        <img
+                          src="assets/images/Gfeatures01.webp"
+                          alt="img"
+                          width=""
+                          heigth=""
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="g-features__content">
+                      <h3 class="g-features__subtitle">В подарки и альбомы</h3>
+                      <p class="g-features__text">
+                        Чтобы сохранить тёплое, <br />
+                        сделать красиво и с душой
+                      </p>
+                      <ul class="g-features__list" style="max-width: 190px">
+                        <li class="g-features__item">сюрприз</li>
+                        <li class="g-features__item">память</li>
+                        <li class="g-features__item">семья</li>
+                        <li class="g-features__item">впечатления</li>
+                      </ul>
+                    </div>
+                    <div class="g-features__image">
+                      <picture>
+                        <source
+                          srcset="assets/images/Gfeatures02-mobile.webp"
+                          media="(max-width: 992px)"
+                        />
+                        <img
+                          src="assets/images/Gfeatures02.webp"
+                          alt="img"
+                          width=""
+                          heigth=""
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="g-features__content">
+                      <h3 class="g-features__subtitle">В интерьер и печать</h3>
+                      <p class="g-features__text">
+                        Чтобы украсить дом или сделать <br />
+                        фотостену из эмоций
+                      </p>
+                      <ul class="g-features__list" style="max-width: 260px">
+                        <li class="g-features__item">декор</li>
+                        <li class="g-features__item">любимые фото</li>
+                        <li class="g-features__item">постер</li>
+                        <li class="g-features__item">стена воспоминаний</li>
+                      </ul>
+                    </div>
+                    <div class="g-features__image">
+                      <picture>
+                        <source
+                          srcset="assets/images/Gfeatures03-mobile.webp"
+                          media="(max-width: 992px)"
+                        />
+                        <img
+                          src="assets/images/Gfeatures03.webp"
+                          alt="img"
+                          width=""
+                          heigth=""
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="g-features__content">
+                      <h3 class="g-features__subtitle">В учёбу и проекты</h3>
+                      <p class="g-features__text">
+                        Чтобы визуализировать мысли, <br />
+                        сделать презентацию живее
+                      </p>
+                      <ul class="g-features__list" style="max-width: 220px">
+                        <li class="g-features__item">мудборд</li>
+                        <li class="g-features__item">референсы</li>
+                        <li class="g-features__item">доска идей</li>
+                        <li class="g-features__item">портфолио</li>
+                      </ul>
+                    </div>
+                    <div class="g-features__image">
+                      <picture>
+                        <source
+                          srcset="assets/images/Gfeatures04-mobile.webp"
+                          media="(max-width: 992px)"
+                        />
+                        <img
+                          src="assets/images/Gfeatures04.webp"
+                          alt="img"
+                          width=""
+                          heigth=""
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+                <div class="g-features-pagination swiper-pagination"></div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews" class="g-reviews-section section">
+          <div class="container">
+            <div class="reviews-body G-column-center">
+              <div class="section-titles fade-bottom">
+                <h2 class="block-title">Что говорят наши пользователи</h2>
+              </div>
+              <div class="reviews-box block-cnt fade-bottom G-justify-between">
+                <div class="reviews-left-item">
+                  <div class="face-reviews-left-img G-flex">
+                    <img
+                      src="assets/images/Greviews1.webp"
+                      alt="reviews-author"
+                      width="386"
+                      height="260"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="reviews-left-info">
+                    <div class="reviews-item-header G-justify-between">
+                      <div class="reviews-author">
+                        <h4 class="">Анна С.</h4>
+                        <p>Фотограф</p>
+                      </div>
+                      <div class="reviews-icon G-flex">
+                        <img
+                          src="assets/images/estimation1.svg"
+                          alt="estimation"
+                          width="32"
+                          height="32"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                    <div class="reviews-item-text">
+                      Нейросеть делает такие коллажи, какие я раньше собирала
+                      часами в редакторе. А теперь — пара кликов, и можно сразу
+                      в печать.
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper g-reviews-swiper reviews-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews-mobile-item">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Greviews2-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Greviews1.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Анна С.</h4>
+                              <p>Фотограф</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            Нейросеть делает такие коллажи, какие я раньше
+                            собирала часами в редакторе. А теперь — пара кликов,
+                            и можно сразу в печать.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Greviews2-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Greviews2.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Даниил О.</h4>
+                              <p>Контент-менеджер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            Использую для сторис и постов — визуал стал
+                            на голову выше. Клиенты стали чаще сохранять
+                            публикации.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Greviews3-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Greviews3.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Ирина К.</h4>
+                              <p>Мама троих детей</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            Сделала семейный коллаж на годовщину —
+                            все прослезились. Очень удобно, когда
+                            не разбираешься в программах.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Greviews4-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Greviews4.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Тимур Е.</h4>
+                              <p>Дизайнер-фрилансер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            Иногда даже сам вдохновляюсь предложенными
+                            вариантами. Алгоритм действительно “чувствует”
+                            композицию.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Greviews5-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Greviews5.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Валентина А.</h4>
+                              <p>Учитель истории</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            Создаю коллажи для презентаций и классных часов.
+                            Дети в восторге — и всё просто, без сложных
+                            программ.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Greviews6-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Greviews6.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Алексей Ш.</h4>
+                              <p>Менеджер проектов</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            Нужно было оформить фото с командой для отчёта —
+                            получилось стильно и быстро. Руководство оценило!
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Greviews7-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Greviews7.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Мария Щ.</h4>
+                              <p>Художник</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            Собрала серию коллажей из фото своих работ. Очень
+                            удобно — помогает подать всё как цельную историю.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Greviews8-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Greviews8.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Артём Б.</h4>
+                              <p>SMM-специалист</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            Идеальный инструмент для быстрого контента. Экономит
+                            время и даёт классный результат без дизайнера.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-pagination swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+            <div class="g-try__body">
+              <div class="g-try__image">
+                <img
+                  src="assets/images/Gtry.webp"
+                  alt="img"
+                  width=""
+                  heigth=""
+                  loading="lazy"
+                />
+              </div>
+              <div class="g-try__content">
+                <div class="g-try__icon">
+                  <img
+                    src="assets/images/Ggallery-favorite.png"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <h2 class="g-try__title">Попробуйте бесплатно!</h2>
+                <p class="g-try__text">
+                  Загрузите изображения, а нейросеть <br />
+                  за секунды сделает коллаж
+                </p>
+                <a
+                  href="https://nexa.ru/sign-up"
+                  target="_blank"
+                  class="black-btn g-try-btn"
+                >
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Создать коллаж</span>
+                </a>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="faq" class="g-faq-section section">
+          <div class="container">
+            <div class="faq-body">
+              <div class="section-titles fade-bottom">
+                <h2>Все, что нужно знать о нейросети</h2>
+              </div>
+              <div
+                id="accordion"
+                class="faq-items block-cnt G-flex-column fade-bottom"
+              >
+                <div class="faq-item">
+                  <div class="faq-item-header link G-align-center">
+                    <h3>Сколько фото можно загрузить?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Вы можете загрузить от 2 до 30 фотографий за раз — нейросеть
+                    сама подстроится под количество.
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Нужно ли устанавливать программу?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Нет, всё работает прямо в браузере — ничего не нужно
+                    скачивать или устанавливать.
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Можно ли выбрать стиль коллажа?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Конечно! После загрузки фото нейросеть предложит несколько
+                    вариантов на выбор — выберите тот, который вам нравится.
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Подходит ли это для печати?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Да, готовые коллажи можно скачать в высоком качестве —
+                    подойдут для печати в формате постера, открытки или альбома.
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Что происходит с моими фотографиями?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Мы не сохраняем и не передаём ваши фото — все изображения
+                    обрабатываются только во время генерации и сразу удаляются.
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Поддерживается ли мобильный телефон?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Да, сервис полностью адаптирован под смартфоны — удобно
+                    загружать фото прямо из галереи.
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Подходит ли нейросеть новичкам?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Да, сервис очень простой — разберётесь без опыта. Всё
+                    интуитивно: загрузили фото, выбрали стиль, скачали
+                    результат.
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Какие форматы доступны для скачивания?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Вы можете сохранить коллаж в формате JPG, PNG или PDF —
+                    подойдёт и для экрана, и для печати.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer>
+        <div class="container">
+          <div class="footer-body">
+            <a class="footer-logo G-flex fade-bottom" href="index.html">
+              <img
+                src="assets/images/logoBig.svg"
+                alt="Company logo"
+                width="705"
+                height="180"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </a>
+            <div class="footer-cnt fade-bottom">
+              <div class="footer-grid G-flex">
+                <picture>
+                  <source
+                    srcset="assets/images/footerGridMobile.png"
+                    media="(max-width: 576px)"
+                    type="image/png"
+                  />
+                  <img
+                    src="assets/images/footerGrid.png"
+                    alt="footer grid"
+                    width="1160"
+                    height="491"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="white-btn footer-btn"
+              >
+                <span class="white-btn-bg G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+                <span class="white-btn-text">Начать бесплатно</span>
+              </a>
+              <nav class="footer-menu">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#steps">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer-policy">
+                <ul>
+                  <li>
+                    <a href="#">Оферта</a>
+                  </li>
+                  <li>
+                    <a href="#">Политика конфиденциальности</a>
+                  </li>
+                </ul>
+              </nav>
+              <p class="footer-text">© 2025 Nexa AI. Все права защищены</p>
+            </div>
+            <div class="footer-blur G-flex">
+              <picture>
+                <source
+                  srcset="assets/images/footerBlurMobile.webp"
+                  media="(max-width: 576px)"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/images/footerBlur.webp"
+                  alt="footerBlur"
+                  width="1160"
+                  height="491"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zurb-twentytwenty@0.1.1/js/jquery.twentytwenty.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

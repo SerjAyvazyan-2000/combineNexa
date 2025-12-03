@@ -1,0 +1,1250 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Photo colorization</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+
+  <style>
+    body,html{
+      background: #111215;
+    }
+  </style>
+  <body>
+    <div class="wrapper">
+      <header>
+        <div class="container">
+          <div class="header-body G-justify-between">
+            <a class="header-logo G-flex" href="index.html">
+              <picture>
+                <source
+                  srcset="assets/images/logoMobile.svg"
+                  media="(max-width: 576px)"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/logo.svg"
+                  alt="Company logo"
+                  width="28"
+                  height="28"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </picture>
+            </a>
+
+            <nav class="menu">
+              <div class="menu-wrapper">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+
+                <div class="menu-mobile-actions">
+                  <a href="https://nexa.ru/sign-up" target="_blank" class="btn-login G-align-center">
+                    <span class="login-btn-bg G-center">
+                      <i class="icon icon-person"></i>
+                    </span>
+                    <span class="login-btn-text">Войти</span>
+                  </a>
+
+                  <a href="https://nexa.ru/sign-up" target="_blank" class="btn-register G-align-center">
+                    <span class="register-btn-bg G-center">
+                      <i class="icon icon-person-edit"></i>
+                    </span>
+                    <span class="register-btn-text">Регистрация</span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+            <div class="menu-bg"></div>
+
+            <div class="header-actions G-align-center">
+              <a href="https://nexa.ru/sign-up" target="_blank"class="btn-login G-align-center">
+                <span class="login-btn-bg G-center">
+                  <i class="icon icon-person"></i>
+                </span>
+                <span class="login-btn-text">Войти</span>
+              </a>
+
+              <a href="https://nexa.ru/sign-up" target="_blank" class="btn-register G-align-center">
+                <span class="register-btn-bg G-center">
+                  <i class="icon icon-person-edit"></i>
+                </span>
+                <span class="register-btn-text">Регистрация</span>
+              </a>
+
+              <div class="burger-bg G-center">
+                <div class="burger">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section id="hero" class="j-hero-section">
+          <div class="container">
+            <div class="j-hero-body">
+              <div class="j-hero-titles">
+                <h1 class="fade-top">Колоризация фото</h1>
+                <p class="fade-bottom">
+                  <span class="mobile-text-wrap">Превращение черно-белых</span>
+                  кадров
+                  <span class="desktop-text-wrap"
+                    ><strong>в цветные —</strong>
+                    <span class="mobile-text-wrap"> моментально</span></span
+                  >
+                </p>
+                <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn dark-black-btn j-hero-btn">
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Начать бесплатно</span>
+                </a>
+              </div>
+              <div class="j-hero-card-plus fade-left G-flex">
+                <img
+                  src="assets/images/JcardPlus.svg"
+                  alt="photo"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="high"
+                  width="60"
+                  height="60"
+                />
+              </div>
+
+              <div class="j-hero-image-left fade-right G-flex">
+                <img
+                  src="assets/images/JheroImageLeft.webp"
+                  alt="photo"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="high"
+                  width="100"
+                  height="110"
+                />
+              </div>
+              <div class="j-hero-image-right fade-left G-flex">
+                <img
+                  src="assets/images/JheroImageRight.webp"
+                  alt="photo"
+                  loading="lazy"
+                  decoding="async"
+                  fetchpriority="high"
+                  width="108"
+                  height="160"
+                />
+              </div>
+            </div>
+          </div>
+
+          <div class="j-hero-bg G-flex">
+            <img
+              src="assets/images/JheroBg.webp"
+              alt="photo"
+              loading="lazy"
+              decoding="async"
+              fetchpriority="high"
+              width=""
+              height=""
+            />
+          </div>
+
+          <div class="j-hero-image G-flex">
+            <picture>
+              <source
+                srcset="assets/images/JheroImageMobile.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/JheroImage.webp"
+                alt="photo"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="high"
+                width=""
+                height=""
+              />
+            </picture>
+          </div>
+
+          <div class="j-hero-media">
+            <picture>
+              <source
+                srcset="assets/images/JheroMediaMobile.webp"
+                media="(max-width: 576px)"
+                type="image/webp"
+              />
+              <img
+                src="assets/images/JheroMedia.webp"
+                alt="photo"
+                loading="lazy"
+                decoding="async"
+                fetchpriority="high"
+                width=""
+                height=""
+              />
+            </picture>
+
+            <div class="j-hero-mobile-slider">
+              <div class="j-hero-swiper swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="j-hero-slide-item G-flex">
+                      <img
+                        src="assets/images/JheroSlide1.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width=""
+                        height=""
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="j-hero-slide-item G-flex">
+                      <img
+                        src="assets/images/JheroSlide2.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width=""
+                        height=""
+                      />
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="j-hero-slide-item G-flex">
+                      <img
+                        src="assets/images/JheroSlide3.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width=""
+                        height=""
+                      />
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="j-hero-mobile-decor mobile-block">
+                <img
+                  src="assets/images/JheroDecorMobile.png"
+                  alt="photo"
+                  loading="lazy"
+                  width=""
+                  height=""
+                />
+              </div>
+
+              <div class="j-hero-mobile-icon G-flex">
+                <img
+                  src="assets/images/JHeroMobileIcon.webp"
+                  alt="photo"
+                  loading="lazy"
+                  width=""
+                  height=""
+                />
+              </div>
+
+              <div class="j-hero-icon-two G-flex">
+                <img
+                  src="assets/images/JHeroMobileIcon2.webp"
+                  alt="photo"
+                  loading="lazy"
+                  width=""
+                  height=""
+                />
+              </div>
+
+              <div class="j-hero-icon-tree G-flex">
+                <img
+                  src="assets/images/JHeroMobileIcon3.webp"
+                  alt="photo"
+                  loading="lazy"
+                  width=""
+                  height=""
+                />
+              </div>
+
+              <a href="https://nexa.ru/sign-up" target="_blank" class="j-hero-card-plus-mobile descktop-block">
+                <img
+                  src="assets/images/JcardPlus2.svg"
+                  alt="photo"
+                  loading="lazy"
+                  width=""
+                  height=""
+                />
+              </a>
+            </div>
+            <div class="j-hero-pagination swiper-pagination"></div>
+          </div>
+        </section>
+
+        <section id="possibilities" class="j-possibilities-section">
+          <div class="container">
+            <div class="j-possibilities-body">
+              <div class="section-titles fade-top G-column-center">
+                <span class="section-tag">[ Возможности ]</span>
+                <h2>
+                  Нейросеть окрасит
+                  <span class="j-text-primary mobile-text-wrap"
+                    >любое фото,</span
+                  >
+                  <span class="text-wrap">даже если у него...</span>
+                </h2>
+              </div>
+
+              <div class="j-possibilities-columns G-flex-column block-cnt-big">
+                <div class="j-possibilities-column G-flex">
+                  <div class="j-possibilities-img-item fade-left">
+                    <picture>
+                      <source
+                        srcset="assets/images/JPossibilitiesImgMobile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/JPossibilitiesImg.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="575"
+                        height="320"
+                      />
+                    </picture>
+                  </div>
+                  <div class="j-possibilities-text-item fade-right">
+                    <h3 class="block-title">...Плохое качество</h3>
+                    <p class="block-text">
+                      <strong>Улучшит.</strong> Nexa AI уберёт размытость,
+                      зернистость и артефакты, сделав фото чистым
+                    </p>
+                    <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn dark-black-btn j-possibilities-btn">
+                      <span class="black-btn-bg G-center">
+                        <i class="icon icon-stars"></i>
+                      </span>
+                      <span class="black-btn-text">Попробовать</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="j-possibilities-column G-flex">
+                  <div class="j-possibilities-text-item fade-left">
+                    <h3 class="block-title">...Есть визуальный шум</h3>
+                    <p class="block-text">
+                      <strong>Уберёт.</strong> Если детали фотографии
+                      смешиваются с артефактами, ИИ оставит только нужное
+                    </p>
+                    <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn dark-black-btn j-possibilities-btn">
+                      <span class="black-btn-bg G-center">
+                        <i class="icon icon-stars"></i>
+                      </span>
+                      <span class="black-btn-text">Попробовать</span>
+                    </a>
+                  </div>
+
+                  <div class="j-possibilities-img-item fade-right">
+                    <picture>
+                      <source
+                        srcset="assets/images/jPossibilitiesImgMobile2.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/JPossibilitiesImgMobile2.webp"
+                        alt="photo"
+                        loading="lazy"
+                        decoding="async"
+                        fetchpriority="high"
+                        width="575"
+                        height="320"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                <div class="j-possibilities-column G-flex">
+                  <div class="j-possibilities-img-item fade-left">
+                    <picture>
+                      <source
+                        srcset="assets/images/jPossibilitiesImgMobile3.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/jPossibilitiesImg3.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="575"
+                        height="320"
+                      />
+                    </picture>
+                  </div>
+                  <div class="j-possibilities-text-item fade-right">
+                    <h3 class="block-title">...Выцвел фон</h3>
+                    <p class="block-text">
+                      <strong>Обновит.</strong> Добавит подходящие по смыслу
+                      элементы, чтобы всё смотрелось естественно
+                    </p>
+                    <a class="black-btn dark-black-btn j-possibilities-btn">
+                      <span class="black-btn-bg G-center">
+                        <i class="icon icon-stars"></i>
+                      </span>
+                      <span class="black-btn-text">Попробовать</span>
+                    </a>
+                  </div>
+                </div>
+
+                <div class="j-possibilities-column G-flex">
+                  <div class="j-possibilities-text-item fade-left">
+                    <h3 class="block-title">...Слишком много всего</h3>
+                    <p class="block-text">
+                      <strong>И что?</strong> Распознает даже самые сложные
+                      композиции и улучшит каждую по отдельности
+                    </p>
+                    <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn dark-black-btn j-possibilities-btn">
+                      <span class="black-btn-bg G-center">
+                        <i class="icon icon-stars"></i>
+                      </span>
+                      <span class="black-btn-text">Попробовать</span>
+                    </a>
+                  </div>
+
+                  <div class="j-possibilities-img-item fade-right">
+                    <picture>
+                      <source
+                        srcset="assets/images/jPossibilitiesImgMobile4.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/jPossibilitiesImg4.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width="575"
+                        height="320"
+                      />
+                    </picture>
+                  </div>
+                </div>
+
+                
+
+                <div class="j-possibilities-left-decor G-flex">
+                  <picture>
+                    <source
+                      srcset="assets/images/jPossibilitiesdecor1Mobile.webp"
+                      media="(max-width: 576px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/jPossibilitiesdecor1.webp"
+                      alt="photo"
+                      loading="lazy"
+                      width="592"
+                      height="592"
+                    />
+                  </picture>
+                </div>
+
+                <div class="j-possibilities-right-decor G-flex">
+                  <picture>
+                    <source
+                      srcset="assets/images/jPossibilitiesdecor2Mobile.webp"
+                      media="(max-width: 576px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/jPossibilitiesdecor2.webp"
+                      alt="photo"
+                      loading="lazy"
+                      width="592"
+                      height="592"
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="howWork" class="section">
+          <div class="container">
+            <div class="block-body">
+              <div class="section-titles fade-top G-column-center">
+                <span class="section-tag">[ Процесс работы ]</span>
+                <h2>
+                  Простые шаги
+                  <span class="text-wrap">до сложного результата</span>
+                </h2>
+                <p>
+                  Весь процесс занимает
+                  <strong class="mobile-text-wrap">меньше минуты</strong>
+                </p>
+              </div>
+
+              <div class="j-how-work-cnt fade-bottom block-cnt-big G-flex">
+                <div class="j-work-small-item">
+                  <span>[ Шаг 1 ] </span>
+                  <h3 class="block-title">Выберите фото</h3>
+                  <p class="block-text">
+                    Любое черно-белое фото, невзирая на его качество и т.д.
+                  </p>
+
+                  <div class="j-work-media G-flex">
+                    <img
+                      src="assets/images/jWorkMedia1.webp"
+                      alt="photo"
+                      loading="lazy"
+                      width="332"
+                      height="234"
+                    />
+                  </div>
+                </div>
+
+                <div class="j-work-big-item G-flex-column">
+                  <div class="j-work-bg G-flex">
+                    <picture>
+                      <source
+                        srcset="assets/images/jWorkBGMobile.webp"
+                        media="(max-width: 576px)"
+                        type="image/webp"
+                      />
+                      <img
+                        src="assets/images/jWorkBG.webp"
+                        alt="photo"
+                        loading="lazy"
+                        width=""
+                        height=""
+                      />
+                    </picture>
+                  </div>
+
+                  <div class="j-work-big-info">
+                    <h3 class="block-title">Задайте промпт</h3>
+                    <p class="block-text">
+                      ИИ раскрасит его
+                      <a class="text-wrap">и дорисует все</a> недостающие детали
+                    </p>
+
+                    <span>[ Шаг 2 ] </span>
+                  </div>
+
+                  <div class="j-work-big-text">
+                    <p>
+                      <b>|</b> Сделай фото цветным,
+                      <span class="text-wrap">убери размытие и затёртости</span>
+                    </p>
+
+                    <div class="j-work-big-bg G-flex">
+                      <picture>
+                        <source
+                          srcset="assets/images/jWorkBIGBGMobile.png"
+                          media="(max-width: 576px)"
+                          type="image/webp"
+                        />
+                        <img
+                          src="assets/images/jWorkBIGBG.png"
+                          alt="photo"
+                          loading="lazy"
+                          width=""
+                          height=""
+                        />
+                      </picture>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <div class="j-start-now fade-top">
+                <div class="section-titles G-column-center">
+                  <h2>Начните <span class="text-wrap">прямо сейчас!</span></h2>
+                  <p>
+                    Просто загрузите фото —
+                    <strong class="text-wrap"
+                      >Nexa AI сделает всё за вас</strong
+                    >
+                  </p>
+                  <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn dark-black-btn  j-start-btn">
+                    <span class="black-btn-bg G-center">
+                      <i class="icon icon-stars"></i>
+                    </span>
+                    <span class="black-btn-text">Начать бесплатно</span>
+                  </a>
+                </div>
+
+                <div class="j-start-bg G-flex">
+                  <picture>
+                    <source
+                      srcset="assets/images/jStartBGMobile.webp"
+                      media="(max-width: 576px)"
+                      type="image/webp"
+                    />
+                    <img
+                      src="assets/images/jStartBG.webp"
+                      alt="photo"
+                      loading="lazy"
+                      width=""
+                      height=""
+                    />
+                  </picture>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <section id="reviews" class="j-reviews-section section">
+          <div class="container">
+            <div class="reviews-body G-column-center">
+              <div
+                class="section-titles j-reviews-titles fade-top G-column-center"
+              >
+                <span class="section-tag">[ Отзывы ]</span>
+                <h2>
+                  Что говорят <span class="mobile-text-wrap">пользователи</span>
+                </h2>
+                <p>
+                  Жизненные истории, связанные
+                  <span class="mobile-text-wrap">с сервисом</span>
+                </p>
+              </div>
+
+              <div class="reviews-box block-cnt-big G-justify-between">
+                <div class="j-reviews-left-item fade-left">
+                  <div class="face-reviews-left-img G-flex">
+                    <img
+                      src="assets/images/Jreviews2.webp"
+                      alt="reviews-author"
+                      width="386"
+                      height="260"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="reviews-left-info">
+                    <div class="reviews-item-header G-justify-between">
+                      <div class="reviews-author">
+                        <h4 class="">Евгений З.</h4>
+                        <p>Любящий сын</p>
+                      </div>
+                      <div class="reviews-icon G-flex">
+                        <img
+                          src="assets/images/estimation1.svg"
+                          alt="estimation"
+                          width="32"
+                          height="32"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                    <div class="reviews-item-text">
+                      Подарил маме на юбилей раскрашенное фото её родителей,
+                      свадьба 1961 года. Она сначала не поняла, а потом
+                      разрыдалась и сказала: «Папа точно в таком голубом пиджаке
+                      был...».
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper reviews-swiper j-reviews-swiper fade-right">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews-mobile-item">
+                      <div class="face-reviews-item G-flex">
+                        <div class="face-reviews-left-img">
+                          <img
+                            src="assets/images/Jreviews2.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-left-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Евгений З.</h4>
+                              <p>Любящий сын</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text text-mobile-size">
+                            Подарил маме на юбилей раскрашенное фото её
+                            родителей, свадьба 1961 года. Она сначала не поняла,
+                            а потом разрыдалась и сказала: «Папа точно в таком
+                            голубом пиджаке был...».
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Jreviews8.webp"
+                            alt="reviews-author"
+                            width="124"
+                            height="124"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Анна К.</h4>
+                              <p>Арт-директор издательства</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            Оцифровывали архив чёрно-белых иллюстраций для
+                            книги. Типография была в шоке от качества.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Jreviews3.webp"
+                            alt="reviews-author"
+                            width="124"
+                            height="124"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Максим З.</h4>
+                              <p>Основатель маркетплейса</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            У нас 500+ товаров с белым фоном. Nexa AI за неделю
+                            расставил их на фото в интерьерах — конверсия в
+                            карточках выросла на 15%.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Jreviews4.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Сергей Т.</h4>
+                              <p>Блогер-историк</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            Для моего канала обработал 100+ ч/б кадров войны. ИИ
+                            не только добавил цвет, но и усилил резкость —
+                            зрители говорят, что история «ожила».
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Jreviews5.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Ольга В.</h4>
+                              <p>Digital-маркетолог в ритейле</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            За 3 дня создали 200+ вариантов цветного баннера для
+                            A/B-тестирования из одной чёрно-белой заготовки.
+                            Экономия на дизайнере — 90 000 ₽.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Jreviews6.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Дарья П.</h4>
+                              <p>Семейный архивариус</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            Восстановила свадебное фото бабушки и дедушки 1953
+                            года. Убрали пятна, трещины, раскрасили — мама
+                            плакала от счастья, когда увидела их молодыми.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Jreviews7.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Иван Ч.</h4>
+                              <p>Риелтор</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            Превратил чёрно-белые фото квартиры из архива
+                            застройщика в сочные «квартиры мечты» для
+                            презентации. Клиенты стали чаще просить показ.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Jreviews10.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Алина М.</h4>
+                              <p>Гейм-дизайнер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            Использовала сервис для колоризации старых скетчей
+                            персонажей. Получила готовый референс за 2 минуты
+                            вместо 8 часов работы вручную.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <img
+                            src="assets/images/Jreviews11.webp"
+                            alt="reviews-author"
+                            width="386"
+                            height="260"
+                            loading="lazy"
+                            decoding="async"
+                          />
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Павел С.</h4>
+                              <p>Владелец кафе</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            Раскрасили винтажные ч/б фото нашего района для
+                            оформления зала. Гости постоянно спрашивают, где
+                            купить такие постеры — теперь продаём сувениры.
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div
+                    class="j-reviews-pagination reviews-pagination swiper-pagination"
+                  ></div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="j-reviews-bg G-flex">
+            <img
+              src="assets/images/JreviewsBg.webp"
+              alt="photo"
+              loading="lazy"
+              width=""
+              height=""
+            />
+          </div>
+        </section>
+
+        <section id="faq" class="j-faq-section another-color-faq section">
+          <div class="container">
+            <div class="faq-body">
+              <div class="section-titles fade-top G-column-center">
+                <span class="section-tag">[ FAQ ] </span>
+                <h2>
+                  Все, что нужно
+                  <span class="mobile-text-wrap">знать о Nexa AI</span>
+                </h2>
+              </div>
+
+              <div
+                id="accordion"
+                class="faq-items block-cnt-big G-flex-column fade-bottom"
+              >
+                <div class="faq-item">
+                  <div class="faq-item-header link G-align-center">
+                    <h3>Что умеет эта нейросеть?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Нейросеть может: раскрашивать чёрно-белые фото, улучшать
+                    качество (убирать шумы, повышать резкость), восстанавливать
+                    старые повреждённые снимки, а также генерировать совершенно
+                    новые изображения по вашему описанию.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Какие форматы файлов поддерживаются?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Мы работаем с самыми популярными форматами: JPG, PNG, WEBP.
+                    Максимальный размер загружаемого файла — 25 МБ.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Можно ли обрабатывать сканы старых фотографий?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Да, это одна из наших основных специализаций! Нейросеть
+                    отлично справляется с пожелтевшими, потёртыми и
+                    потускневшими снимками, возвращая им чёткость и естественные
+                    цвета.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Кому принадлежат права на обработанные изображения?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Вы сохраняете все права на исходные фото. На обработанные
+                    изображения вы получаете полную бесплатную коммерческую
+                    лицензию и можете использовать их где угодно, в том числе
+                    для коммерции
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Что происходит с моими загруженными фотографиями?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Мы не используем ваши изображения для тренировки наших
+                    моделей без вашего явного согласия (его можно дать в
+                    настройках профиля). Все файлы полностью удаляются с наших
+                    серверов через 30 дней.
+                  </div>
+                </div>
+
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Можно ли обрабатывать детские и семейные фото?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Да, конечно! Мы заботимся о конфиденциальности. Такие
+                    изображения обрабатываются с повышенным уровнем защиты и не
+                    передаются третьим лицам.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+      <footer class="j-footer">
+        <div class="container">
+          <div class="footer-body">
+            <a class="footer-logo G-flex fade-bottom" href="index.html">
+              <img
+                src="assets/images/logoBig.svg"
+                alt="Company logo"
+                width="705"
+                height="180"
+                loading="lazy"
+              />
+            </a>
+
+            <div class="footer-cnt fade-bottom">
+              <div class="footer-grid G-flex">
+                <picture>
+                  <source
+                    srcset="assets/images/JfooterGridMobile.png"
+                    media="(max-width: 576px)"
+                    type="image/png"
+                  />
+                  <img
+                    src="assets/images/JfooterGrid.png"
+                    alt="footer grid"
+                    width="1160"
+                    height="491"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <a href="https://nexa.ru/sign-up" target="_blank" class="white-btn footer-btn">
+                <span class="white-btn-bg G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+                <span class="white-btn-text">Начать бесплатно</span>
+              </a>
+
+              <nav class="footer-menu">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer-policy">
+                <ul>
+                  <li>
+                    <a href="#">Оферта</a>
+                  </li>
+                  <li>
+                    <a href="#">Политика конфиденциальности</a>
+                  </li>
+                </ul>
+              </nav>
+              <p class="footer-text">© 2025 Nexa AI. Все права защищены</p>
+            </div>
+
+            <div class="footer-blur G-flex">
+              <picture>
+                <source
+                  srcset="assets/images/footerBlurMobile2.webp"
+                  media="(max-width: 576px)"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/images/JfooterBlur2.webp"
+                  alt="footerBlur"
+                  width="1160"
+                  height="491"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </footer>
+    </div>
+
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

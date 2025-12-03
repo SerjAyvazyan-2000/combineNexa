@@ -82,3 +82,11 @@
             mask-image: url(stars2.svg);
   -webkit-mask-image: url(stars2.svg);
 }
+.icon-arrow-right{
+        mask-image: url(arrowRight.svg);
+  -webkit-mask-image: url(arrowRight.svg);
+}
+.icon-arrow-right2{
+          mask-image: url(arrowRight2.svg);
+  -webkit-mask-image: url(arrowRight2.svg);
+}

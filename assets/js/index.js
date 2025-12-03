@@ -73,8 +73,8 @@ if (burger && menu) {
     menu.classList.toggle("active");
     menuBg.classList.toggle("active");
     document.body.style.overflow = "hidden";
-    if(!burger.classList.contains('active')){
-         document.body.style.overflow = "unset";
+    if (!burger.classList.contains("active")) {
+      document.body.style.overflow = "unset";
     }
   });
 
@@ -90,8 +90,7 @@ if (burger && menu) {
       burger.classList.remove("active");
       menu.classList.remove("active");
       menuBg.classList.remove("active");
-     document.body.style.overflow = "unset";
-
+      document.body.style.overflow = "unset";
     });
   });
 
@@ -103,12 +102,10 @@ if (burger && menu) {
       burger.classList.remove("active");
       menu.classList.remove("active");
       menuBg.classList.remove("active");
-          document.body.style.overflow = "unset";
-
+      document.body.style.overflow = "unset";
     }
   });
 }
-
 
 document.addEventListener("DOMContentLoaded", () => {
   const animatedItems = document.querySelectorAll(
@@ -121,48 +118,47 @@ document.addEventListener("DOMContentLoaded", () => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
         } else {
-        
         }
       });
     },
     {
-      threshold: 0.15, 
+      threshold: 0.15,
     }
   );
 
   animatedItems.forEach((item) => observer.observe(item));
 });
 
-document.querySelectorAll('.menu-list-link').forEach(link => {
-    link.addEventListener('click', function (e) {
-        e.preventDefault();
-        const targetId = this.getAttribute('href').substring(1);
-        const targetElement = document.getElementById(targetId);
+document.querySelectorAll(".menu-list-link").forEach((link) => {
+  link.addEventListener("click", function (e) {
+    e.preventDefault();
+    const targetId = this.getAttribute("href").substring(1);
+    const targetElement = document.getElementById(targetId);
 
-        if (targetElement) {
-            const headerHeight = document.querySelector('header').offsetHeight;
-            const extraOffset = 20; 
+    if (targetElement) {
+      const headerHeight = document.querySelector("header").offsetHeight;
+      const extraOffset = 20;
 
-            const targetPosition =
-                targetElement.getBoundingClientRect().top +
-                window.scrollY -
-                (headerHeight + extraOffset);
+      const targetPosition =
+        targetElement.getBoundingClientRect().top +
+        window.scrollY -
+        (headerHeight + extraOffset);
 
-            window.scrollTo({
-                top: targetPosition,
-                behavior: 'smooth'
-            });
-        }
-    });
+      window.scrollTo({
+        top: targetPosition,
+        behavior: "smooth",
+      });
+    }
+  });
 });
-
-
 
 (function () {
   const animItem = document.querySelector(".d-anmiation-item--one");
   const imageWrap = document.querySelector(".d-anmiation-small-img");
   const imgLow = document.querySelector(".d-anmiation-small-img .low-quality");
-  const imgHigh = document.querySelector(".d-anmiation-small-img .high-quality");
+  const imgHigh = document.querySelector(
+    ".d-anmiation-small-img .high-quality"
+  );
   const mouse = document.querySelector(".d-anmiation-mouse");
 
   if (!animItem || !imageWrap || !imgLow || !imgHigh || !mouse) {
@@ -224,14 +220,12 @@ document.querySelectorAll('.menu-list-link').forEach(link => {
   mouseClick();
 })();
 
-
-
 (function () {
   const anmiationBlock = document.querySelector(".d-anmiation-item--two");
 
   if (!anmiationBlock) {
     console.warn("d-anmiation-item--two not available — animation skipped.");
-    return; 
+    return;
   }
 
   function animateCompare() {
@@ -245,12 +239,6 @@ document.querySelectorAll('.menu-list-link').forEach(link => {
   animateCompare();
   setInterval(animateCompare, 5000);
 })();
-
-
-
-
-
-
 
 (function () {
   const blockTree = document.querySelector(".d-anmiation-item--tree");
@@ -272,43 +260,39 @@ document.querySelectorAll('.menu-list-link').forEach(link => {
   setInterval(animateMouseZoom, 5000);
 })();
 
-
 document.addEventListener("DOMContentLoaded", function () {
-    const container = document.querySelector(".hero-clues");
-    const marquee = document.querySelector(".marquee");
+  const container = document.querySelector(".hero-clues");
+  const marquee = document.querySelector(".marquee");
 
-    if (!container || !marquee) return; 
+  if (!container || !marquee) return;
 
-    const wrapper = document.createElement("div");
-    wrapper.classList.add("marquee-container");
+  const wrapper = document.createElement("div");
+  wrapper.classList.add("marquee-container");
 
-    wrapper.appendChild(marquee);
+  wrapper.appendChild(marquee);
 
-    const clone = marquee.cloneNode(true);
-    wrapper.appendChild(clone);
+  const clone = marquee.cloneNode(true);
+  wrapper.appendChild(clone);
 
-    container.appendChild(wrapper);
+  container.appendChild(wrapper);
 
-    let speed = 0.5;
-    let position = 0;
+  let speed = 0.5;
+  let position = 0;
 
-    function animate() {
-      position -= speed;
-      if (Math.abs(position) >= marquee.clientWidth) {
-        position = 0;
-      }
-      wrapper.style.transform = `translateX(${position}px)`;
-      requestAnimationFrame(animate);
+  function animate() {
+    position -= speed;
+    if (Math.abs(position) >= marquee.clientWidth) {
+      position = 0;
     }
+    wrapper.style.transform = `translateX(${position}px)`;
+    requestAnimationFrame(animate);
+  }
 
-    animate();
-  
+  animate();
 });
 
 document.addEventListener("DOMContentLoaded", () => {
-  const animatedItems = document.querySelectorAll(
-    ".animation"
-  );
+  const animatedItems = document.querySelectorAll(".animation");
 
   const observer = new IntersectionObserver(
     (entries) => {
@@ -316,14 +300,37 @@ document.addEventListener("DOMContentLoaded", () => {
         if (entry.isIntersecting) {
           entry.target.classList.add("show");
         } else {
-        
         }
       });
     },
     {
-      threshold: 0.15, 
+      threshold: 0.15,
     }
   );
 
   animatedItems.forEach((item) => observer.observe(item));
 });
+
+const track = document.querySelector(".m-trust-track");
+if(track){
+const items = gsap.utils.toArray(".m-trust-track > *");
+if (track && items) {
+  items.forEach((item) => {
+    const clone = item.cloneNode(true);
+    track.appendChild(clone);
+  });
+
+  const totalWidth = track.scrollWidth / 2;
+
+  gsap.to(track, {
+    x: -totalWidth,
+    duration: 50,
+    ease: "none",
+    repeat: -1,
+    modifiers: {
+      x: gsap.utils.unitize((x) => parseFloat(x) % -totalWidth),
+    },
+  });
+}
+}
+

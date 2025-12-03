@@ -116,11 +116,34 @@ const sliderSettings = {
     desktopSlides: 3,
     mobileSlides: 1
   },
- "f-reviews-section": {
+ "f-reviews-swiper": {
     desktopSlides: 3,
     mobileSlides: 1
   },
- 
+   "g-reviews-swiper": {
+    desktopSlides: 2.9,
+    mobileSlides: 1
+  },
+    "h-reviews-swiper": {
+    desktopSlides: 2.8,
+    mobileSlides: 1
+  },
+  "i-reviews-swiper": {
+    desktopSlides: 3,
+    mobileSlides: 1
+  },
+  "k-reviews-swiper": {
+    desktopSlides: 2.8,
+    mobileSlides: 1
+  },
+   "l-reviews-swiper": {
+    desktopSlides: 2.8,
+    mobileSlides: 1
+  },
+    "m-reviews-swiper": {
+    desktopSlides: 2.8,
+    mobileSlides: 1
+  },
 };
 
 let swipers = []; 
@@ -210,4 +233,142 @@ let resizeTimer;
 window.addEventListener("resize", () => {
   clearTimeout(resizeTimer);
   resizeTimer = setTimeout(initAllReviewSwipers, 200);
+});
+
+
+
+
+
+let reviewsSwiper;
+let currentDirection;
+let featuresSwiper;
+
+function initSwiper() {
+  const isMobile = window.innerWidth <= 992;
+  const isFeaturesMobile = window.innerWidth <= 768;
+  const direction = isMobile ? "horizontal" : "vertical";
+
+  if (isFeaturesMobile) {
+    if (!featuresSwiper) {
+      featuresSwiper = new Swiper(".g-features__swiper", {
+        spaceBetween: 20,
+        slidesPerView: 2,
+        pagination: {
+          el: ".g-features-pagination",
+          clickable: true,
+        },
+        breakpoints: {
+          300: { slidesPerView: 1, spaceBetween: 8 },
+          400: { slidesPerView: 1, spaceBetween: 8 },
+          500: { slidesPerView: 1.5, spaceBetween: 8 },
+          600: { slidesPerView: 2 },
+        },
+      });
+    }
+  } else {
+    if (featuresSwiper) {
+      featuresSwiper.destroy(true, true);
+      featuresSwiper = null;
+    }
+  }
+
+}
+
+window.addEventListener("load", initSwiper);
+window.addEventListener("resize", () => {
+  clearTimeout(window._resizeTimer);
+  window._resizeTimer = setTimeout(initSwiper, 250);
+});
+
+
+
+const swiper = new Swiper(".h-how-work-swiper", {
+  spaceBetween: 10,
+  slidesPerView:3,
+  pagination: {
+    el: ".h-work-swiper-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    320: { slidesPerView: 1 },
+    490: { slidesPerView: 1.2 },
+    620: { slidesPerView: 1.5 , },
+    810: { slidesPerView: 2 },
+    992: { slidesPerView: 2.5 },
+    1263: { slidesPerView: 2.6 },
+    1300: { slidesPerView: 3 },
+  },
+});
+
+
+
+const iPossibilitiesSwiper = new Swiper(".i-possibilities-swiper", {
+  spaceBetween: 10,
+  slidesPerView:3,
+  pagination: {
+    el: ".i-possibilities-pagination",
+    clickable: true,
+  },
+
+  breakpoints: {
+    320: { slidesPerView: 1 },
+    490: { slidesPerView: 1 },
+    530: { slidesPerView: 1.3 , },
+     570: { slidesPerView: 1.4 , },
+    620: { slidesPerView: 1.5 , },
+    810: { slidesPerView: 2 },
+    992: { slidesPerView: 2.5 },
+    1263: { slidesPerView: 2.6 },
+    1300: { slidesPerView: 3 },
+  },
+});
+
+const jHeroSwiper = new Swiper(".j-hero-swiper", {
+  spaceBetween: 10,
+  slidesPerView:1,
+  pagination: {
+    el: ".j-hero-pagination",
+    clickable: true,
+  },
+
+
+});
+
+const Kswiper = new Swiper(".k-possibilities-swiper", {
+  spaceBetween: 10,
+  slidesPerView:1,
+  pagination: {
+    el: ".k-possibilities-pagination",
+    clickable: true,
+  },
+
+
+});
+
+const swiperProcess = new Swiper(".l-process-swiper", {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  pagination: {
+    el: ".l-process-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+      300: {
+      slidesPerView: 1,
+    },
+     540: {
+      slidesPerView: 1.5,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 2.5,
+    },
+
+    1100: {
+      slidesPerView: 3,
+    },
+  },
 });

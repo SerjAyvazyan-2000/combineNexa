@@ -1,0 +1,1182 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"
+    />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Favicon generation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="preload"
+      as="image"
+      href="assets/images/heroBlur.webp"
+      imagesrcset="assets/images/heroBlurMobile.webp 576w, assets/images/heroBlur.webp 1160w"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/zurb-twentytwenty@0.1.1/css/twentytwenty.min.css"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="wrapper">
+     <header>
+        <div class="container">
+          <div class="header-body G-justify-between">
+            <a class="header-logo G-flex" href="index.html">
+              <picture>
+                <source
+                  srcset="assets/images/logoMobile.svg"
+                  media="(max-width: 576px)"
+                  type="image/svg+xml"
+                />
+                <img
+                  src="assets/images/logo.svg"
+                  alt="Company logo"
+                  width="28"
+                  height="28"
+                  loading="eager"
+                  fetchpriority="high"
+                  decoding="async"
+                />
+              </picture>
+            </a>
+
+            <nav class="menu">
+              <div class="menu-wrapper">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+
+                <div class="menu-mobile-actions">
+                  <a
+                    href="https://nexa.ru/sign-up"
+                    target="_blank"
+                    class="btn-login G-align-center"
+                  >
+                    <span class="login-btn-bg G-center">
+                      <i class="icon icon-person"></i>
+                    </span>
+                    <span class="login-btn-text">Войти</span>
+                  </a>
+
+                  <a
+                    href="https://nexa.ru/sign-up"
+                    target="_blank"
+                    class="btn-register G-align-center"
+                  >
+                    <span class="register-btn-bg G-center">
+                      <i class="icon icon-person-edit"></i>
+                    </span>
+                    <span class="register-btn-text">Регистрация</span>
+                  </a>
+                </div>
+              </div>
+            </nav>
+            <div class="menu-bg"></div>
+
+            <div class="header-actions G-align-center">
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="btn-login G-align-center"
+              >
+                <span class="login-btn-bg G-center">
+                  <i class="icon icon-person"></i>
+                </span>
+                <span class="login-btn-text">Войти</span>
+              </a>
+
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="btn-register G-align-center"
+              >
+                <span class="register-btn-bg G-center">
+                  <i class="icon icon-person-edit"></i>
+                </span>
+                <span class="register-btn-text">Регистрация</span>
+              </a>
+
+              <div class="burger-bg G-center">
+                <div class="burger">
+                  <span></span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </header>
+
+
+      <main>
+        <section id="hero" class="e-hero-section">
+          <div class="container">
+            <div class="e-hero-body">
+              <div class="e-hero-titles">
+                <h1 class="fade-top">
+                  Нейросеть для <br />
+                  генерации фавиконов
+                </h1>
+                <p class="fade-bottom">
+                  Создавайте стильные фавиконы с новым ИИ-помощником
+                </p>
+                <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn  e-hero-btn">
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Начать бесплатно</span>
+               </a>
+              </div>
+              <div class="e-hero-image fade-bottom">
+                <picture>
+                  <source
+                    srcset="assets/images/Ehero-mobile.webp"
+                    media="(max-width: 768px)"
+                  />
+                  <img
+                    src="assets/images/Eherogrid.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                  />
+                </picture>
+                <div class="e-hero-card">
+                  <img
+                    src="assets/images/Ehero.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                  />
+                </div>
+                <div class="e-hero-blur">
+                  <img
+                    src="assets/images/EheroBlur.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                  />
+                </div>
+              </div>
+              <div class="e-hero-circle">
+                <img
+                  src="assets/images/EheroCircle.webp"
+                  alt="img"
+                  width=""
+                  heigth=""
+                />
+              </div>
+              <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn  e-hero-btn e-hero-btn-mobile">
+                <span class="black-btn-bg G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+                <span class="black-btn-text">Начать бесплатно</span>
+               </a>
+              <div class="e-hero-tag e-hero-tag--two G-align-center fade-right">
+                <span>Десятки стилей и форматов</span>
+              </div>
+              <div class="e-hero-tag e-hero-tag--for G-align-center fade-right">
+                <span>Мгновенное создание фавикона</span>
+              </div>
+              <div class="e-hero-tag e-hero-tag--tree G-align-center fade-left">
+                <span>Настройка под ваш бренд</span>
+              </div>
+              <div class="e-hero-tag e-hero-tag--one G-align-center fade-left">
+                <span>Готовые файлы для web</span>
+              </div>
+            </div>
+          </div>
+          <div class="e-hero-bg">
+            <picture>
+              <source
+                srcset="assets/images/EheroBg-mobile.webp"
+                media="(max-width: 576px)"
+              />
+              <img
+                src="assets/images/EheroBg.webp"
+                alt="img"
+                width=""
+                heigth=""
+              />
+            </picture>
+          </div>
+        </section>
+
+        <section id="steps" class="e-steps section">
+          <div class="container">
+            <div class="section-titles fade-bottom">
+              <h2>Простые шаги к созданию фавикона</h2>
+              <p>От идеи до идеального результата — за секунды</p>
+            </div>
+            <div class="e-steps__body">
+              <div class="e-steps__image fade-left">
+                <img
+                  src="assets/images/Esteps.webp"
+                  alt="img"
+                  width=""
+                  heigth=""
+                />
+                <div class="e-steps__blur"></div>
+              </div>
+              <div class="e-steps__column fade-right">
+                <h3 class="e-steps__subtitle">
+                  <span>3 простых шага</span> для идеального фавикона
+                </h3>
+                <ul class="e-steps__list">
+                  <li class="e-steps__item">
+                    <p class="e-steps__step">Шаг 1</p>
+                    <div class="e-steps__block">
+                      <p class="e-steps__name">Опишите идею</p>
+                      <p class="e-steps__text">
+                        Просто укажите стиль, цвет и тематику
+                      </p>
+                    </div>
+                  </li>
+                  <li class="e-steps__item">
+                    <p class="e-steps__step">Шаг 2</p>
+                    <div class="e-steps__block">
+                      <p class="e-steps__name">Автоматическая обработка</p>
+                      <p class="e-steps__text">
+                        ИИ генерирует фавикон — несколько уникальных вариантов
+                        на выбор
+                      </p>
+                    </div>
+                  </li>
+                  <li class="e-steps__item">
+                    <p class="e-steps__step">Шаг 3</p>
+                    <div class="e-steps__block">
+                      <p class="e-steps__name">Готовый результат</p>
+                      <p class="e-steps__text">
+                        Загружаете на сайт — иконка сразу видна в браузере
+                      </p>
+                    </div>
+                  </li>
+                </ul>
+                <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn  e-steps-btn">
+                  <span class="black-btn-bg G-center">
+                    <i class="icon icon-stars"></i>
+                  </span>
+                  <span class="black-btn-text">Начать бесплатно</span>
+               </a>
+              </div>
+              <div class="e-steps__cirlce">
+                <img
+                  src="assets/images/EstepsCircle.webp"
+                  alt="img"
+                  width=""
+                  heigth=""
+                />
+              </div>
+            </div>
+            <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn  e-steps-btn-mobile e-steps-btn">
+              <span class="black-btn-bg G-center">
+                <i class="icon icon-stars"></i>
+              </span>
+              <span class="black-btn-text">Начать бесплатно</span>
+            </a>
+          </div>
+          <div class="e-steps__bg">
+            <picture>
+              <source
+                srcset="assets/images/EstepsGrid-mobile.webp"
+                media="(max-width: 479px)"
+              />
+              <img src="assets/images/EstepsGrid.webp" alt="img" />
+            </picture>
+          </div>
+        </section>
+
+        <section id="possibilities" class="e-possibilities-section section">
+          <div class="container">
+            <div class="e-possibilities-body">
+              <div class="section-titles fade-bottom">
+                <h2>Возможности использования Nexa AI</h2>
+                <p>От идеи до идеального результата — за секунды</p>
+              </div>
+              <div class="e-possibilities-wrapper fade-bottom block-cnt">
+                <div class="e-possibilities-items">
+                  <div class="e-possibilities-item e-possibilities-item-big">
+                    <div class="e-possibilities-top">
+                      <div class="e-possibilities-number">1</div>
+                      <p>
+                        Генерация фавиконов <br />
+                        по текстовому запросу
+                      </p>
+                    </div>
+                    <p class="block-text">
+                      Просто опишите желаемый стиль, цвет и идею — нейросеть
+                      создаст уникальный фавикон за секунды
+                    </p>
+                  </div>
+                  <div class="e-possibilities-item">
+                    <div class="e-possibilities-top">
+                      <div class="e-possibilities-number">2</div>
+                      <p>
+                        Автоматическая обрезка <br />
+                        и оптимизация размеров
+                      </p>
+                    </div>
+                    <p class="block-text">
+                      Иконка будет идеально отображаться в 16x16, 32x32, 64x64
+                      пикселях без потери деталей
+                    </p>
+                  </div>
+                  <div class="e-possibilities-item">
+                    <div class="e-possibilities-top">
+                      <div class="e-possibilities-number">3</div>
+                      <p>
+                        Экспорт в несколько <br />
+                        форматов одновременно
+                      </p>
+                    </div>
+                    <p class="block-text">
+                      Получите готовые файлы ICO, PNG и SVG одним кликом — без
+                      ручной конвертации.
+                    </p>
+                  </div>
+                  <div class="e-possibilities-item e-possibilities-item-big">
+                    <div class="e-possibilities-top">
+                      <div class="e-possibilities-number">4</div>
+                      <p>
+                        Создание на основе <br />
+                        загруженного изображения
+                      </p>
+                    </div>
+                    <p class="block-text">
+                      Загрузите свой логотип или картинку — система адаптирует
+                      её под нужные размеры и сохранит узнаваемость.
+                    </p>
+                  </div>
+                </div>
+                <div class="e-possibilities-start">
+                  <div class="e-possibilities-image">
+                    <div class="e-possibilities-image-wrapper">
+                      <div class="e-possibilities-icon">
+                        <img
+                          src="assets/images/Epossibilities01.png"
+                          alt="img"
+                          width=""
+                          heigth=""
+                          loading="lazy"
+                        />
+                      </div>
+                      <p>Example.com</p>
+                    </div>
+                  </div>
+                  <p class="e-possibilities-text">
+                    Нейросеть анализирует загруженные изображения или ваш сайт,
+                    чтобы подобрать гармоничные цвета
+                  </p>
+                  <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn  e-possibilities-btn">
+                    <span class="black-btn-bg G-center">
+                      <i class="icon icon-stars"></i>
+                    </span>
+                    <span class="black-btn-text">Начать бесплатно</span>
+                  </a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section class="e-advantages section">
+          <div class="container">
+            <div class="section-titles fade-bottom">
+              <h2>Преимущества Nexa AI</h2>
+              <p>От идеи до идеального результата — за секунды</p>
+            </div>
+            <div class="e-advantages__blur e-advantages__blur-1">
+              <img
+                src="assets/images/EadvantagesBlur-1.webp"
+                alt="img"
+                width=""
+                heigth=""
+                loading="lazy"
+              />
+            </div>
+            <div class="e-advantages__blur e-advantages__blur-2">
+              <img
+                src="assets/images/EadvantagesBlur-2.webp"
+                alt="img"
+                width=""
+                heigth=""
+                loading="lazy"
+              />
+            </div>
+            <div class="e-advantages__image fade-bottom">
+              <picture>
+                <source
+                  srcset="assets/images/Egallery-mobile.webp"
+                  media="(max-width: 576px)"
+                />
+                <img
+                  src="assets/images/Egallery.webp"
+                  alt="reviews-author"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+            <div class="e-advantages__body fade-bottom">
+              <div class="e-advantages__result">
+                <div class="e-advantages__top">
+                  <div class="e-advantages__stat">
+                    <span>до 99%</span>
+                    <p>
+                      точный <br />
+                      результат
+                    </p>
+                  </div>
+                  <div class="e-advantages__stat">
+                    <span>95,7%</span>
+                    <p>
+                      пользователей <br />
+                      довольны
+                    </p>
+                  </div>
+                </div>
+                <p class="e-advantages__text">
+                  Нейросеть генерирует профессиональные фавиконы на основе
+                  вашего бренда, сферы деятельности и стиля. Без дизайнеров, без
+                  лишних затрат — просто, быстро, качественно
+                </p>
+              </div>
+              <div class="e-advantages__column">
+                <div class="e-advantages__users e-advantages__users-mobile">
+                  <img
+                    src="assets/images/Euser.webp"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                  2 млн+ пользователей
+                </div>
+                <div class="e-advantages__icon">
+                  <img
+                    src="assets/images/logo.svg"
+                    alt="img"
+                    width=""
+                    heigth=""
+                    loading="lazy"
+                  />
+                </div>
+                <div class="e-advantages__item">
+                  <div class="e-advantages__users">
+                    <img
+                      src="assets/images/Euser.webp"
+                      alt="img"
+                      width=""
+                      heigth=""
+                      loading="lazy"
+                    />
+                    2 млн+ пользователей
+                  </div>
+                  <p class="e-advantages__text">
+                    Доступ через браузер без установки ПО — работает на любом
+                    устройстве.
+                  </p>
+                </div>
+              </div>
+            </div>
+            <a href="https://nexa.ru/sign-up" target="_blank" class="black-btn  e-advantages-btn">
+              <span class="black-btn-bg G-center">
+                <i class="icon icon-stars"></i>
+              </span>
+              <span class="black-btn-text">Начать бесплатно</span>
+            </a>
+            <div class="e-advantages__grid e-advantages__grid-1">
+              <img
+                src="assets/images/EadvantagesGrid.webp"
+                alt="img"
+                width=""
+                heigth=""
+                loading="lazy"
+              />
+            </div>
+            <div class="e-advantages__grid e-advantages__grid-2">
+              <img
+                src="assets/images/EadvantagesGrid.webp"
+                alt="img"
+                width=""
+                heigth=""
+                loading="lazy"
+              />
+            </div>
+          </div>
+        </section>
+        <section id="reviews" class="reviews-section">
+          <div class="container">
+            <div class="reviews-body G-column-center">
+              <div class="section-titles fade-bottom">
+                <h2 class="block-title">Что говорят наши пользователи</h2>
+              </div>
+              <div class="reviews-box block-cnt fade-bottom G-justify-between">
+                <div class="reviews-left-item">
+                  <div class="face-reviews-left-img G-flex">
+                    <img
+                      src="assets/images/Ereviews1.webp"
+                      alt="reviews-author"
+                      width="386"
+                      height="260"
+                      loading="lazy"
+                      decoding="async"
+                    />
+                  </div>
+                  <div class="reviews-left-info">
+                    <div class="reviews-item-header G-justify-between">
+                      <div class="reviews-author">
+                        <h4 class="">Роман</h4>
+                        <p>графический дизайнер</p>
+                      </div>
+                      <div class="reviews-icon G-flex">
+                        <img
+                          src="assets/images/estimation1.svg"
+                          alt="estimation"
+                          width="32"
+                          height="32"
+                          loading="lazy"
+                          decoding="async"
+                        />
+                      </div>
+                    </div>
+                    <div class="reviews-item-text">
+                      "Теперь не трачу часы на ручную обрезку и подгонку —
+                      просто загружаю логотип, и нейросеть сама делает фавикон
+                      во всех нужных размерах. Идеально для сайтов, приложений и
+                      презентаций!"
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper reviews-swiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide reviews-mobile-item">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/reviews2-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Ereviews1.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Роман</h4>
+                              <p>графический дизайнер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Теперь не трачу часы на ручную обрезку и подгонку —
+                            просто загружаю логотип, и нейросеть сама делает
+                            фавикон во всех нужных размерах. Идеально для
+                            сайтов, приложений и презентаций!"
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Ereviews2-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Ereviews2.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Ирина Л.</h4>
+                              <p>Веб-дизайнер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Сервис сэкономил кучу времени! Просто загружаю
+                            логотип — и получаю аккуратный фавикон в нужных
+                            форматах. Больше никаких мучений с масштабированием
+                            в Photoshop!"
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Ereviews4-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Ereviews4.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Александр П.</h4>
+                              <p>Разработчик</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Раньше тратил по полчаса на фавикон для каждого
+                            проекта. Теперь это 2 клика — и всё готово. Даже не
+                            думал, что это может быть так просто!"
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Ereviews6-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Ereviews6.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Юлия М.</h4>
+                              <p>Контент-менеджер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Не дизайнер, но благодаря этому сервису могу легко
+                            сделать фавикон сама. Загружаю изображение — и сразу
+                            получаю иконку, которая отлично смотрится на всех
+                            устройствах!"
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Ereviews3-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Ereviews3.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Денис К.</h4>
+                              <p>Фрилансер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Удобно, быстро, результат на уровне. Клиенты
+                            довольны, я — тем более. Фавиконы получаются чёткие
+                            и стильные, без ручной возни."
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Ereviews5-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Ereviews5.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Светлана В.</h4>
+                              <p>SEO-специалист</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Фавикон — мелочь, а впечатление о сайте формирует.
+                            Этот инструмент стал моим must-have: загружаю
+                            логотип, и через секунду — готовый фавикон в нужных
+                            форматах."
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Ereviews7-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Ereviews7.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Максим Т.</h4>
+                              <p>UX/UI дизайнер</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Нейросеть отлично подгоняет изображение под нужный
+                            размер, не теряя читаемости и деталей. Раньше всё
+                            делал вручную, теперь даже не открываю редакторы."
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Ereviews8-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Ereviews8.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Елена С.</h4>
+                              <p>Маркетолог</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Теперь могу быстро подготовить фавикон для лендинга
+                            без помощи дизайнеров. Просто и эффективно —
+                            идеально для запуска MVP!"
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="face-reviews-item G-flex">
+                        <div class="reviews-item-img">
+                          <picture>
+                            <source
+                              srcset="assets/images/Ereviews9-mobile.webp"
+                              media="(min-width: 993px)"
+                            />
+                            <img
+                              src="assets/images/Ereviews9.webp"
+                              alt="reviews-author"
+                              width="386"
+                              height="260"
+                              loading="lazy"
+                              decoding="async"
+                            />
+                          </picture>
+                        </div>
+                        <div class="reviews-item-info">
+                          <div class="reviews-item-header G-justify-between">
+                            <div class="reviews-author">
+                              <h4>Олег В.</h4>
+                              <p>Основатель стартапа</p>
+                            </div>
+                            <div class="reviews-icon G-flex">
+                              <img
+                                src="assets/images/estimation1.svg"
+                                alt="estimation"
+                                width="32"
+                                height="32"
+                                loading="lazy"
+                                decoding="async"
+                              />
+                            </div>
+                          </div>
+                          <div class="reviews-item-text">
+                            "Запускали несколько сайтов подряд — и с этим
+                            инструментом создание фавиконов стало последней
+                            вещью, о которой переживаю. Всё легко, а иконки
+                            выглядят профессионально."
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="reviews-pagination swiper-pagination"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+        <section id="faq" class="faq-section section">
+          <div class="container">
+            <div class="faq-body">
+              <div class="section-titles fade-bottom">
+                <h2>Все, что нужно знать о Nexa AI</h2>
+              </div>
+              <div
+                id="accordion"
+                class="faq-items block-cnt G-flex-column fade-bottom"
+              >
+                <div class="faq-item">
+                  <div class="faq-item-header link G-align-center">
+                    <h3>Что такое Nexa AI и как он работает?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Nexa AI — это нейросеть, которая автоматически создаёт
+                    фавиконы из вашего логотипа или изображения. Просто
+                    загрузите файл — и получите готовый комплект иконок для
+                    сайта во всех нужных форматах и разрешениях
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>
+                      Нужно ли что-то устанавливать, чтобы пользоваться Nexa AI?
+                    </h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Нет, установка не требуется. Сервис полностью работает в
+                    браузере — достаточно открыть сайт и загрузить изображение
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>В чём отличие от ручного создания фавикона?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Обычно приходится вручную обрезать, настраивать размеры и
+                    сохранять иконки в разных форматах. Nexa AI делает всё это
+                    автоматически: оптимизирует изображение, адаптирует под
+                    мелкие размеры и экспортирует сразу все нужные версии
+                    фавикона
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Какие форматы фавиконов я получу?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Сервис генерирует .ico, .png и SVG-версии фавиконов, включая
+                    стандартные размеры: 16×16, 32×32, 48×48, 64×64, 128×128,
+                    180×180 и другие — всё, что нужно для разных платформ и
+                    браузеров
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>
+                      Можно ли использовать фавикон, созданный в Nexa AI, в
+                      коммерческих проектах?
+                    </h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Да, созданные фавиконы можно использовать как в личных, так
+                    и в коммерческих целях — без ограничений
+                  </div>
+                </div>
+                <div class="faq-item">
+                  <div class="faq-item-header G-align-center link">
+                    <h3>Насколько быстро я получу результат?</h3>
+                    <div class="faq-item-icon G-center">
+                      <i class="icon icon-arrow"></i>
+                    </div>
+                  </div>
+                  <div class="faq-sub-text submenu">
+                    Весь процесс занимает несколько секунд. Загрузили — и сразу
+                    можете скачать архив с готовыми фавиконами.
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </section>
+      </main>
+
+
+      <footer>
+        <div class="container">
+          <div class="footer-body">
+            <a class="footer-logo G-flex fade-bottom" href="index.html">
+              <img
+                src="assets/images/logoBig.svg"
+                alt="Company logo"
+                width="705"
+                height="180"
+                loading="eager"
+                fetchpriority="high"
+                decoding="async"
+              />
+            </a>
+
+            <div class="footer-cnt fade-bottom">
+              <div class="footer-grid G-flex">
+                <picture>
+                  <source
+                    srcset="assets/images/footerGridMobile.png"
+                    media="(max-width: 576px)"
+                    type="image/png"
+                  />
+                  <img
+                    src="assets/images/footerGrid.png"
+                    alt="footer grid"
+                    width="1160"
+                    height="491"
+                    loading="lazy"
+                    decoding="async"
+                  />
+                </picture>
+              </div>
+              <a
+                href="https://nexa.ru/sign-up"
+                target="_blank"
+                class="white-btn footer-btn"
+              >
+                <span class="white-btn-bg G-center">
+                  <i class="icon icon-stars"></i>
+                </span>
+                <span class="white-btn-text">Начать бесплатно</span>
+              </a>
+
+              <nav class="footer-menu">
+                <ul>
+                  <li>
+                    <a class="menu-list-link" href="#howWork">Как работает</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#possibilities"
+                      >Возможности</a
+                    >
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#reviews">Отзывы</a>
+                  </li>
+                  <li>
+                    <a class="menu-list-link" href="#faq">FAQ</a>
+                  </li>
+                </ul>
+              </nav>
+              <nav class="footer-policy">
+                <ul>
+                  <li>
+                    <a href="#">Оферта</a>
+                  </li>
+                  <li>
+                    <a href="#">Политика конфиденциальности</a>
+                  </li>
+                </ul>
+              </nav>
+              <p class="footer-text">© 2025 Nexa AI. Все права защищены</p>
+            </div>
+
+            <div class="footer-blur G-flex">
+              <picture>
+                <source
+                  srcset="assets/images/footerBlurMobile.webp"
+                  media="(max-width: 576px)"
+                  type="image/webp"
+                />
+                <img
+                  src="assets/images/footerBlur.webp"
+                  alt="footerBlur"
+                  width="1160"
+                  height="491"
+                  loading="lazy"
+                  decoding="async"
+                />
+              </picture>
+            </div>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.event.move/1.3.6/jquery.event.move.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/zurb-twentytwenty@0.1.1/js/jquery.twentytwenty.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="assets/js/swiper.js"></script>
+    <script src="assets/js/index.js"></script>
+  </body>
+</html>

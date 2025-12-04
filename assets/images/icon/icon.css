@@ -115,3 +115,20 @@
         mask-image: url(arrow-up.svg);
   -webkit-mask-image: url(arrow-up.svg);
 }
+
+.icon-smartfon {
+  mask-image: url(smartfon.svg);
+  -webkit-mask-image: url(smartfon.svg);
+}
+.icon-skorost {
+  mask-image: url(skorost.svg);
+  -webkit-mask-image: url(skorost.svg);
+}
+.icon-menyu{
+    mask-image: url(menyu.svg);
+  -webkit-mask-image: url(menyu.svg);
+}
+.icon-union{
+    mask-image: url(union.svg);
+  -webkit-mask-image: url(union.svg);
+}

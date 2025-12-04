@@ -108,6 +108,12 @@ const sliderSettings = {
     desktopSlides: 3,
     mobileSlides: 1
   },
+    "b-reviews-swiper": {
+    desktopSlides: 3,
+    mobileSlides: 1
+  },
+
+  
   "c-reviews-swiper": {
     desktopSlides: 2.8,
     mobileSlides: 1
@@ -442,3 +448,42 @@ const swiperAdvantages = new Swiper(".w-advantages__swiper", {
     },
   },
 });
+
+const tHowWorkSwiper = new Swiper(".t-possibilities-swiper", {
+  spaceBetween: 10,
+  slidesPerView:1,
+  pagination: {
+    el: ".t-possibilities-pagination",
+    clickable: true,
+  },
+
+
+});
+
+const UswiperProcess = new Swiper(".r-advantages-swiper", {
+  spaceBetween: 10,
+  slidesPerView: 3,
+  pagination: {
+    el: ".r-advantages-pagination",
+    clickable: true,
+  },
+  breakpoints: {
+      300: {
+      slidesPerView: 1,
+    },
+     540: {
+      slidesPerView: 1.5,
+    },
+    640: {
+      slidesPerView: 2,
+    },
+    992: {
+      slidesPerView: 2.5,
+    },
+
+    1100: {
+      slidesPerView: 3,
+    },
+  },
+});
+
